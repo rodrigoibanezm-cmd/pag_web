@@ -22,15 +22,20 @@ const pageLink = current => current === 'como'
   ? '<a data-route href="/">Volver a las preguntas</a>'
   : '<a data-route href="/como">Cómo funciona</a>'
 
+const menuItems = current => `
+  ${links(current === 'como' ? comoLinks : queLinks)}
+  <span class="nav-separator" aria-hidden="true"></span>
+  ${pageLink(current)}
+  <a href="#piloto">Piloto</a>`
+
 export const nav = current => `
 <header class="topbar"><nav class="nav shell">
   ${brand()}
-  <div class="navlinks">
-    ${links(current === 'como' ? comoLinks : queLinks)}
-    <span class="nav-separator" aria-hidden="true"></span>
-    ${pageLink(current)}
-    <a href="#piloto">Piloto</a>
-  </div>
+  <div class="navlinks">${menuItems(current)}</div>
+  <details class="mobile-nav">
+    <summary>Índice <span aria-hidden="true">＋</span></summary>
+    <div class="mobile-nav-links">${menuItems(current)}</div>
+  </details>
 </nav></header>`
 
 export const footer = () => `<footer class="shell">${brand()}<span>PressureBoard · Workspace</span><span>nexusg.cl</span></footer>`
