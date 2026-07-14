@@ -2,7 +2,9 @@
 .nav { min-height:74px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
 .brand { display:inline-flex; align-items:center; gap:10px; font-size:.92rem; font-weight:900; letter-spacing:.08em; }
 .brand-mark { width:14px; height:14px; border-radius:50%; background:var(--accent); box-shadow:18px 0 0 var(--ink); margin-right:18px; }
-.navlinks { display:flex; align-items:center; gap:28px; color:#3d3934; font-size:.93rem; }
-.navlinks a.active { font-weight:800; }
-.navlinks .outline { padding:10px 17px; border:1px solid var(--ink); border-radius:999px; }
+.navlinks { display:flex; align-items:center; gap:28px; color:#3d3934; font-size:.93rem; white-space:nowrap; }
+.navlinks a { position:relative; }
+.navlinks a::after { content:""; position:absolute; left:0; right:0; bottom:-7px; height:1px; background:var(--ink); transform:scaleX(0); transform-origin:left; transition:transform .18s ease; }
+.navlinks a:hover::after { transform:scaleX(1); }
+.nav-separator { width:34px; height:1px; margin-inline:2px; background:var(--line); }
 footer { padding:30px 0 55px; display:flex; justify-content:space-between; gap:20px; color:#6e685f; font-size:.9rem; }
