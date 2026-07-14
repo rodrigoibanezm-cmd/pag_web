@@ -17,7 +17,14 @@
   .nav { min-height:auto; padding:16px 0 12px; align-items:flex-start; flex-direction:column; }
   .navlinks { width:100%; gap:20px; padding-bottom:6px; font-size:.84rem; }
   .hero { padding-top:24px; }
-  .hero-main,.hero-side,.question,.proof-q,.proof-a,.job,.modular-copy,.systems,.pilot,.card,.mode { padding:26px; }
+  .hero-main,.hero-side,.proof-q,.proof-a,.job,.modular-copy,.systems,.pilot,.card,.mode { padding:26px; }
+  .question-grid { gap:14px; }
+  .question { width:90%; min-height:150px; padding:23px; }
+  .question:nth-child(odd) { justify-self:start; }
+  .question:nth-child(even) { justify-self:end; }
+  .question.accent,.question.dark { width:100%; }
+  .question:not(.accent):not(.dark):nth-child(3n) { background:#f1ede6; }
+  .question h3 { margin-top:18px; }
   .systems,.grid3,.grid4 { grid-template-columns:1fr; }
   .systems-note { grid-column:auto; }
   footer { flex-direction:column; }
