@@ -1,53 +1,89 @@
 # PRODUCTO VISIBLE EN LA WEB
 
-## Un solo sistema, dos trabajos
+## Dos trabajos
 
-NexusG construye y mantiene comprensión de la empresa a partir de sus fuentes.
-PressureBoard y Workspace consumen esa misma comprensión de maneras distintas.
+La web presenta dos trabajos resueltos
+
+```txt
+saber qué merece atención
+entender una situación compleja para decidir
+```
+
+PressureBoard y Workspace aparecen como consecuencia de esos trabajos
+
+No como productos que deban explicarse primero
 
 ## PressureBoard
 
-Es el modo atención. No responde preguntas: decide qué situaciones merecen ser
-investigadas antes de que el usuario las descubra.
+PressureBoard es el modo atención
 
-No trabaja con correos, eventos o alertas aisladas. Trabaja con situaciones que
-evolucionan. Cada señal puede cambiar su prioridad. Solo llegan al tablero las
-pocas situaciones donde intervenir ahora puede cambiar el resultado.
+No responde preguntas ni reúne alertas
 
-Una card debe dejar claro:
+Selecciona situaciones donde intervenir ahora puede cambiar más el resultado
 
-- qué cambió;
-- por qué importa ahora;
-- por qué vale la pena intervenir;
-- qué evidencia lo sostiene.
+No busca necesariamente los problemas más grandes
 
-Las vistas de presión organizan cards en:
+Busca oportunidades de intervención cuyo costo de ignorarlas supera el costo de investigarlas
 
-- Urgente: existe un costo inmediato por no actuar.
-- Importante: todavía hay tiempo; el valor está en prevenir.
-- Tareas: seguimientos y acciones que deben mantenerse vivas.
+Trabaja con situaciones que evolucionan
+
+Cada nueva señal puede cambiar su prioridad
+
+Solo unas pocas llegan a convertirse en cards
+
+Una card debe dejar claro
+
+```txt
+qué cambió
+por qué merece atención ahora
+qué evidencia lo sostiene
+qué intervención tiene sentido
+```
+
+Las vistas de presión organizan las cards en
+
+```txt
+Urgente    existe un costo inmediato por no actuar
+Importante todavía hay tiempo y el valor está en prevenir
+Tareas     seguimientos y acciones que deben mantenerse vivas
+```
 
 ## Workspace
 
-Es el modo investigación. El usuario parte de una pregunta o profundiza una
-situación del PressureBoard.
+Workspace es el modo investigación
 
-No entrega información por mostrar información. Reconstruye contexto, cruza
-evidencia y termina en una recomendación fundamentada que cambia una decisión.
+El usuario parte de una pregunta o profundiza una situación
 
-Puede vivir en ChatGPT, MCP, un Custom GPT u otra interfaz conversacional. La
-interfaz no es el producto.
+Su trabajo no es mostrar información
+
+Hace investigación, análisis, síntesis e interpretación hasta terminar en
+
+```txt
+contexto preparado
+evidencia
+recomendación fundamentada
+```
+
+La recomendación debe cambiar una decisión
+
+Workspace puede vivir en ChatGPT, MCP, Custom GPT u otra interfaz conversacional
+
+La interfaz no es el producto
 
 ## Relación
 
-El PressureBoard selecciona dónde mirar. Workspace permite entender y decidir.
-Un planner puede entrar directamente a Workspace; no necesita pasar antes por
-PressureBoard.
+PressureBoard selecciona dónde vale la pena mirar
 
-## Flujo conceptual
+Workspace permite entender y decidir
 
-1. Se conecta una fuente existente.
-2. NexusG construye comprensión del dominio y del usuario.
-3. Opera continuamente sobre nueva evidencia.
-4. PressureBoard rescata situaciones relevantes.
-5. Workspace investiga preguntas o cards cuando hace falta profundidad.
+Un planner puede entrar directamente a Workspace
+
+No necesita pasar por PressureBoard
+
+## Precisión importante
+
+Workspace no "aprende" la empresa
+
+Es una forma de consumir el trabajo de NexusG
+
+La comprensión y la lógica especializada pertenecen al sistema, no a la interfaz
