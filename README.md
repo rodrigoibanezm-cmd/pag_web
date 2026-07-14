@@ -4,25 +4,9 @@ Landing pública de NexusG desplegada en Vercel.
 
 ## Responsabilidad
 
-```txt
-explicar qué hace NexusG
-mostrar cómo trabaja
-presentar PressureBoard y Workspace
-convertir preguntas complejas en una experiencia web clara
-```
-
-## Esta repo NO contiene
-
-```txt
-backend de NexusG
-motores de dominio
-agentes
-MCP
-bases de datos
-lógica de negocio
-```
-
-La web solo presenta el producto.
+La web muestra qué trabajo hace NexusG, cómo trabaja y por qué PressureBoard y
+Workspace son útiles. No contiene backend, motores, agentes, MCP, bases de datos
+ni lógica de negocio.
 
 ## Rutas
 
@@ -30,6 +14,8 @@ La web solo presenta el producto.
 /       página Qué
 /como   página Cómo
 ```
+
+La página `Qué` provoca la pregunta. La página `Cómo` reduce la incertidumbre.
 
 ## Arquitectura
 
@@ -39,37 +25,39 @@ index.html
 → src/router.js
 → páginas
 → componentes
-→ estilos
+→ datos y estilos
 ```
 
-Regla:
+Reglas obligatorias:
 
 ```txt
 1 archivo = 1 responsabilidad
-ningún archivo debe crecer sin límite
-preferencia: menos de 100 líneas
+ningún archivo supera 100 líneas
+refactorizar antes de alcanzar el límite
 ```
 
 ## Documentación
 
-- [Producto y narrativa](docs/PRODUCTO.md)
+- [Contexto y objetivo](docs/CONTEXTO.md)
+- [Producto visible](docs/PRODUCTO.md)
+- [Responsabilidad de las páginas](docs/PAGINAS.md)
+- [Criterios editoriales](docs/CONTENIDO.md)
+- [Aprendizajes de investigación](docs/INVESTIGACION.md)
+- [Historia de las decisiones](docs/HISTORIA.md)
 - [Arquitectura frontend](docs/ARQUITECTURA.md)
-- [Contenido editorial](docs/CONTENIDO.md)
 - [Responsive y mobile](docs/RESPONSIVE.md)
 - [Deploy en Vercel](docs/DEPLOY.md)
-
-## Principio central
-
-```txt
-la página Qué provoca la pregunta
-la página Cómo reduce la incertidumbre
-```
 
 ## Estado
 
 ```txt
-estrategia de la página Qué cerrada
+estrategia y narrativa cerradas
 contenido principal validado
-arquitectura modular en construcción
+arquitectura modular iniciada
+implementación de páginas pendiente
 Vercel conectado a main
 ```
+
+La implementación puede corregir estructura técnica y responsive. No debe
+reabrir el hero, agregar secciones, introducir conceptos ni reescribir la
+narrativa validada.
