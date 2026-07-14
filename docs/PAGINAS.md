@@ -2,49 +2,77 @@
 
 ## Decisión
 
-La misma landing se divide en dos páginas con trabajos narrativos diferentes.
-No son dos productos ni dos relatos independientes.
+La web se divide en dos páginas con trabajos narrativos distintos
+
+No son dos productos ni dos relatos independientes
 
 ## Página Qué (`/`)
 
-Su trabajo es provocar reconocimiento y deseo de respuesta.
+Su trabajo es provocar reconocimiento y deseo de respuesta
 
-Muestra:
+Muestra
 
-- preguntas que cambian decisiones;
-- una respuesta concreta como prueba;
-- atención mediante PressureBoard;
-- investigación mediante Workspace;
-- posibilidad de comenzar por una fuente;
-- invitación a probar una pregunta real.
+```txt
+preguntas que cambian decisiones
+una respuesta concreta como prueba
+atención mediante PressureBoard
+investigación mediante Workspace
+posibilidad de comenzar por una fuente
+invitación a probar una pregunta real
+```
 
-No explica arquitectura, LLM, motores, MCP, memoria, seguridad ni integración
-interna. Las preguntas son la demostración, no ejemplos decorativos.
+No explica
+
+```txt
+arquitectura
+IA o LLM
+modelos
+bases de datos
+motores
+MCP
+memoria
+seguridad
+integración interna
+```
+
+Las preguntas son la demostración
+
+No son ejemplos decorativos ni un recurso de copy
 
 ## Página Cómo (`/como`)
 
-Empieza cuando el visitante ya pregunta cómo se logra lo anterior. Su trabajo es
-reducir incertidumbre y aumentar confianza sin convertirse en documentación
-técnica.
+Empieza cuando el visitante ya quiere entender cómo se logra lo anterior
 
-Explica:
+Su trabajo es reducir incertidumbre y aumentar confianza
 
-- que NexusG trabaja sobre información ya existente;
-- que se puede comenzar por una fuente;
-- que cada dominio exige reglas y comprensión distintas;
-- el recorrido: leer, relacionar, evaluar y recomendar;
-- las dos formas de consumo: Workspace y PressureBoard;
-- el alcance inicial de un piloto.
+Explica únicamente lo necesario para entender que
 
-Aquí pueden aparecer conocimiento persistente, motores determinísticos, MCP,
-memoria, seguridad e integración, solo cuando ayuden a entender o confiar.
+```txt
+NexusG trabaja sobre información existente
+se puede comenzar por una sola fuente
+cada dominio exige lógica y comprensión propias
+la información se relaciona, evalúa y termina en una recomendación
+Workspace y PressureBoard consumen el trabajo de formas distintas
+el alcance puede crecer cuando aparecen nuevas preguntas
+```
+
+Puede mencionar agente, conocimiento persistente, MCP, memoria, seguridad o integración solo cuando resuelvan una duda real
+
+No debe transformarse en documentación técnica ni en una lista de funcionalidades
+
+No se necesita inventar un nombre para cada componente interno
 
 ## Navegación
 
-La barra principal conecta `Qué`, `Cómo` y `Piloto`. Cambiar de ruta no debe
-romper la continuidad visual ni sentirse como entrar a otro sitio.
+La barra principal conecta `Qué`, `Cómo` y `Piloto`
+
+Cambiar de ruta debe conservar identidad visual y continuidad narrativa
 
 ## Continuidad
 
-`Qué` genera la pregunta. `Cómo` entrega la explicación suficiente. Ambas deben
-compartir identidad, componentes, lenguaje y una misma promesa.
+```txt
+Qué   hace que el visitante necesite una respuesta
+Cómo  demuestra que el sistema está bien pensado
+```
+
+La página `Cómo` no debe repetir la tensión que ya construyó `Qué`
