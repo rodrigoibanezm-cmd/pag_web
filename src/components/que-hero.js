@@ -5,7 +5,6 @@ export const queHero = () => `
       <h1>Algunas preguntas parecen simples hasta que alguien intenta <span>responderlas bien</span></h1>
       <p>NexusG trabaja sobre la información que ya existe en una empresa para responder preguntas complejas y detectar situaciones que merecen atención</p>
     </div>
-    <a class="continue" href="#preguntas">Continuar ↓</a>
   </div>
   <aside class="hero-side warm-side"><div>
     <p class="eyebrow">TRES PREGUNTAS</p>
