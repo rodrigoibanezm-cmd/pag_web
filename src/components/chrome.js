@@ -6,7 +6,7 @@ export const nav = current => `
   <div class="navlinks">
     <a data-route href="/" class="${current === 'que' ? 'active' : ''}">Qué</a>
     <a data-route href="/como" class="${current === 'como' ? 'active' : ''}">Cómo</a>
-    <a class="outline" href="mailto:hola@nexusg.cl">Piloto</a>
+    <a class="outline" href="#piloto">Piloto</a>
   </div>
 </nav></header>`
 

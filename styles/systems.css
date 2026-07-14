@@ -1,0 +1,9 @@
+.modular { display:grid; grid-template-columns:.9fr 1.1fr; gap:20px; align-items:stretch; border-radius:var(--radius); overflow:hidden; }
+.modular-copy { padding:40px; background:var(--paper); border:1px solid var(--line); }
+.modular-copy h2 { margin-bottom:18px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(2.3rem,4.1vw,4.2rem); line-height:1; letter-spacing:-.044em; }
+.modular-copy p { max-width:560px; color:var(--muted); font-size:1.05rem; }
+.systems { padding:30px; background:var(--warm); color:white; display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+.system { padding:19px; border:1px solid rgba(255,255,255,.22); border-radius:14px; background:rgba(255,255,255,.05); }
+.system b { display:block; margin-bottom:5px; font-size:1rem; }
+.system span { color:#e7dcd2; font-size:.85rem; }
+.systems-note { grid-column:1/-1; padding-top:10px; color:#eee4db; font-size:.9rem; }

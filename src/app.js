@@ -1,6 +1,7 @@
 import { renderRoute } from './router.js'
 
 const mount = () => {
+  document.title = location.pathname.startsWith('/como') ? 'NexusG — Cómo' : 'NexusG — Qué'
   document.querySelector('#app').innerHTML = renderRoute(location.pathname)
   window.scrollTo(0, 0)
 }

@@ -1,0 +1,18 @@
+@media(max-width:900px) {
+  .navlinks a:not(.outline) { display:none; }
+  .hero,.section-head,.proof,.jobs,.modular,.pilot,.modes { grid-template-columns:1fr; }
+  .hero-main { min-height:auto; padding:38px; }
+  .hero-main h1 { font-size:clamp(2.8rem,12vw,4.7rem); }
+  .question:nth-child(n) { grid-column:span 12; }
+  .section-head { gap:10px; }
+  .proof-q { min-height:auto; }
+  .grid3,.grid4 { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:620px) {
+  .shell { width:min(100% - 24px,1180px); }
+  .hero { padding-top:24px; }
+  .hero-main,.hero-side,.question,.proof-q,.proof-a,.job,.modular-copy,.systems,.pilot,.card,.mode { padding:26px; }
+  .systems,.grid3,.grid4 { grid-template-columns:1fr; }
+  .systems-note { grid-column:auto; }
+  footer { flex-direction:column; }
+}

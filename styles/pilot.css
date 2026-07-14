@@ -1,0 +1,5 @@
+.pilot { padding:48px; background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:end; }
+.pilot h2 { margin-bottom:16px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(2.5rem,4.4vw,4.5rem); line-height:1; letter-spacing:-.045em; }
+.pilot p { margin-bottom:0; color:var(--muted); font-size:1.03rem; }
+.pilot ul { list-style:none; padding:0; margin:0 0 25px; display:grid; gap:10px; color:#4d4841; }
+.pilot li::before { content:"—"; margin-right:10px; color:var(--accent); font-weight:800; }
