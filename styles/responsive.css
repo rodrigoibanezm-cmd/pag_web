@@ -1,5 +1,8 @@
 @media(max-width:900px) {
-  .navlinks a:not(.outline) { display:none; }
+  .nav { gap:18px; }
+  .navlinks { gap:18px; overflow-x:auto; scrollbar-width:none; }
+  .navlinks::-webkit-scrollbar { display:none; }
+  .nav-separator { width:22px; flex:0 0 22px; }
   .hero,.section-head,.proof,.jobs,.modular,.pilot,.modes { grid-template-columns:1fr; }
   .hero-main { min-height:auto; padding:38px; }
   .hero-main h1 { font-size:clamp(2.8rem,12vw,4.7rem); }
@@ -8,8 +11,11 @@
   .proof-q { min-height:auto; }
   .grid3,.grid4 { grid-template-columns:1fr 1fr; }
 }
+
 @media(max-width:620px) {
   .shell { width:min(100% - 24px,1180px); }
+  .nav { min-height:auto; padding:16px 0 12px; align-items:flex-start; flex-direction:column; }
+  .navlinks { width:100%; gap:20px; padding-bottom:6px; font-size:.84rem; }
   .hero { padding-top:24px; }
   .hero-main,.hero-side,.question,.proof-q,.proof-a,.job,.modular-copy,.systems,.pilot,.card,.mode { padding:26px; }
   .systems,.grid3,.grid4 { grid-template-columns:1fr; }
