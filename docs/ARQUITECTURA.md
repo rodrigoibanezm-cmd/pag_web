@@ -2,11 +2,18 @@
 
 ## Objetivo
 
-Sitio estático modular desplegado en Vercel.
+Sitio estático modular, responsive y desplegado en Vercel. No usa framework ni
+backend porque la landing no los necesita.
 
-No usa framework.
+## Rutas
 
-No necesita backend.
+```txt
+/       → página Qué
+/como   → página Cómo
+```
+
+Vercel reescribe ambas rutas a `index.html`. El router selecciona la página con
+`window.location.pathname` y conserva navegación sin recarga.
 
 ## Estructura
 
@@ -33,87 +40,29 @@ styles/
 
 ## Responsabilidades
 
-### index.html
+- `index.html`: cascarón, metadatos, estilos y entrada de la app.
+- `app.js`: montaje y navegación del cliente.
+- `router.js`: resolución de ruta.
+- `pages`: composición de secciones, sin estilos ni routing.
+- `components`: una unidad visual reutilizable.
+- `data`: copy, preguntas, fuentes y dominios.
+- `styles`: CSS separado por responsabilidad.
 
-```txt
-cascarón HTML
-carga estilos
-carga app.js
-```
+## Reglas obligatorias
 
-### app.js
+- Ningún archivo supera 100 líneas, incluida documentación.
+- Un archivo tiene una responsabilidad.
+- Se refactoriza antes de crecer.
+- No se duplican componentes ni estilos.
+- No se agrega un framework sin una necesidad real.
+- No se modifica contenido validado durante la refactorización.
 
-```txt
-inicia la aplicación
-renderiza navegación
-renderiza página activa
-```
+## Criterio responsive
 
-### router.js
+Desktop y mobile son dos composiciones del mismo contenido. No se oculta
+información esencial en mobile. Se prueban navegación, jerarquía, ancho de texto,
+cards, espacios, overflow y objetivos táctiles.
 
-```txt
-/       → Qué
-/como   → Cómo
-```
+## Principio
 
-### pages
-
-```txt
-componen secciones
-no contienen estilos
-no contienen lógica de routing
-```
-
-### components
-
-```txt
-renderizan una unidad visual
-reciben datos
-no conocen la ruta completa
-```
-
-### data
-
-```txt
-copy
-preguntas
-fuentes
-dominios
-```
-
-### styles
-
-```txt
-separados por responsabilidad
-sin CSS inline salvo casos excepcionales
-```
-
-## Reglas
-
-```txt
-1 archivo = 1 responsabilidad
-preferencia: menos de 100 líneas
-refactor antes de crecer
-no duplicar componentes
-no duplicar estilos
-no introducir framework sin necesidad real
-```
-
-## Routing en Vercel
-
-`vercel.json` debe redirigir rutas de aplicación al mismo `index.html`.
-
-```txt
-/como → /index.html
-```
-
-El router decide qué página renderizar según `window.location.pathname`.
-
-## Principio central
-
-```txt
-HTML mínimo
-componentes pequeños
-contenido separado
-estilos compartidos
-```
+HTML mínimo, componentes pequeños, contenido separado y estilos compartidos.
