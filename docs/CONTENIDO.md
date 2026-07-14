@@ -2,51 +2,99 @@
 
 ## Tono
 
-Ejecutivo, claro, directo y neutral. Debe sentirse como una conversación entre
-personas que conocen el trabajo.
+Ejecutivo, claro, directo y neutral
 
-Nunca atacar al lector, vender culpa, miedo o superioridad. Evitar frases como
-"no sabes", "siempre pensaste" o "lo estás haciendo mal".
+Debe sentirse como una conversación entre personas que conocen el trabajo
+
+Nunca atacar al lector ni vender culpa, miedo o superioridad
+
+Evitar
+
+```txt
+no sabes
+siempre pensaste
+lo estás haciendo mal
+nunca imaginaste
+```
 
 ## Preguntas
 
-Las preguntas son la demo. Cada una debe superar cuatro pruebas:
+Las preguntas son la demo
 
-1. Un gerente real podría hacerla.
-2. Responderla normalmente requiere horas o días.
-3. Obliga a cruzar fuentes o contextos.
-4. La respuesta cambia una decisión.
+Cada una debe superar cuatro pruebas
 
-Debe existir diversidad: riesgo, oportunidad, contradicción, priorización,
-explicación y asignación de recursos.
+```txt
+un gerente real podría hacerla
+responderla requiere horas o días
+obliga a cruzar fuentes o contextos
+la respuesta cambia una decisión
+```
 
-No basta con que una pregunta sea difícil. Debe ser gerencialmente valiosa.
+Debe existir diversidad cognitiva
 
-## Demostraciones
+```txt
+priorización
+riesgo
+oportunidad
+contradicción
+asignación de recursos
+explicación
+```
 
-Las situaciones y respuestas concretas funcionan mejor que explicaciones del
-producto. Evitar escenas ficticias o mecanismos interactivos que hagan visible
-la intención persuasiva.
+No basta con que una pregunta sea difícil
 
-PressureBoard debe provocar: "yo también dedicaría atención a esto".
+Debe ser gerencialmente valiosa
 
-Workspace debe provocar: "yo no habría llegado a esa recomendación".
+## PressureBoard
+
+La card no demuestra detección de anomalías
+
+Demuestra criterio para decidir por qué una situación merece atención ahora
+
+Debe provocar
+
+> yo también dedicaría tiempo a esto
+
+## Workspace
+
+La investigación no demuestra capacidad analítica
+
+Demuestra criterio y termina en una recomendación clara
+
+Idealmente contradice la intuición inicial o muestra un camino menos obvio
+
+Debe provocar
+
+> yo no habría llegado a esa conclusión
 
 ## Lenguaje
 
-Evitar jerga y clichés: inteligencia artificial, transformación, revolucionar,
-insights accionables, plataforma inteligente y frases para el bronce.
+Evitar jerga, clichés y frases para el bronce
 
-En `Qué`, preferir preguntar o mostrar. En `Cómo`, explicar únicamente lo que
-reduce una duda real.
+```txt
+inteligencia artificial
+transformación
+revolucionar
+insights accionables
+plataforma inteligente
+```
+
+En `Qué`, preferir preguntas, cards y decisiones
+
+En `Cómo`, explicar solo lo que reduce una duda real
 
 ## Prueba de edición
 
-Cada frase debe aportar al menos una de estas cosas:
+Cada frase debe aportar al menos una de estas cosas
 
-- claridad;
-- credibilidad;
-- tensión narrativa.
+```txt
+claridad
+credibilidad
+tensión narrativa
+```
 
-Si no aporta ninguna, se elimina. La regla final es mostrar más, explicar menos
-y terminar en una decisión.
+Si puede desaparecer sin afectar ninguna de ellas, se elimina
+
+La evidencia tiene prioridad sobre la descripción
+
+Todo ejemplo debe terminar en una decisión
