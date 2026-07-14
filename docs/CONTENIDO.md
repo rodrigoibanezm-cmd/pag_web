@@ -1,107 +1,52 @@
-# CONTENIDO EDITORIAL
-
-## Objetivo
-
-Aumentar confianza sin aumentar explicación.
-
-El contenido debe demostrar criterio.
+# CRITERIOS EDITORIALES
 
 ## Tono
 
-```txt
-ejecutivo
-claro
-directo
-sin jerga técnica
-sin grandilocuencia
-```
+Ejecutivo, claro, directo y neutral. Debe sentirse como una conversación entre
+personas que conocen el trabajo.
 
-Evitar:
-
-```txt
-inteligencia artificial
-transformación
-insights accionables
-revolucionar
-plataforma inteligente
-```
+Nunca atacar al lector, vender culpa, miedo o superioridad. Evitar frases como
+"no sabes", "siempre pensaste" o "lo estás haciendo mal".
 
 ## Preguntas
 
-Las preguntas son la demo.
+Las preguntas son la demo. Cada una debe superar cuatro pruebas:
 
-Cada pregunta debe cumplir:
+1. Un gerente real podría hacerla.
+2. Responderla normalmente requiere horas o días.
+3. Obliga a cruzar fuentes o contextos.
+4. La respuesta cambia una decisión.
 
-```txt
-un gerente real podría hacerla
-requiere horas o días responderla
-cruza múltiples fuentes
-cambia una decisión
-```
+Debe existir diversidad: riesgo, oportunidad, contradicción, priorización,
+explicación y asignación de recursos.
 
-Debe existir diversidad cognitiva:
+No basta con que una pregunta sea difícil. Debe ser gerencialmente valiosa.
 
-```txt
-priorización
-riesgo
-oportunidad
-contradicción
-asignación de recursos
-explicación
-```
+## Demostraciones
 
-## PressureBoard
+Las situaciones y respuestas concretas funcionan mejor que explicaciones del
+producto. Evitar escenas ficticias o mecanismos interactivos que hagan visible
+la intención persuasiva.
 
-No describirlo como detector de anomalías.
+PressureBoard debe provocar: "yo también dedicaría atención a esto".
 
-La card debe demostrar:
+Workspace debe provocar: "yo no habría llegado a esa recomendación".
 
-```txt
-qué cambió
-por qué importa ahora
-por qué vale la pena intervenir
-```
+## Lenguaje
 
-La reacción esperada es:
+Evitar jerga y clichés: inteligencia artificial, transformación, revolucionar,
+insights accionables, plataforma inteligente y frases para el bronce.
 
-```txt
-sí, yo también dedicaría tiempo a esto
-```
+En `Qué`, preferir preguntar o mostrar. En `Cómo`, explicar únicamente lo que
+reduce una duda real.
 
-## Workspace
+## Prueba de edición
 
-La investigación debe terminar en una recomendación clara.
+Cada frase debe aportar al menos una de estas cosas:
 
-La recomendación debe:
+- claridad;
+- credibilidad;
+- tensión narrativa.
 
-```txt
-cambiar una decisión
-contradecir una intuición inicial cuando corresponda
-mostrar un camino concreto
-```
-
-La reacción esperada es:
-
-```txt
-yo no habría llegado a esa conclusión
-```
-
-## Edición
-
-Antes de mantener una frase preguntar:
-
-```txt
-aporta claridad
-aporta credibilidad
-aporta tensión narrativa
-```
-
-Si no aporta ninguna, eliminarla.
-
-## Regla final
-
-```txt
-mostrar más
-explicar menos
-terminar siempre en una decisión
-```
+Si no aporta ninguna, se elimina. La regla final es mostrar más, explicar menos
+y terminar en una decisión.
