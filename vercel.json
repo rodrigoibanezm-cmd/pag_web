@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/como", "destination": "/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
