@@ -1,7 +1,7 @@
-.jobs { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-.job { min-height:360px; padding:34px; border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; }
-.job.light { background:var(--paper); border:1px solid var(--line); }
-.job.dark { background:var(--dark); color:white; }
+.jobs { display:grid; grid-template-columns:1fr 1fr; gap:42px; }
+.job { min-height:360px; padding:0; display:flex; flex-direction:column; justify-content:space-between; }
+.job.light { background:transparent; }
+.job.dark { padding:30px; background:var(--dark); color:white; }
 .job h3 { margin-bottom:16px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.8rem,2.8vw,2.85rem); line-height:1.04; letter-spacing:-.038em; }
 .job p { max-width:500px; color:var(--muted); font-size:.98rem; }
 .job.dark p { color:#c8c0b7; }
@@ -10,12 +10,12 @@
 .product strong { display:block; margin-bottom:7px; font-size:.98rem; }
 .product span { color:var(--muted); font-size:.86rem; }
 .job.dark .product span { color:#aaa095; }
-.pb-card { margin-top:22px; padding:20px; background:#f8f4ee; border:1px solid var(--line); border-radius:16px; }
-.pb-card .status { display:inline-block; margin-bottom:12px; padding:5px 8px; border:1px solid #b64f43; border-radius:6px; color:#b64f43; font-size:.62rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.pb-card { margin-top:22px; padding:18px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.pb-card .status { display:inline-block; margin-bottom:12px; color:var(--accent); font-size:.62rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
 .pb-card h4 { margin:0 0 8px; font-family:Georgia,"Times New Roman",serif; font-size:1.16rem; line-height:1.16; font-weight:500; }
 .pb-card p { margin:0; color:#5d574f; font-size:.86rem; }
 .why-now { margin-top:14px; padding-top:13px; border-top:1px solid var(--line); color:#4f4a44; font-size:.84rem; }
 .why-now b { display:block; margin-bottom:5px; color:var(--ink); }
-.workspace-box { margin-top:22px; padding:18px; border-radius:15px; background:#292723; border:1px solid rgba(255,255,255,.12); }
+.workspace-box { margin-top:22px; padding:18px; background:#292723; }
 .workspace-box small { color:#9e958a; text-transform:uppercase; letter-spacing:.12em; font-size:.62rem; font-weight:800; }
 .workspace-box p { margin:10px 0 0; color:white; font-family:Georgia,"Times New Roman",serif; font-size:1.05rem; line-height:1.28; }
