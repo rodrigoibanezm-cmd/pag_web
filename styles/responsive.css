@@ -4,8 +4,8 @@
   .navlinks::-webkit-scrollbar { display:none; }
   .nav-separator { width:22px; flex:0 0 22px; }
   .hero,.section-head,.proof,.jobs,.modular,.pilot,.modes { grid-template-columns:1fr; }
-  .hero-main { min-height:auto; padding:38px; }
-  .hero-main h1 { font-size:clamp(2.8rem,12vw,4.7rem); }
+  .hero-main { min-height:auto; padding:34px; }
+  .hero-main h1 { font-size:clamp(2.25rem,8.5vw,3.8rem); }
   .question:nth-child(n) { grid-column:span 12; }
   .section-head { gap:10px; }
   .proof-q { min-height:auto; }
@@ -17,18 +17,22 @@
   .nav { min-height:68px; padding:0; align-items:center; flex-direction:row; }
   .navlinks { display:none; }
   .mobile-nav { display:block; margin-left:auto; color:#3d3934; }
-  .mobile-nav summary { display:flex; align-items:center; gap:9px; font-size:.92rem; font-weight:700; }
+  .mobile-nav summary { display:flex; align-items:center; gap:9px; font-size:.88rem; font-weight:700; }
   .mobile-nav-links { position:absolute; left:0; right:0; top:100%; padding:20px 24px 24px; background:rgba(243,239,232,.98); border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:grid; gap:18px; box-shadow:0 14px 30px rgba(21,21,21,.08); }
   .mobile-nav-links .nav-separator { width:100%; margin:2px 0; }
-  .hero { padding-top:24px; }
-  .hero-main,.hero-side,.proof-q,.proof-a,.job,.modular-copy,.systems,.pilot,.card,.mode { padding:26px; }
+  section { padding:50px 0; }
+  .hero { padding-top:18px; }
+  .hero-main,.hero-side,.proof-q,.proof-a,.job,.modular-copy,.systems,.pilot,.card,.mode { padding:24px; }
+  .hero-main h1 { font-size:clamp(2.15rem,10.5vw,3rem); line-height:1; }
+  .hero-main p { font-size:.98rem; }
+  .section-head h2 { font-size:clamp(1.8rem,8vw,2.5rem); }
   .question-grid { gap:14px; }
-  .question { width:90%; min-height:150px; padding:23px; }
+  .question { width:90%; min-height:138px; padding:21px; }
   .question:nth-child(odd) { justify-self:start; }
   .question:nth-child(even) { justify-self:end; }
   .question.accent,.question.dark { width:100%; }
   .question:not(.accent):not(.dark):nth-child(3n) { background:#f1ede6; }
-  .question h3 { margin-top:18px; }
+  .question h3 { margin-top:16px; font-size:1.2rem; }
   .systems,.grid3,.grid4 { grid-template-columns:1fr; }
   .systems-note { grid-column:auto; }
   footer { flex-direction:column; }
