@@ -1,21 +1,21 @@
-.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-.grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
-.card { padding:26px; background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; min-height:200px; }
-.card.dark { background:var(--dark); color:#fff; }
-.card.warm { background:var(--warm); color:#fff; }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+.card { padding:22px 0; border-top:1px solid var(--line); min-height:180px; }
+.card.dark { padding:22px; background:var(--dark); color:#fff; border-top:0; }
+.card.warm { background:transparent; color:var(--ink); border-top:2px solid var(--accent); }
 .card h3 { font-family:Georgia,serif; font-size:1.6rem; margin:0 0 12px; }
 .card p { color:var(--muted); }
-.card.dark p,.card.warm p { color:#d7cec5; }
+.card.dark p { color:#d7cec5; }
 .card ul { list-style:none; padding:0; margin:20px 0 0; }
 .card li { padding-top:9px; border-top:1px solid var(--line); margin-top:9px; }
-.card.dark li,.card.warm li { border-color:rgba(255,255,255,.16); }
-.modes { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-.mode { padding:34px; min-height:360px; border-radius:var(--radius); overflow:hidden; }
-.mode.light { background:var(--paper); border:1px solid var(--line); }
-.mode.dark { background:var(--dark); color:#fff; }
+.card.dark li { border-color:rgba(255,255,255,.16); }
+.modes { display:grid; grid-template-columns:1fr 1fr; gap:42px; }
+.mode { padding:0; min-height:340px; }
+.mode.light { background:transparent; }
+.mode.dark { padding:30px; background:var(--dark); color:#fff; }
 .mode h3 { font-family:Georgia,serif; font-size:clamp(1.85rem,3vw,3rem); line-height:1.04; letter-spacing:-.04em; }
 .mode p { color:var(--muted); }
 .mode.dark p { color:#c7beb4; }
-.mode-box { margin-top:22px; padding:19px; border:1px solid var(--line); border-radius:16px; background:#f8f4ee; }
-.mode.dark .mode-box { background:#292723; border-color:rgba(255,255,255,.13); }
-.mode.dark .decision { background:#24221f; }
+.mode-box { margin-top:22px; padding:18px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.mode.dark .mode-box { padding:18px; background:#292723; border:0; }
+.mode.dark .decision { background:transparent; }
