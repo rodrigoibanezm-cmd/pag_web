@@ -3,19 +3,19 @@
 .job.light { background:transparent; }
 .job.dark { padding:30px; background:var(--dark); color:white; }
 .job h3 { margin-bottom:16px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.8rem,2.8vw,2.85rem); line-height:1.04; letter-spacing:-.038em; }
-.job p { max-width:500px; color:var(--muted); font-size:.98rem; }
+.job p { max-width:500px; color:var(--muted); font-size:1.08rem; line-height:1.6; }
 .job.dark p { color:#c8c0b7; }
 .product { padding-top:22px; margin-top:24px; border-top:1px solid var(--line); }
 .job.dark .product { border-color:rgba(255,255,255,.16); }
-.product strong { display:block; margin-bottom:7px; font-size:.98rem; }
-.product span { color:var(--muted); font-size:.86rem; }
+.product strong { display:block; margin-bottom:7px; font-size:1rem; }
+.product span { color:var(--muted); font-size:1rem; line-height:1.55; }
 .job.dark .product span { color:#aaa095; }
 .pb-card { margin-top:22px; padding:18px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
 .pb-card .status { display:inline-block; margin-bottom:12px; color:var(--accent); font-size:.62rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
 .pb-card h4 { margin:0 0 8px; font-family:Georgia,"Times New Roman",serif; font-size:1.16rem; line-height:1.16; font-weight:500; }
-.pb-card p { margin:0; color:#5d574f; font-size:.86rem; }
-.why-now { margin-top:14px; padding-top:13px; border-top:1px solid var(--line); color:#4f4a44; font-size:.84rem; }
+.pb-card p { margin:0; color:#5d574f; font-size:1rem; line-height:1.55; }
+.why-now { margin-top:14px; padding-top:13px; border-top:1px solid var(--line); color:#4f4a44; font-size:1rem; line-height:1.55; }
 .why-now b { display:block; margin-bottom:5px; color:var(--ink); }
 .workspace-box { margin-top:22px; padding:18px; background:#292723; }
 .workspace-box small { color:#9e958a; text-transform:uppercase; letter-spacing:.12em; font-size:.62rem; font-weight:800; }
-.workspace-box p { margin:10px 0 0; color:white; font-family:Georgia,"Times New Roman",serif; font-size:1.05rem; line-height:1.28; }
+.workspace-box p { margin:10px 0 0; color:white; font-family:Georgia,"Times New Roman",serif; font-size:1.12rem; line-height:1.4; }
