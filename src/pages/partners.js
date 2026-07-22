@@ -47,7 +47,7 @@ ${partnerNav()}
   </div></section>
 
   <section id="casos"><div class="shell">
-    <div class="section-head"><p class="eyebrow">Dónde entra</p><h2>Situaciones que aparecen después de que los sistemas ya están funcionando.</h2></div>
+    <div class="section-head"><p class="eyebrow">Casos de uso</p><h2>Dónde NexusG aporta una nueva capacidad.</h2></div>
     <div class="partner-cases">
       ${card('ERP','La operación está registrada, pero entender qué cambió, qué se desvió y qué requiere atención todavía depende de reportes y análisis manual. NexusG agrega una capa de lectura sobre esa información. Habla con los datos que ya existen.')}
       ${card('CRM','Las oportunidades, actividades y conversaciones están disponibles. La priorización comercial sigue dependiendo de que alguien conecte esas señales a tiempo. NexusG mantiene esa lectura en contexto.')}
