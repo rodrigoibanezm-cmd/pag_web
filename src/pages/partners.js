@@ -29,7 +29,7 @@ export const partnersPage = () => `
 ${partnerNav()}
 <main id="top" class="partners-page">
   <section class="partner-hero"><div class="shell partner-hero-grid">
-    <div><p class="eyebrow">Programa de Partners</p><h1>Una nueva capacidad, sin tocar ni reemplazar los sistemas que ya tiene.</h1></div>
+    <div><p class="eyebrow">Programa de Partners</p><h1>Una nueva capacidad, sin tocar ni reemplazar sistemas ya implementados.</h1></div>
     <div class="partner-hero-copy"><p>NexusG conecta la información distribuida entre ERP, CRM, correo, documentos y otras fuentes para construir una comprensión persistente de la empresa.</p><p>Para un partner, esto abre una conversación posterior a la implementación: más valor sobre la infraestructura existente, nuevas líneas de servicio y una relación que puede continuar después del proyecto inicial.</p></div>
   </div></section>
 
