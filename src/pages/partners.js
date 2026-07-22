@@ -27,7 +27,7 @@ ${partnerNav()}
 <main id="top" class="partners-page">
   <section class="partner-hero"><div class="shell partner-hero-grid">
     <div><p class="eyebrow">Programa de Partners</p><h1>Una nueva capacidad para los clientes que ya conoces.</h1></div>
-    <div class="partner-hero-copy"><p>NexusG trabaja sobre la información que ya existe en una empresa para ayudarla a entender qué está ocurriendo, qué merece atención y dónde conviene profundizar.</p><p>El programa permite incorporar esa capacidad a tu oferta sin desarrollar una plataforma propia.</p><a class="button" href="#contacto">Solicitar una evaluación</a></div>
+    <div class="partner-hero-copy"><p>NexusG trabaja sobre la información que ya existe en una empresa para ayudarla a entender qué está ocurriendo, qué merece atención y dónde conviene profundizar.</p><p>El programa permite incorporar esa capacidad a tu oferta sin desarrollar una plataforma propia.</p></div>
   </div></section>
 
   <section id="oportunidad"><div class="shell partner-split">
