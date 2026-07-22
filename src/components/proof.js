@@ -16,11 +16,11 @@ export const proof = () => `
       <p class="eyebrow">DOS SALIDAS</p>
       <h3>La misma comprensión alimenta PressureBoard y Workspace</h3>
       <p>No utilizan datos distintos ni mantienen contextos separados. Son dos formas de acceder al mismo conocimiento.</p>
-      <div class="decision"><b>PressureBoard</b>Prioriza las situaciones que probablemente requieren atención.</div>
+      <div class="decision"><b>Entrega</b>El motor se implementa como un MCP conectado a los sistemas del cliente y disponible desde ChatGPT.</div>
       <div class="evidence">
-        <div class="evidence-row"><span>Workspace</span><b>Permite comprender, planificar y actuar</b></div>
+        <div class="evidence-row"><span>Workspace</span><b>MCP para comprender, planificar y actuar</b></div>
+        <div class="evidence-row"><span>PressureBoard</span><b>App de ChatGPT para recibir situaciones priorizadas</b></div>
         <div class="evidence-row"><span>Origen</span><b>Una comprensión compartida del negocio</b></div>
-        <div class="evidence-row"><span>Resultado</span><b>Atención y trabajo con el mismo contexto</b></div>
       </div>
     </div>
   </article>
