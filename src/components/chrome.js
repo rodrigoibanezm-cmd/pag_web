@@ -26,7 +26,8 @@ const menuItems = current => `
   ${links(current === 'como' ? comoLinks : queLinks)}
   <span class="nav-separator" aria-hidden="true"></span>
   ${pageLink(current)}
-  <a href="#piloto">Piloto</a>`
+  <a href="#piloto">Piloto</a>
+  <a data-route href="/partners">Partners</a>`
 
 export const nav = current => `
 <header class="topbar"><nav class="nav shell">
