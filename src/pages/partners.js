@@ -30,18 +30,18 @@ ${partnerNav()}
 <main id="top" class="partners-page">
   <section class="partner-hero"><div class="shell partner-hero-grid">
     <div><p class="eyebrow">Programa de Partners</p><h1>Una nueva capacidad, sin tocar ni reemplazar sistemas ya implementados.</h1></div>
-    <div class="partner-hero-copy"><p>NexusG conecta la información distribuida entre ERP, CRM, correo, documentos y otras fuentes para construir una comprensión persistente de la empresa.</p><p>Para un partner, esto abre una conversación posterior a la implementación: más valor sobre la infraestructura existente, nuevas líneas de servicio y una relación que puede continuar después del proyecto inicial.</p></div>
+    <div class="partner-hero-copy"><p>NexusG conecta información distribuida entre ERP, CRM, correo, documentos y otras fuentes para detectar situaciones relevantes, comprender qué las provoca y entregar evidencia para actuar.</p><p>Para un partner, esto abre una conversación posterior a la implementación: más valor sobre la infraestructura existente, nuevas líneas de servicio y una relación que puede continuar después del proyecto inicial.</p></div>
   </div></section>
 
   <section id="oportunidad"><div class="shell partner-split">
-    <p class="eyebrow">La oportunidad</p><div><h2>La implementación termina. La necesidad de entender la empresa no.</h2><p>Los sistemas registran gran parte de lo que ocurre, pero esa información suele quedar repartida entre plataformas, reportes y conversaciones. La integración resuelve el acceso. No necesariamente resuelve la lectura.</p><p>NexusG trabaja sobre esa capa posterior: permite volver sobre clientes ya implementados con una capacidad adicional, sin reemplazar los sistemas que ya operan.</p></div>
+    <p class="eyebrow">La oportunidad</p><div><h2>La implementación termina. La necesidad de entender la empresa no.</h2><p>Los sistemas registran gran parte de lo que ocurre, pero esa información suele quedar repartida entre plataformas, reportes y conversaciones. La integración resuelve el acceso. No necesariamente construye comprensión.</p><p>NexusG trabaja sobre esa capa posterior: permite volver sobre clientes ya implementados con una capacidad adicional, sin reemplazar los sistemas que ya operan.</p></div>
   </div></section>
 
   <section id="productos" class="partner-paper"><div class="shell">
     <div class="section-head"><p class="eyebrow">El producto</p><h2>Un motor. Dos interfaces de trabajo.</h2></div>
     <div class="partner-products">
-      ${productExample('workspace','Analizar una situación concreta.','Workspace expone el motor mediante un MCP para consultar, cruzar información y construir una respuesta con contexto del negocio.',[['Pregunta','¿Por qué cayó el margen en tiendas propias?'],['Cruza','Ventas · inventario · descuentos · correo'],['Entrega','Hallazgos, evidencia y próximos pasos']])}
-      ${productExample('pressureboard','Ver qué merece atención primero.','PressureBoard es una aplicación para ChatGPT que presenta las situaciones priorizadas por el motor.',[['Presión','Quiebre de stock afecta campaña activa'],['Por qué ahora','Ventas suben y reposición sigue atrasada'],['Qué hacer','Revisar compra y redistribución hoy']])}
+      ${productExample('workspace','Analizar una situación concreta.','La interfaz conversacional para investigar una situación utilizando la comprensión construida por el motor.',[['Pregunta','¿Por qué cayó el margen en tiendas propias?'],['Cruza','Ventas · inventario · descuentos · correo'],['Entrega','Hallazgos, evidencia y próximos pasos']])}
+      ${productExample('pressureboard','Ver qué merece atención primero.','La interfaz de priorización que muestra qué situaciones requieren atención y por qué importan ahora.',[['Presión','Quiebre de stock afecta campaña activa'],['Por qué ahora','Ventas suben y reposición sigue atrasada'],['Qué hacer','Revisar compra y redistribución hoy']])}
     </div>
     <div class="partner-combination"><p>Se pueden implementar por separado o como parte de una misma solución.</p><p>Ambas trabajan sobre la misma comprensión persistente de la empresa.</p><a class="partner-link" data-route href="/">Ver el producto →</a></div>
   </div></section>
@@ -59,9 +59,9 @@ ${partnerNav()}
   <section class="partner-proof"><div class="shell">
     <div class="section-head"><p class="eyebrow">Base técnica</p><h2>Una capacidad que puede incorporarse sin rediseñar la operación del cliente.</h2></div>
     <div class="partner-signals">
-      ${signal('Integraciones','ERP, CRM, correo, documentos, bases de datos y APIs existentes.')}
-      ${signal('Arquitectura','Conectores modulares, motor independiente y separación entre lógica determinística y trabajo semántico.')}
-      ${signal('Seguridad','Permisos por fuente, acceso mínimo necesario, trazabilidad de evidencia y control por usuario.')}
+      ${signal('Integraciones','Se conecta con ERP, CRM, correo, documentos, bases de datos y APIs existentes.')}
+      ${signal('Arquitectura','Separa la lógica controlada del trabajo semántico para combinar control, flexibilidad y trazabilidad.')}
+      ${signal('Seguridad','Opera con permisos por fuente, acceso mínimo necesario, trazabilidad de evidencia y control por usuario.')}
       ${signal('Despliegue','Implementación cloud y evaluación de alternativas privadas cuando el caso lo requiere.')}
     </div>
     <a class="partner-link" data-route href="/como">Ver cómo funciona →</a>
@@ -69,7 +69,7 @@ ${partnerNav()}
 
   <section id="alianza" class="partner-dark"><div class="shell partner-dark-grid">
     <div><p class="eyebrow">La alianza</p><h2>El partner mantiene la relación. NexusG aporta el producto.</h2></div>
-    <div class="partner-models"><div><strong>El partner abre la conversación.</strong><p>Puede incorporar NexusG a una relación existente cuando identifica una necesidad compatible.</p></div><div><strong>NexusG acompaña el proceso.</strong><p>Aporta producto, implementación, soporte técnico y evolución, sin desplazar al partner de la cuenta.</p></div><p class="partner-close">La forma comercial y operativa de cada alianza se define caso a caso.</p></div>
+    <div class="partner-models"><div><strong>El partner mantiene la relación.</strong><p>Identifica la oportunidad y mantiene la relación con el cliente.</p></div><div><strong>NexusG acompaña el proceso.</strong><p>Acompaña la evaluación y aporta producto, implementación, soporte técnico y evolución.</p></div><p class="partner-close">La forma comercial y operativa de cada alianza se define caso a caso.</p></div>
   </div></section>
 
   <section class="partner-contact"><div class="shell"><p class="eyebrow">NexusG</p><h2>Conversemos.</h2><a class="partner-link" href="mailto:contacto@nexusg.cl?subject=Conversemos%20sobre%20NexusG">contacto@nexusg.cl →</a></div></section>
