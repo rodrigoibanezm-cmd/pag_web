@@ -13,7 +13,7 @@ const partnerNav = () => `
   </details>
 </nav></header>`
 
-const card = (title, text) => `<article class="partner-card"><h3>${title}</h3><p>${text}</p></article>`
+const card = (title, questions) => `<article class="partner-card"><h3>${title}</h3><ul>${questions.map(question => `<li>${question}</li>`).join('')}</ul></article>`
 const signal = (label, text) => `<article class="partner-signal"><span>${label}</span><p>${text}</p></article>`
 
 const productExample = (type, title, text, rows) => `
@@ -49,10 +49,10 @@ ${partnerNav()}
   <section id="casos"><div class="shell">
     <div class="section-head"><p class="eyebrow">Casos de uso</p><h2>Dónde NexusG aporta una nueva capacidad.</h2></div>
     <div class="partner-cases">
-      ${card('ERP','La operación está registrada, pero entender qué cambió, qué se desvió y qué requiere atención todavía depende de reportes y análisis manual. NexusG agrega una capa de lectura sobre esa información. Habla con los datos que ya existen.')}
-      ${card('CRM','Las oportunidades, actividades y conversaciones están disponibles. La priorización comercial sigue dependiendo de que alguien conecte esas señales a tiempo. NexusG mantiene esa lectura en contexto.')}
-      ${card('Comercio electrónico','Ventas, inventario, margen, logística y postventa suelen analizarse por separado. NexusG permite leerlos como partes de una misma operación.')}
-      ${card('Integración y automatización','Conectar sistemas mueve datos. NexusG utiliza esos datos para construir contexto, detectar tensiones y sostener una comprensión común del negocio.')}
+      ${card('ERP',['¿Qué cliente paga bien, pero tiene margen negativo al incluir el costo real de servicio?','¿Qué línea de negocio crece en ventas mientras deteriora caja?','¿Dónde está aumentando el gasto más rápido que los ingresos?'])}
+      ${card('CRM',['¿Qué oportunidad que debía cerrar este mes dejó de responder?','¿Qué patrón hace que las oportunidades se caigan siempre en la misma etapa?','¿Qué propuestas enviadas todavía no tienen seguimiento?'])}
+      ${card('Correo',['¿Qué está consumiendo tiempo sin que nadie lo advierta?','¿Qué problema probablemente volverá a aparecer la próxima semana?','¿Qué conversaciones distintas son, en realidad, parte de la misma situación?'])}
+      ${card('Clientes y postventa',['¿Qué sucursal está deteriorando la experiencia del cliente?','¿Qué patrón aparece antes de que caiga su evaluación?','¿Dónde la competencia está ganando percepción?'])}
     </div>
   </div></section>
 
