@@ -1,20 +1,37 @@
 # NexusG
 
-> NexusG trabaja sobre la información que ya existe en una empresa para responder preguntas complejas y detectar situaciones que merecen atención.
+NexusG es un motor que construye y mantiene comprensión sobre la operación de una empresa.
 
-NexusG conecta información distribuida entre ERP, CRM, correo, documentos y otras fuentes. Su trabajo es ayudar a identificar qué situaciones merecen atención y comprender rápidamente situaciones complejas con evidencia del negocio.
+Se conecta a fuentes existentes como ERP, CRM, correo, documentos y otras fuentes de información para relacionar evidencia, interpretar contexto y mantener una comprensión persistente del negocio.
 
-## Páginas principales
+## Arquitectura
 
-- [Qué hace NexusG](https://nexusg.cl/): problemas que resuelve, preguntas que puede responder y trabajos que entrega.
-- [Cómo funciona](https://nexusg.cl/como): fuentes, arquitectura, Workspace, PressureBoard, seguridad e integración.
-- [Partners](https://nexusg.cl/partners): propuesta para implementadores de ERP y CRM, integradores y consultoras tecnológicas.
+Un motor. Dos interfaces.
 
-## Productos
+Workspace permite investigar una situación mediante conversación utilizando la comprensión construida por el motor.
 
-- Workspace: interfaz conversacional para investigar una situación utilizando la comprensión construida por el motor.
-- PressureBoard: interfaz de priorización que muestra qué situaciones requieren atención y por qué importan ahora.
+PressureBoard muestra qué situaciones requieren atención, por qué importan y qué hacer a continuación.
 
-## Contacto
+Ambas interfaces trabajan sobre la misma comprensión persistente.
 
-- Sitio oficial: https://nexusg.cl/
+## Cómo responde
+
+- Interpreta la intención de la consulta.
+- Activa capacidades especializadas según el dominio.
+- Relaciona información entre múltiples fuentes.
+- Devuelve evidencia, trazabilidad y explicación.
+
+## Cómo aprende
+
+Durante el onboarding:
+
+- Explora las fuentes conectadas.
+- Descubre procesos, relaciones y contexto.
+- Define criterios de prioridad junto al usuario.
+- Mantiene esa comprensión para futuras consultas.
+
+## Sitio
+
+- https://nexusg.cl/
+- https://nexusg.cl/como
+- https://nexusg.cl/partners
