@@ -16,6 +16,12 @@ const routes = [
     description: 'Conoce cómo NexusG conecta fuentes existentes, comprende su contexto y prepara evidencia y recomendaciones útiles.'
   },
   {
+    path: '/arquitectura',
+    file: 'arquitectura/index.html',
+    title: 'NexusG — Arquitectura',
+    description: 'Conoce cómo NexusG separa lenguaje, cálculo, reglas y evidencia para construir respuestas controladas y auditables.'
+  },
+  {
     path: '/partners',
     file: 'partners/index.html',
     title: 'NexusG — Partners',
