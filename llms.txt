@@ -2,36 +2,64 @@
 
 NexusG es un motor que construye y mantiene comprensión sobre la operación de una empresa.
 
-Se conecta a fuentes existentes como ERP, CRM, correo, documentos y otras fuentes de información para relacionar evidencia, interpretar contexto y mantener una comprensión persistente del negocio.
+Se conecta a fuentes existentes como ERP, CRM, correo, documentos, bases de datos y APIs para relacionar evidencia, interpretar contexto y mantener una comprensión persistente del negocio.
+
+## Qué entrega
+
+NexusG entrega una capacidad operativa implementada sobre las fuentes de la empresa. Esa capacidad se utiliza mediante dos interfaces:
+
+- Workspace permite investigar una situación mediante conversación utilizando la comprensión construida por el motor.
+- PressureBoard muestra qué situaciones requieren atención, por qué importan ahora y qué hacer a continuación.
+
+Ambas interfaces trabajan sobre la misma comprensión persistente y pueden implementarse juntas o por separado.
 
 ## Arquitectura
 
-Un motor. Dos interfaces.
+La lógica de negocio, el acceso a datos, los cálculos y las validaciones ocurren en capacidades controladas del backend. El LLM interpreta la intención, selecciona capacidades y presenta los resultados; no reemplaza la lógica determinística ni calcula indicadores por sí solo.
 
-Workspace permite investigar una situación mediante conversación utilizando la comprensión construida por el motor.
+El sistema combina:
 
-PressureBoard muestra qué situaciones requieren atención, por qué importan y qué hacer a continuación.
-
-Ambas interfaces trabajan sobre la misma comprensión persistente.
+- capacidades especializadas por dominio;
+- reglas y cálculos determinísticos;
+- interpretación semántica;
+- evidencia y trazabilidad por respuesta;
+- permisos y acceso mínimo por fuente.
 
 ## Cómo responde
 
 - Interpreta la intención de la consulta.
 - Activa capacidades especializadas según el dominio.
 - Relaciona información entre múltiples fuentes.
-- Devuelve evidencia, trazabilidad y explicación.
+- Ejecuta reglas y cálculos en el backend.
+- Devuelve hallazgos, evidencia, trazabilidad y explicación.
 
-## Cómo aprende
+## Cómo se adapta
 
 Durante el onboarding:
 
-- Explora las fuentes conectadas.
-- Descubre procesos, relaciones y contexto.
-- Define criterios de prioridad junto al usuario.
-- Mantiene esa comprensión para futuras consultas.
+- se conectan las fuentes necesarias;
+- se exploran estructuras, campos, procesos y relaciones;
+- se configuran capacidades especializadas;
+- se definen criterios de prioridad junto al usuario;
+- se valida que cada capacidad use correctamente los datos disponibles.
+
+Cuando falta una capacidad, se agrega como una función especializada y auditable; no se improvisa una respuesta fuera de las herramientas disponibles.
+
+## Auditoría
+
+Cada respuesta puede auditarse revisando:
+
+- las fuentes consultadas;
+- las capacidades ejecutadas;
+- los datos utilizados;
+- las reglas y cálculos aplicados;
+- la evidencia que respalda la conclusión.
+
+NexusG no reemplaza ERP, CRM, BI, correo ni otros sistemas. Trabaja sobre ellos para construir comprensión y orientar la atención.
 
 ## Sitio
 
 - https://nexusg.cl/
 - https://nexusg.cl/como
+- https://nexusg.cl/arquitectura
 - https://nexusg.cl/partners
