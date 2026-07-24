@@ -7,6 +7,10 @@ export const systems = () => `
   <div class="modular-copy"><p class="eyebrow">EMPIEZA DONDE TENGA SENTIDO</p>
     <h2>No necesitas conectar toda la empresa</h2>
     <p>Puedes comenzar por una sola fuente e incorporar otras cuando aparezcan nuevas preguntas</p>
+    <a class="reasoning-link" data-route href="/partners">
+      <span>¿Implementas ERP, CRM u otros sistemas empresariales?</span>
+      <b>Conoce cómo funciona una alianza →</b>
+    </a>
   </div>
   <div class="systems">${sources.map(system).join('')}<div class="systems-note">Puedes ampliar el alcance cuando tenga sentido</div></div>
 </div></section>`
