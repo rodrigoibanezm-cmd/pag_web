@@ -1,0 +1,20 @@
+# NexusG
+
+> NexusG trabaja sobre la información que ya existe en una empresa para responder preguntas complejas y detectar situaciones que merecen atención.
+
+NexusG conecta información distribuida entre ERP, CRM, correo, documentos y otras fuentes. Su trabajo es ayudar a identificar qué situaciones merecen atención y comprender rápidamente situaciones complejas con evidencia del negocio.
+
+## Páginas principales
+
+- [Qué hace NexusG](https://nexusg.cl/): problemas que resuelve, preguntas que puede responder y trabajos que entrega.
+- [Cómo funciona](https://nexusg.cl/como): fuentes, arquitectura, Workspace, PressureBoard, seguridad e integración.
+- [Partners](https://nexusg.cl/partners): propuesta para implementadores de ERP y CRM, integradores y consultoras tecnológicas.
+
+## Productos
+
+- Workspace: interfaz conversacional para investigar una situación utilizando la comprensión construida por el motor.
+- PressureBoard: interfaz de priorización que muestra qué situaciones requieren atención y por qué importan ahora.
+
+## Contacto
+
+- Sitio oficial: https://nexusg.cl/
