@@ -6,10 +6,10 @@ const partnerNav = () => `
   <div class="navlinks">
     <a href="#oportunidad">La oportunidad</a><a href="#productos">El producto</a>
     <a href="#casos">Casos de uso</a><a href="#alianza">La alianza</a>
-    <span class="nav-separator" aria-hidden="true"></span><a data-route href="/">Conocer NexusG</a>
+    <span class="nav-separator" aria-hidden="true"></span><a data-route href="/">Conocer NexusG</a><a data-route href="/arquitectura">Arquitectura</a>
   </div>
   <details class="mobile-nav"><summary>Índice <span>＋</span></summary>
-    <div class="mobile-nav-links"><a href="#oportunidad">La oportunidad</a><a href="#productos">El producto</a><a href="#casos">Casos de uso</a><a href="#alianza">La alianza</a><a data-route href="/">Conocer NexusG</a></div>
+    <div class="mobile-nav-links"><a href="#oportunidad">La oportunidad</a><a href="#productos">El producto</a><a href="#casos">Casos de uso</a><a href="#alianza">La alianza</a><a data-route href="/">Conocer NexusG</a><a data-route href="/arquitectura">Arquitectura</a></div>
   </details>
 </nav></header>`
 
