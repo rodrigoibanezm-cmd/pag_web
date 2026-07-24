@@ -48,4 +48,4 @@ export const nav = current => `
   </details>
 </nav></header>`
 
-export const footer = () => `<footer class="shell">${brand()}<span>PressureBoard · Workspace</span><span>nexusg.cl</span></footer>`
+export const footer = () => `<footer class="shell">${brand()}<span>PressureBoard · Workspace</span><span><a href="/arquitectura">Arquitectura</a> · <a href="/llms.txt">Documentación para LLMs</a></span></footer>`
