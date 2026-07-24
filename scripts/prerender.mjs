@@ -1,7 +1,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { renderRoute } from '../src/router.js'
 
-const origin = 'https://nexusg.cl'
+const origin = 'https://www.nexusg.cl'
 const routes = [
   {
     path: '/',
