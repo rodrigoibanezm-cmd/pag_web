@@ -22,6 +22,10 @@ export const proof = () => `
         <div class="evidence-row"><span>PressureBoard</span><b>App de ChatGPT para recibir situaciones priorizadas</b></div>
         <div class="evidence-row"><span>Origen</span><b>Una comprensión compartida del negocio</b></div>
       </div>
+      <a class="reasoning-link" data-route href="/arquitectura">
+        <span>¿Qué ocurre detrás de estas interfaces?</span>
+        <b>Revisa la arquitectura técnica →</b>
+      </a>
     </div>
   </article>
 </section>`
