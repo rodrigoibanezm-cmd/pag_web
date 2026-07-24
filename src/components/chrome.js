@@ -22,12 +22,21 @@ const pageLink = current => current === 'como'
   ? '<a data-route href="/">Volver a las preguntas</a>'
   : '<a data-route href="/como">Cómo funciona</a>'
 
-const menuItems = current => `
-  ${links(current === 'como' ? comoLinks : queLinks)}
-  <span class="nav-separator" aria-hidden="true"></span>
-  ${pageLink(current)}
-  <a href="#piloto">Piloto</a>
-  <a data-route href="/partners">Partners</a>`
+const menuItems = current => {
+  if (current === 'arquitectura') return `
+    <a data-route href="/">Qué</a>
+    <a data-route href="/como">Cómo funciona</a>
+    <a aria-current="page" href="/arquitectura">Arquitectura</a>
+    <a data-route href="/partners">Partners</a>`
+
+  return `
+    ${links(current === 'como' ? comoLinks : queLinks)}
+    <span class="nav-separator" aria-hidden="true"></span>
+    ${pageLink(current)}
+    <a data-route href="/arquitectura">Arquitectura</a>
+    <a href="#piloto">Piloto</a>
+    <a data-route href="/partners">Partners</a>`
+}
 
 export const nav = current => `
 <header class="topbar"><nav class="nav shell">
