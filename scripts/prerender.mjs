@@ -26,6 +26,12 @@ const routes = [
     file: 'partners/index.html',
     title: 'NexusG — Partners',
     description: 'NexusG permite a partners tecnológicos incorporar una nueva capacidad sobre los sistemas existentes de sus clientes.'
+  },
+  {
+    path: '/labs',
+    file: 'labs/index.html',
+    title: 'NexusG — Comprensión operativa',
+    description: 'NexusG incorpora una capacidad permanente para comprender la operación y convertir esa comprensión en decisiones.'
   }
 ]
 
