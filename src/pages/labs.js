@@ -20,6 +20,7 @@ export const labsPage = () => `
       <a href="#como-funciona">Cómo funciona</a>
       <a href="#adaptacion">Adaptación</a>
       <a href="#arquitectura">Arquitectura</a>
+      <a href="#datos">Datos</a>
       <a href="#partners">Partners</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -112,6 +113,13 @@ export const labsPage = () => `
     </div>
   `)}
 
+  ${section('datos', 'Datos y propiedad', 'La información y el conocimiento generado permanecen bajo control del cliente', `
+    <p>NexusG trabaja sobre las fuentes que la empresa ya utiliza y consulta únicamente la información necesaria para cada operación, con permisos definidos por fuente y por usuario.</p>
+    <p>La configuración, el estado operativo, el modelo construido y los persistentes generados por Workspace pueden mantenerse en infraestructura controlada por el cliente.</p>
+    <p>Así, no solo los datos originales, sino también el conocimiento y los artefactos generados durante el uso de NexusG permanecen como activos del cliente.</p>
+    <p>Cada respuesta conserva trazabilidad sobre las fuentes consultadas, los motores ejecutados, las reglas aplicadas y los cálculos realizados.</p>
+  `)}
+
   ${section('entregable', 'El entregable', 'Una capacidad operativa implementada', `
     <p>Incluye conexiones, capacidades de consulta y cálculo, reglas del negocio, detección de situaciones, evidencia, trazabilidad y acceso mediante Workspace, PressureBoard o ambos.</p>
     <p>No es una asesoría ni una colección de reportes.</p>
@@ -127,6 +135,7 @@ export const labsPage = () => `
       <details><summary>¿Qué compra el cliente?</summary><p>Una capacidad operativa para comprender la operación y convertir esa comprensión en decisiones.</p></details>
       <details><summary>¿Qué son Workspace y PressureBoard?</summary><p>Workspace es la interfaz conversacional para investigar situaciones. PressureBoard presenta las situaciones construidas por NexusG y explica por qué merecen atención.</p></details>
       <details><summary>¿Cómo se adapta NexusG a cada empresa?</summary><p>Los motores del backend analizan las fuentes conectadas y construyen automáticamente un modelo operativo. NexusG solo presenta preguntas específicas y cerradas cuando necesita validar una hipótesis o comprobar el resultado antes de habilitar la capacidad.</p></details>
+      <details><summary>¿Dónde quedan los datos y los persistentes de Workspace?</summary><p>La configuración, el estado operativo, el modelo construido y los persistentes generados por Workspace pueden mantenerse en infraestructura controlada por el cliente. El conocimiento generado permanece como un activo del cliente.</p></details>
       <details><summary>¿Workspace es ChatGPT?</summary><p>No. Workspace puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p></details>
       <details><summary>¿PressureBoard calcula o detecta situaciones?</summary><p>No. Las situaciones, reglas y cálculos se construyen en capacidades controladas del backend. PressureBoard las presenta.</p></details>
       <details><summary>¿Dónde ocurren los cálculos?</summary><p>En motores especializados del backend, utilizando las definiciones válidas del negocio.</p></details>
