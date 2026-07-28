@@ -52,6 +52,12 @@ const routes = [
     description: 'Ejemplo ilustrativo de cómo NexusG relaciona conversaciones para reconstruir el flujo operativo que explica resultados, demoras y bloqueos.'
   },
   {
+    path: '/ejemplos/clientes',
+    file: 'ejemplos/clientes/index.html',
+    title: 'NexusG — Ejemplo experiencia de clientes',
+    description: 'Ejemplo ilustrativo de cómo NexusG relaciona encuestas, reseñas, reclamos y comentarios para detectar patrones de deterioro en la experiencia de clientes.'
+  },
+  {
     path: '/labs',
     file: 'labs/index.html',
     title: 'NexusG — Comprensión operativa',
