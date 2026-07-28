@@ -1,9 +1,75 @@
-export const ejemplosPage = () => `
+export const ejemplosIndexPage = () => `
 <header class="labs-nav">
   <div class="shell labs-nav-inner">
     <a class="labs-brand" href="/" data-route>NexusG</a>
     <nav class="example-nav" aria-label="Navegación de ejemplos">
       <a href="/" data-route>Inicio</a>
+      <span>Ejemplos</span>
+    </nav>
+    <a class="button labs-nav-cta" href="mailto:contacto@nexusg.cl">Conversemos</a>
+  </div>
+</header>
+
+<main class="example-page">
+  <section class="example-hero">
+    <div class="shell example-hero-inner">
+      <p class="eyebrow">Ejemplos</p>
+      <h1>Así se ve una situación construida por NexusG.</h1>
+      <p class="example-lead">Cada ejemplo muestra cómo señales distribuidas se convierten en una situación priorizada, con evidencia y una acción concreta para evaluar.</p>
+      <p class="example-disclaimer">Todos los ejemplos utilizan datos ficticios y no representan a ninguna empresa real.</p>
+    </div>
+  </section>
+
+  <section class="example-section">
+    <div class="shell">
+      <div class="labs-use-grid">
+        <article>
+          <p class="labs-card-kicker">Ventas</p>
+          <h3>CRM</h3>
+          <p>Oportunidades avanzadas que están perdiendo tracción antes de registrarse como perdidas.</p>
+          <a class="labs-text-link" href="/ejemplos/crm" data-route>Ver ejemplo →</a>
+        </article>
+        <article>
+          <p class="labs-card-kicker">Rentabilidad</p>
+          <h3>ERP y margen</h3>
+          <p>Clientes, productos o líneas que crecen mientras deterioran margen o caja.</p>
+          <span class="example-disclaimer">Próximamente</span>
+        </article>
+        <article>
+          <p class="labs-card-kicker">Operación</p>
+          <h3>Correo</h3>
+          <p>Compromisos, dependencias y problemas repetidos ocultos entre conversaciones distintas.</p>
+          <span class="example-disclaimer">Próximamente</span>
+        </article>
+        <article>
+          <p class="labs-card-kicker">Clientes</p>
+          <h3>Experiencia de clientes</h3>
+          <p>Patrones de deterioro que aparecen antes de reflejarse claramente en el resultado final.</p>
+          <span class="example-disclaimer">Próximamente</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-compatibility">
+    <div class="shell example-compatibility-inner">
+      <p class="eyebrow">Qué muestran</p>
+      <h2>Señales → situación → evidencia → acción.</h2>
+      <p>Los ejemplos no son capturas de clientes ni casos reales publicados. Son demostraciones sanitizadas de cómo NexusG organiza y presenta una capacidad operativa.</p>
+      <a class="labs-text-link" href="/" data-route>Volver a NexusG</a>
+    </div>
+  </section>
+</main>
+
+<footer class="labs-footer"><div class="shell"><span>NexusG</span><span>Ejemplos ilustrativos · datos ficticios</span></div></footer>
+`
+
+export const ejemplosPage = () => `
+<header class="labs-nav">
+  <div class="shell labs-nav-inner">
+    <a class="labs-brand" href="/" data-route>NexusG</a>
+    <nav class="example-nav" aria-label="Navegación de ejemplos">
+      <a href="/ejemplos" data-route>Ejemplos</a>
       <span>CRM</span>
     </nav>
     <a class="button labs-nav-cta" href="mailto:contacto@nexusg.cl">Conversemos</a>
@@ -22,10 +88,7 @@ export const ejemplosPage = () => `
 
   <section class="example-section">
     <div class="shell example-two-columns">
-      <div>
-        <p class="eyebrow">Preguntas</p>
-        <h2>Preguntas que cambian una decisión comercial</h2>
-      </div>
+      <div><p class="eyebrow">Preguntas</p><h2>Preguntas que cambian una decisión comercial</h2></div>
       <div class="example-questions">
         <p>¿Qué parte del pipeline está comenzando a deteriorarse?</p>
         <p>¿Dónde se concentra hoy el riesgo comercial?</p>
@@ -37,13 +100,9 @@ export const ejemplosPage = () => `
   <section class="example-section example-board-section">
     <div class="shell">
       <div class="example-board-heading">
-        <div>
-          <p class="eyebrow">PressureBoard</p>
-          <h2>Una situación, no una suma de alertas</h2>
-        </div>
+        <div><p class="eyebrow">PressureBoard</p><h2>Una situación, no una suma de alertas</h2></div>
         <span class="example-status">Requiere atención</span>
       </div>
-
       <article class="example-pressure-card">
         <div class="example-card-header">
           <div>
@@ -53,29 +112,11 @@ export const ejemplosPage = () => `
           </div>
           <span class="example-card-marker" aria-hidden="true"></span>
         </div>
-
         <div class="example-card-grid">
-          <section>
-            <h4>Señales relacionadas</h4>
-            <ul>
-              <li>Oportunidades avanzadas sin actividad reciente.</li>
-              <li>Ausencia de una próxima acción registrada.</li>
-              <li>Fechas de cierre próximas sin nueva evidencia.</li>
-              <li>Forecast sostenido pese a la pérdida de interacción.</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Por qué importa</h4>
-            <p>La pérdida de tracción aparece antes de que la oportunidad sea registrada como perdida. Revisar solo el valor total del pipeline puede ocultar ese deterioro.</p>
-          </section>
-          <section>
-            <h4>Qué hacer</h4>
-            <p>Revisar las oportunidades afectadas y asignar una intervención concreta antes de la próxima reunión comercial.</p>
-          </section>
-          <section>
-            <h4>Evidencia</h4>
-            <p>Actividad · etapa · próxima acción · fecha de cierre · historial de cambios.</p>
-          </section>
+          <section><h4>Señales relacionadas</h4><ul><li>Oportunidades avanzadas sin actividad reciente.</li><li>Ausencia de una próxima acción registrada.</li><li>Fechas de cierre próximas sin nueva evidencia.</li><li>Forecast sostenido pese a la pérdida de interacción.</li></ul></section>
+          <section><h4>Por qué importa</h4><p>La pérdida de tracción aparece antes de que la oportunidad sea registrada como perdida. Revisar solo el valor total del pipeline puede ocultar ese deterioro.</p></section>
+          <section><h4>Qué hacer</h4><p>Revisar las oportunidades afectadas y asignar una intervención concreta antes de la próxima reunión comercial.</p></section>
+          <section><h4>Evidencia</h4><p>Actividad · etapa · próxima acción · fecha de cierre · historial de cambios.</p></section>
         </div>
       </article>
     </div>
@@ -83,10 +124,7 @@ export const ejemplosPage = () => `
 
   <section class="example-section">
     <div class="shell example-two-columns">
-      <div>
-        <p class="eyebrow">Qué aporta</p>
-        <h2>De señales dispersas a una intervención concreta</h2>
-      </div>
+      <div><p class="eyebrow">Qué aporta</p><h2>De señales dispersas a una intervención concreta</h2></div>
       <div class="example-benefits">
         <article><span>01</span><p>Detecta deterioro antes de que la oportunidad se pierda.</p></article>
         <article><span>02</span><p>Relaciona señales que un reporte muestra por separado.</p></article>
@@ -101,7 +139,7 @@ export const ejemplosPage = () => `
       <p class="eyebrow">Sobre sistemas existentes</p>
       <h2>No reemplaza el CRM.</h2>
       <p>Trabaja sobre la información que ya existe en el sistema comercial y agrega capacidades de comprensión, priorización e investigación.</p>
-      <a class="labs-text-link" href="/" data-route>Volver a NexusG</a>
+      <a class="labs-text-link" href="/ejemplos" data-route>Ver todos los ejemplos</a>
     </div>
   </section>
 </main>
