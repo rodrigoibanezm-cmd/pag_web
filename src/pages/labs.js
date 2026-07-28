@@ -12,7 +12,7 @@ const section = (id, eyebrow, title, body, extraClass = '') => `
 export const labsPage = () => `
 <header class="labs-nav">
   <div class="shell labs-nav-inner">
-    <a class="labs-brand" href="/labs" data-route>NexusG</a>
+    <a class="labs-brand" href="/" data-route>NexusG</a>
     <nav class="labs-menu" aria-label="Secciones de la página">
       <a href="#problema">Problema</a>
       <a href="#que-es">Qué es</a>
@@ -58,15 +58,15 @@ export const labsPage = () => `
       <article class="labs-card">
         <p class="labs-card-kicker">Atención</p>
         <h3>PressureBoard</h3>
-        <p>Muestra qué situaciones merecen atención, por qué importan ahora y qué acción conviene evaluar.</p>
+        <p>Presenta las situaciones construidas por NexusG, explica por qué importan ahora y muestra qué acción conviene evaluar.</p>
       </article>
       <article class="labs-card">
         <p class="labs-card-kicker">Investigación</p>
         <h3>Workspace</h3>
-        <p>Permite investigar una situación y hacer preguntas sobre el negocio utilizando evidencia verificable.</p>
+        <p>Es la interfaz conversacional para investigar una situación y hacer preguntas sobre el negocio utilizando evidencia verificable.</p>
       </article>
     </div>
-    <p>PressureBoard ayuda a decidir dónde mirar. Workspace ayuda a comprender y decidir qué hacer.</p>
+    <p>PressureBoard no detecta ni calcula: presenta el resultado construido por el motor. Workspace no es ChatGPT: puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p>
   `)}
 
   ${section('situaciones', 'Situaciones, no alertas', 'NexusG reúne señales dispersas en una explicación operativa', `
@@ -97,10 +97,11 @@ export const labsPage = () => `
   `)}
 
   ${section('arquitectura', 'Arquitectura', 'Lenguaje natural, ejecución controlada', `
-    <p>El modelo de lenguaje interpreta la intención, selecciona capacidades y presenta resultados.</p>
-    <p>Las consultas, reglas, cálculos y validaciones ocurren en componentes controlados del backend. Cada respuesta conserva evidencia y trazabilidad.</p>
+    <p>El modelo de lenguaje interpreta la intención, selecciona capacidades y presenta resultados. Workspace permite esa interacción desde clientes compatibles con MCP; no depende de una interfaz ni de un proveedor específico.</p>
+    <p>Las consultas, reglas, cálculos, validaciones y construcción de situaciones ocurren en componentes controlados del backend. PressureBoard solo presenta esas situaciones y su evidencia.</p>
+    <p>Cada respuesta conserva trazabilidad sobre las capacidades ejecutadas, las fuentes consultadas y los cálculos aplicados.</p>
     <div class="labs-architecture-strip">
-      <span>Intención</span><i>→</i><span>Capacidades</span><i>→</i><span>Fuentes y cálculos</span><i>→</i><span>Evidencia</span><i>→</i><span>Respuesta</span>
+      <span>Intención</span><i>→</i><span>Capacidades</span><i>→</i><span>Fuentes y cálculos</span><i>→</i><span>Situaciones y evidencia</span><i>→</i><span>Workspace o PressureBoard</span>
     </div>
   `)}
 
@@ -117,7 +118,9 @@ export const labsPage = () => `
   ${section('faq', 'Preguntas frecuentes', 'Lo esencial', `
     <div class="labs-faq">
       <details><summary>¿Qué compra el cliente?</summary><p>Una capacidad operativa para comprender la operación y convertir esa comprensión en decisiones.</p></details>
-      <details><summary>¿Qué son Workspace y PressureBoard?</summary><p>Workspace investiga situaciones. PressureBoard muestra cuáles merecen atención y por qué.</p></details>
+      <details><summary>¿Qué son Workspace y PressureBoard?</summary><p>Workspace es la interfaz conversacional para investigar situaciones. PressureBoard presenta las situaciones construidas por NexusG y explica por qué merecen atención.</p></details>
+      <details><summary>¿Workspace es ChatGPT?</summary><p>No. Workspace puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p></details>
+      <details><summary>¿PressureBoard calcula o detecta situaciones?</summary><p>No. Las situaciones, reglas y cálculos se construyen en capacidades controladas del backend. PressureBoard las presenta.</p></details>
       <details><summary>¿Dónde ocurren los cálculos?</summary><p>En capacidades especializadas del backend, utilizando las definiciones válidas del negocio.</p></details>
       <details><summary>¿Cómo se audita una respuesta?</summary><p>Revisando las fuentes, evidencia, capacidades ejecutadas, cálculos y reglas aplicadas.</p></details>
       <details><summary>¿Reemplaza al ERP, CRM o BI?</summary><p>No. Trabaja sobre ellos y agrega una capacidad de comprensión y decisión.</p></details>
