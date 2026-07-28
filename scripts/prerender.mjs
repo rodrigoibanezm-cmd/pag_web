@@ -28,6 +28,24 @@ const routes = [
     description: 'NexusG permite a partners tecnológicos incorporar una nueva capacidad sobre los sistemas existentes de sus clientes.'
   },
   {
+    path: '/ejemplos',
+    file: 'ejemplos/index.html',
+    title: 'NexusG — Ejemplos',
+    description: 'Ejemplos ilustrativos de cómo NexusG convierte señales distribuidas en situaciones priorizadas, evidencia y acciones.'
+  },
+  {
+    path: '/ejemplos/crm',
+    file: 'ejemplos/crm/index.html',
+    title: 'NexusG — Ejemplo CRM',
+    description: 'Ejemplo ilustrativo de cómo NexusG identifica deterioro en oportunidades comerciales y presenta una situación priorizada.'
+  },
+  {
+    path: '/ejemplos/erp',
+    file: 'ejemplos/erp/index.html',
+    title: 'NexusG — Ejemplo ERP y margen',
+    description: 'Ejemplo ilustrativo de cómo NexusG relaciona facturación, costos y carga operativa para detectar deterioro de rentabilidad.'
+  },
+  {
     path: '/labs',
     file: 'labs/index.html',
     title: 'NexusG — Comprensión operativa',
