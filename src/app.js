@@ -4,6 +4,7 @@ const pageTitle = pathname => {
   if (pathname.startsWith('/como')) return 'NexusG — Cómo'
   if (pathname.startsWith('/partners')) return 'NexusG — Partners'
   if (pathname.startsWith('/arquitectura')) return 'NexusG — Arquitectura'
+  if (pathname.startsWith('/ejemplos')) return 'NexusG — Ejemplo CRM'
   if (pathname.startsWith('/labs')) return 'NexusG — Comprensión operativa'
   return 'NexusG — Qué'
 }
