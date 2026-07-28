@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.nexusg.cl/</loc>
-  </url>
-  <url>
-    <loc>https://www.nexusg.cl/como</loc>
-  </url>
-  <url>
-    <loc>https://www.nexusg.cl/arquitectura</loc>
-  </url>
-  <url>
-    <loc>https://www.nexusg.cl/partners</loc>
-  </url>
+  <url><loc>https://www.nexusg.cl/</loc></url>
+  <url><loc>https://www.nexusg.cl/como</loc></url>
+  <url><loc>https://www.nexusg.cl/partners</loc></url>
+  <url><loc>https://www.nexusg.cl/ejemplos</loc></url>
+  <url><loc>https://www.nexusg.cl/ejemplos/crm</loc></url>
+  <url><loc>https://www.nexusg.cl/ejemplos/erp</loc></url>
+  <url><loc>https://www.nexusg.cl/ejemplos/correo</loc></url>
+  <url><loc>https://www.nexusg.cl/ejemplos/clientes</loc></url>
 </urlset>
