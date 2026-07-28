@@ -1,4 +1,5 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
@@ -12,8 +13,8 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|styles/|src/|llms\\.txt|robots\\.txt|sitemap\\.xml|favicon\\.ico).*)",
-      "destination": "/index.html"
+      "source": "/(.*)",
+      "destination": "/"
     }
   ]
 }
