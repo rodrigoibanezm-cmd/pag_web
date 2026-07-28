@@ -51,13 +51,14 @@ ${partnerNav()}
   </div></section>
 
   <section id="proceso"><div class="shell">
-    <div class="section-head"><p class="eyebrow">Cómo comienza</p><h2>De una oportunidad concreta a una capacidad implementada.</h2></div>
+    <div class="section-head"><p class="eyebrow">Cómo comienza</p><h2>Busquemos una oportunidad juntos.</h2></div>
+    <div class="partner-hero-copy"><p>Comencemos con un cliente, una fuente y una pregunta concreta.</p><p>Evaluamos si la información disponible permite construir una capacidad útil antes de pensar en una implementación más amplia.</p></div>
     <div class="partner-signals">
-      ${signal('1 · Oportunidad','El partner identifica una necesidad real sobre sistemas y datos ya existentes.')}
-      ${signal('2 · Evaluación','NexusG revisa fuentes, contexto, factibilidad y valor potencial de la situación.')}
-      ${signal('3 · Alcance','Se define qué fuentes conectar, qué preguntas investigar y qué situaciones priorizar.')}
-      ${signal('4 · Implementación','NexusG configura la capacidad y el partner acompaña la relación con el cliente.')}
-      ${signal('5 · Continuidad','La solución evoluciona sobre nuevos casos, fuentes y necesidades del cliente.')}
+      ${signal('1 · Oportunidad','El partner identifica junto al cliente una situación donde hoy cuesta comprender qué está ocurriendo o decidir cómo actuar.')}
+      ${signal('2 · Evaluación','NexusG revisa las fuentes disponibles, el contexto y la factibilidad para determinar si esa situación puede resolverse con la información existente.')}
+      ${signal('3 · Alcance','Se define la primera capacidad: qué fuentes conectar, qué preguntas responder y qué situaciones construir.')}
+      ${signal('4 · Implementación','NexusG implementa la capacidad y el partner acompaña la relación con el cliente.')}
+      ${signal('5 · Evolución','A partir de los resultados, la capacidad puede extenderse a nuevas fuentes, nuevas preguntas y nuevos dominios.')}
     </div>
   </div></section>
 
