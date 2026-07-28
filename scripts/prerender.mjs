@@ -46,6 +46,12 @@ const routes = [
     description: 'Ejemplo ilustrativo de cómo NexusG relaciona facturación, costos y carga operativa para detectar deterioro de rentabilidad.'
   },
   {
+    path: '/ejemplos/correo',
+    file: 'ejemplos/correo/index.html',
+    title: 'NexusG — Ejemplo operación y correo',
+    description: 'Ejemplo ilustrativo de cómo NexusG relaciona conversaciones para reconstruir el flujo operativo que explica resultados, demoras y bloqueos.'
+  },
+  {
     path: '/labs',
     file: 'labs/index.html',
     title: 'NexusG — Comprensión operativa',
