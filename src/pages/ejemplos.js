@@ -38,8 +38,8 @@ export const ejemplosIndexPage = () => `
         <article>
           <p class="labs-card-kicker">Operación</p>
           <h3>Correo</h3>
-          <p>Compromisos, dependencias y problemas repetidos ocultos entre conversaciones distintas.</p>
-          <span class="example-disclaimer">Próximamente</span>
+          <p>El flujo real de la operación: compromisos, dependencias y decisiones distribuidas entre conversaciones.</p>
+          <a class="labs-text-link" href="/ejemplos/correo" data-route>Ver ejemplo →</a>
         </article>
         <article>
           <p class="labs-card-kicker">Clientes</p>
@@ -222,6 +222,90 @@ export const ejemplosErpPage = () => `
       <p class="eyebrow">Sobre sistemas existentes</p>
       <h2>No reemplaza el ERP.</h2>
       <p>Trabaja sobre la información financiera y operativa que ya existe y agrega capacidades de comprensión, priorización e investigación.</p>
+      <a class="labs-text-link" href="/ejemplos" data-route>Ver todos los ejemplos</a>
+    </div>
+  </section>
+</main>
+
+<footer class="labs-footer"><div class="shell"><span>NexusG</span><span>Ejemplo ilustrativo · datos ficticios</span></div></footer>
+`
+
+export const ejemplosCorreoPage = () => `
+<header class="labs-nav">
+  <div class="shell labs-nav-inner">
+    <a class="labs-brand" href="/" data-route>NexusG</a>
+    <nav class="example-nav" aria-label="Navegación de ejemplos">
+      <a href="/ejemplos" data-route>Ejemplos</a>
+      <span>Operación y correo</span>
+    </nav>
+    <a class="button labs-nav-cta" href="mailto:contacto@nexusg.cl">Conversemos</a>
+  </div>
+</header>
+
+<main class="example-page">
+  <section class="example-hero">
+    <div class="shell example-hero-inner">
+      <p class="eyebrow">Ejemplo · Operación y correo</p>
+      <h1>Los indicadores muestran qué pasó. La operación suele explicar por qué.</h1>
+      <p class="example-lead">Esa operación vive distribuida entre conversaciones, compromisos, respuestas, aprobaciones y decisiones que rara vez quedan registradas en un solo sistema. Los motores de NexusG relacionan esas señales y construyen situaciones que PressureBoard presenta según su prioridad.</p>
+      <p class="example-disclaimer">Ejemplo ilustrativo construido con datos ficticios.</p>
+    </div>
+  </section>
+
+  <section class="example-section">
+    <div class="shell example-two-columns">
+      <div><p class="eyebrow">Workspace</p><h2>Preguntas que reconstruyen lo que ocurrió en la operación</h2></div>
+      <div class="example-questions">
+        <p>¿Qué problema operativo explica este retraso?</p>
+        <p>¿Qué conversaciones distintas hablan realmente de la misma situación?</p>
+        <p>¿Qué compromiso quedó sin responsable o sin cierre?</p>
+        <p>¿Qué decisión continúa esperando una respuesta que nadie está siguiendo?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-section example-board-section">
+    <div class="shell">
+      <div class="example-board-heading">
+        <div><p class="eyebrow">PressureBoard</p><h2>Una situación operativa, no una bandeja de correos</h2></div>
+        <span class="example-status">Requiere atención</span>
+      </div>
+      <article class="example-pressure-card">
+        <div class="example-card-header">
+          <div>
+            <p class="example-card-kicker">Flujo operativo</p>
+            <h3>Dependencia operativa sin resolver</h3>
+            <p>Distintas conversaciones describen el mismo bloqueo. Las respuestas parciales mantienen vivo el problema, pero no existe un responsable claro ni evidencia de resolución.</p>
+          </div>
+          <span class="example-card-marker" aria-hidden="true"></span>
+        </div>
+        <div class="example-card-grid">
+          <section><h4>Señales relacionadas</h4><ul><li>El mismo tema reaparece en conversaciones distintas.</li><li>Varias personas esperan una respuesta de otra área.</li><li>Existen compromisos parciales sin cierre explícito.</li><li>La conversación cambia de participantes sin resolver la dependencia.</li><li>El problema vuelve a aparecer después de aparentar estar resuelto.</li></ul></section>
+          <section><h4>Qué revela el patrón</h4><p>No se trata de correos pendientes aislados. Las conversaciones reconstruyen una única situación operativa que continúa bloqueando decisiones y tareas relacionadas.</p></section>
+          <section><h4>Qué hacer</h4><p>Asignar un responsable de cierre, confirmar la dependencia pendiente y establecer una acción verificable antes de que el bloqueo continúe propagándose.</p></section>
+          <section><h4>Evidencia</h4><p>Hilos · participantes · compromisos · respuestas pendientes · aprobaciones · archivos adjuntos · secuencia temporal.</p></section>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="example-section">
+    <div class="shell example-two-columns">
+      <div><p class="eyebrow">Qué aporta</p><h2>De conversaciones separadas a comprensión operativa</h2></div>
+      <div class="example-benefits">
+        <article><span>01</span><p>Reconstruye el flujo que explica un resultado, una demora o una excepción.</p></article>
+        <article><span>02</span><p>Relaciona conversaciones que una persona normalmente revisaría por separado para construir una única situación operativa.</p></article>
+        <article><span>03</span><p>Distingue un bloqueo persistente de una respuesta o tarea aislada.</p></article>
+        <article><span>04</span><p>Conserva la evidencia y la secuencia necesarias para investigar qué ocurrió.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="example-compatibility">
+    <div class="shell example-compatibility-inner">
+      <p class="eyebrow">Sobre sistemas existentes</p>
+      <h2>No es un resumidor de correos.</h2>
+      <p>Trabaja sobre conversaciones y otras fuentes existentes para reconstruir el flujo real de la operación, comprender qué ocurrió y priorizar las situaciones que requieren atención.</p>
       <a class="labs-text-link" href="/ejemplos" data-route>Ver todos los ejemplos</a>
     </div>
   </section>
