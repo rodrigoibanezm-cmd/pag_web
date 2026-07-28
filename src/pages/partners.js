@@ -4,60 +4,65 @@ const partnerNav = () => `
 <header class="topbar"><nav class="nav shell">
   ${brand()}
   <div class="navlinks">
-    <a href="#oportunidad">La oportunidad</a><a href="#productos">El producto</a>
-    <a href="#casos">Casos de uso</a><a href="#alianza">La alianza</a>
-    <span class="nav-separator" aria-hidden="true"></span><a data-route href="/">Conocer NexusG</a><a data-route href="/arquitectura">Arquitectura</a>
+    <a href="#oportunidad">La oportunidad</a><a href="#oferta">Qué puede ofrecer</a>
+    <a href="#alianza">La alianza</a><a href="#proceso">Cómo comienza</a>
+    <span class="nav-separator" aria-hidden="true"></span><a data-route href="/">Conocer NexusG</a><a data-route href="/ejemplos">Ejemplos</a><a data-route href="/arquitectura">Arquitectura</a>
   </div>
   <details class="mobile-nav"><summary>Índice <span>＋</span></summary>
-    <div class="mobile-nav-links"><a href="#oportunidad">La oportunidad</a><a href="#productos">El producto</a><a href="#casos">Casos de uso</a><a href="#alianza">La alianza</a><a data-route href="/">Conocer NexusG</a><a data-route href="/arquitectura">Arquitectura</a></div>
+    <div class="mobile-nav-links"><a href="#oportunidad">La oportunidad</a><a href="#oferta">Qué puede ofrecer</a><a href="#alianza">La alianza</a><a href="#proceso">Cómo comienza</a><a data-route href="/">Conocer NexusG</a><a data-route href="/ejemplos">Ejemplos</a><a data-route href="/arquitectura">Arquitectura</a></div>
   </details>
 </nav></header>`
 
-const card = (title, questions) => `<article class="partner-card"><h3>${title}</h3><ul>${questions.map(question => `<li>${question}</li>`).join('')}</ul></article>`
+const card = (title, text) => `<article class="partner-card"><h3>${title}</h3><p>${text}</p></article>`
 const signal = (label, text) => `<article class="partner-signal"><span>${label}</span><p>${text}</p></article>`
-
-const productExample = (type, title, text, rows) => `
-<article class="partner-product ${type}">
-  <div class="product-copy"><p class="eyebrow">${type === 'workspace' ? 'Workspace' : 'PressureBoard'}</p><h3>${title}</h3><p>${text}</p></div>
-  <div class="product-window">
-    <div class="window-bar"><i></i><i></i><i></i></div>
-    ${rows.map(([label, value]) => `<div class="window-row"><span>${label}</span><strong>${value}</strong></div>`).join('')}
-  </div>
-</article>`
 
 export const partnersPage = () => `
 ${partnerNav()}
 <main id="top" class="partners-page">
   <section class="partner-hero"><div class="shell partner-hero-grid">
     <div><p class="eyebrow">Programa de Partners</p><h1>Una nueva capacidad, sin tocar ni reemplazar sistemas ya implementados.</h1></div>
-    <div class="partner-hero-copy"><p>NexusG conecta información distribuida entre ERP, CRM, correo, documentos y otras fuentes para detectar situaciones relevantes, comprender qué las provoca y entregar evidencia para actuar.</p><p>Para un partner, esto abre una conversación posterior a la implementación: más valor sobre la infraestructura existente, nuevas líneas de servicio y una relación que puede continuar después del proyecto inicial.</p></div>
+    <div class="partner-hero-copy"><p>NexusG trabaja sobre la información distribuida entre ERP, CRM, correo, documentos y otras fuentes para construir situaciones que merecen atención, explicar qué las provoca y entregar evidencia para actuar.</p><p>Para un partner, esto abre una conversación posterior a la implementación: más valor sobre la infraestructura existente, nuevas líneas de servicio y continuidad después del proyecto inicial.</p></div>
   </div></section>
 
   <section id="oportunidad"><div class="shell partner-split">
-    <p class="eyebrow">La oportunidad</p><div><h2>La implementación termina. La necesidad de entender la empresa no.</h2><p>Los sistemas registran gran parte de lo que ocurre, pero esa información suele quedar repartida entre plataformas, reportes y conversaciones. La integración resuelve el acceso. No necesariamente construye comprensión.</p><p>NexusG trabaja sobre esa capa posterior: permite volver sobre clientes ya implementados con una capacidad adicional, sin reemplazar los sistemas que ya operan.</p></div>
+    <p class="eyebrow">La oportunidad</p><div><h2>La implementación termina. La necesidad de entender la empresa no.</h2><p>Los sistemas registran gran parte de lo que ocurre, pero esa información suele quedar repartida entre plataformas, reportes y conversaciones. La integración resuelve el acceso. No necesariamente construye comprensión.</p><p>NexusG permite volver sobre clientes ya implementados con una capacidad adicional, sin reemplazar los sistemas que ya operan ni iniciar una transformación completa desde cero.</p></div>
   </div></section>
 
-  <section id="productos" class="partner-paper"><div class="shell">
-    <div class="section-head"><p class="eyebrow">El producto</p><h2>Un motor. Dos interfaces de trabajo.</h2></div>
-    <div class="partner-products">
-      ${productExample('workspace','Analizar una situación concreta.','La interfaz conversacional para investigar una situación utilizando la comprensión construida por el motor.',[['Pregunta','¿Por qué cayó el margen en tiendas propias?'],['Cruza','Ventas · inventario · descuentos · correo'],['Entrega','Hallazgos, evidencia y próximos pasos']])}
-      ${productExample('pressureboard','Ver qué merece atención primero.','La interfaz de priorización que muestra qué situaciones requieren atención y por qué importan ahora.',[['Presión','Quiebre de stock afecta campaña activa'],['Por qué ahora','Ventas suben y reposición sigue atrasada'],['Qué hacer','Revisar compra y redistribución hoy']])}
-    </div>
-    <div class="partner-combination"><p>Se pueden implementar por separado o como parte de una misma solución.</p><p>Ambas trabajan sobre la misma comprensión persistente de la empresa.</p><a class="partner-link" data-route href="/">Ver el producto →</a></div>
-  </div></section>
-
-  <section id="casos"><div class="shell">
-    <div class="section-head"><p class="eyebrow">Casos de uso</p><h2>Dónde NexusG aporta una nueva capacidad.</h2></div>
+  <section id="oferta" class="partner-paper"><div class="shell">
+    <div class="section-head"><p class="eyebrow">Qué puede ofrecer el partner</p><h2>Una capacidad permanente para comprender, priorizar e investigar la operación.</h2></div>
+    <div class="partner-hero-copy"><p>El cliente no compra una integración aislada ni una consultoría puntual. Incorpora una capacidad conectada a sus fuentes existentes para investigar situaciones en Workspace y ver qué requiere atención en PressureBoard.</p></div>
     <div class="partner-cases">
-      ${card('ERP',['¿Qué cliente paga bien, pero tiene margen negativo al incluir el costo real de servicio?','¿Qué línea de negocio crece en ventas mientras deteriora caja?','¿Dónde está aumentando el gasto más rápido que los ingresos?'])}
-      ${card('CRM',['¿Qué oportunidad que debía cerrar este mes dejó de responder?','¿Qué patrón hace que las oportunidades se caigan siempre en la misma etapa?','¿Qué propuestas enviadas todavía no tienen seguimiento?'])}
-      ${card('Correo',['¿Qué está consumiendo tiempo sin que nadie lo advierta?','¿Qué problema probablemente volverá a aparecer la próxima semana?','¿Qué conversaciones distintas son, en realidad, parte de la misma situación?'])}
-      ${card('Clientes y postventa',['¿Qué sucursal está deteriorando la experiencia del cliente?','¿Qué patrón aparece antes de que caiga su evaluación?','¿Dónde la competencia está ganando percepción?'])}
+      ${card('Ventas y CRM','Detectar oportunidades que pierden tracción, riesgos concentrados y acciones que requieren intervención antes del cierre.')}
+      ${card('Rentabilidad y ERP','Relacionar ingresos, costos y carga operativa para identificar dónde el crecimiento está deteriorando margen o caja.')}
+      ${card('Operación y correo','Reconstruir bloqueos, dependencias y compromisos distribuidos entre conversaciones que normalmente se revisarían por separado.')}
+      ${card('Experiencia de clientes','Detectar patrones de deterioro entre encuestas, reseñas, reclamos y comentarios antes de que el efecto sea evidente en el resultado.')}
+    </div>
+    <a class="partner-link" data-route href="/ejemplos">Ver ejemplos completos →</a>
+  </div></section>
+
+  <section id="alianza" class="partner-dark"><div class="shell">
+    <div class="section-head"><p class="eyebrow">La alianza</p><h2>El partner mantiene la relación. NexusG aporta el producto.</h2></div>
+    <div class="partner-cases">
+      ${card('El partner','Identifica la oportunidad, comprende el contexto del cliente y mantiene la relación comercial y de confianza.')}
+      ${card('NexusG','Evalúa factibilidad, aporta producto e implementación, y entrega soporte técnico y evolución.')}
+      ${card('El cliente recibe','Una capacidad operativa conectada a sus fuentes, con Workspace y/o PressureBoard, evidencia y trazabilidad.')}
+    </div>
+    <p class="partner-close">La alianza puede adaptarse al modelo comercial del partner: identificación de oportunidades, implementación conjunta, continuidad de servicio y evolución sobre el cliente.</p>
+  </div></section>
+
+  <section id="proceso"><div class="shell">
+    <div class="section-head"><p class="eyebrow">Cómo comienza</p><h2>De una oportunidad concreta a una capacidad implementada.</h2></div>
+    <div class="partner-signals">
+      ${signal('1 · Oportunidad','El partner identifica una necesidad real sobre sistemas y datos ya existentes.')}
+      ${signal('2 · Evaluación','NexusG revisa fuentes, contexto, factibilidad y valor potencial de la situación.')}
+      ${signal('3 · Alcance','Se define qué fuentes conectar, qué preguntas investigar y qué situaciones priorizar.')}
+      ${signal('4 · Implementación','NexusG configura la capacidad y el partner acompaña la relación con el cliente.')}
+      ${signal('5 · Continuidad','La solución evoluciona sobre nuevos casos, fuentes y necesidades del cliente.')}
     </div>
   </div></section>
 
   <section class="partner-proof"><div class="shell">
-    <div class="section-head"><p class="eyebrow">Base técnica</p><h2>Una capacidad que puede incorporarse sin rediseñar la operación del cliente.</h2></div>
+    <div class="section-head"><p class="eyebrow">Respaldo técnico</p><h2>Una capacidad que puede incorporarse sin rediseñar la operación del cliente.</h2></div>
     <div class="partner-signals">
       ${signal('Integraciones','Se conecta con ERP, CRM, correo, documentos, bases de datos y APIs existentes.')}
       ${signal('Arquitectura','Separa la lógica controlada del trabajo semántico para combinar control, flexibilidad y trazabilidad.')}
@@ -65,13 +70,9 @@ ${partnerNav()}
       ${signal('Despliegue','Implementación cloud y evaluación de alternativas privadas cuando el caso lo requiere.')}
     </div>
     <a class="partner-link" data-route href="/como">Ver cómo funciona →</a>
+    <a class="partner-link" data-route href="/arquitectura">Revisar arquitectura →</a>
   </div></section>
 
-  <section id="alianza" class="partner-dark"><div class="shell partner-dark-grid">
-    <div><p class="eyebrow">La alianza</p><h2>El partner mantiene la relación. NexusG aporta el producto.</h2></div>
-    <div class="partner-models"><div><strong>El partner mantiene la relación.</strong><p>Identifica la oportunidad y mantiene la relación con el cliente.</p></div><div><strong>NexusG acompaña el proceso.</strong><p>Acompaña la evaluación y aporta producto, implementación, soporte técnico y evolución.</p></div><p class="partner-close">La forma comercial y operativa de cada alianza se define caso a caso.</p></div>
-  </div></section>
-
-  <section class="partner-contact"><div class="shell"><p class="eyebrow">NexusG</p><h2>Conversemos.</h2><a class="partner-link" href="mailto:contacto@nexusg.cl?subject=Conversemos%20sobre%20NexusG">contacto@nexusg.cl →</a></div></section>
+  <section class="partner-contact"><div class="shell"><p class="eyebrow">NexusG para partners</p><h2>Conversemos sobre una oportunidad concreta.</h2><a class="partner-link" href="mailto:contacto@nexusg.cl?subject=Oportunidad%20de%20partner%20para%20NexusG">contacto@nexusg.cl →</a></div></section>
 </main>
 ${footer()}`
