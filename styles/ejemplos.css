@@ -1,6 +1,7 @@
 .example-page{background:var(--bg)}
 .example-nav{display:flex;align-items:center;gap:18px;color:var(--muted);font-size:.8rem;font-weight:750}
 .example-nav span{color:var(--ink)}
+.example-home-link{color:var(--ink);font-size:.9rem;font-weight:900}
 .example-hero{padding:88px 0 72px;border-bottom:1px solid rgba(17,24,39,.08)}
 .example-hero-inner{max-width:930px}
 .example-hero h1{max-width:900px;margin-bottom:24px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.45rem,4.8vw,4.75rem);font-weight:500;line-height:1.03;letter-spacing:-.047em}
