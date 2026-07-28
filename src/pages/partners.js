@@ -6,10 +6,10 @@ const partnerNav = () => `
   <div class="navlinks">
     <a href="#oportunidad">La oportunidad</a><a href="#oferta">Qué puede ofrecer</a>
     <a href="#alianza">La alianza</a><a href="#proceso">Cómo comienza</a>
-    <span class="nav-separator" aria-hidden="true"></span><a data-route href="/">Conocer NexusG</a><a data-route href="/ejemplos">Ejemplos</a><a data-route href="/arquitectura">Arquitectura</a>
+    <span class="nav-separator" aria-hidden="true"></span><a data-route href="/">Conocer NexusG</a><a data-route href="/ejemplos">Ejemplos</a>
   </div>
   <details class="mobile-nav"><summary>Índice <span>＋</span></summary>
-    <div class="mobile-nav-links"><a href="#oportunidad">La oportunidad</a><a href="#oferta">Qué puede ofrecer</a><a href="#alianza">La alianza</a><a href="#proceso">Cómo comienza</a><a data-route href="/">Conocer NexusG</a><a data-route href="/ejemplos">Ejemplos</a><a data-route href="/arquitectura">Arquitectura</a></div>
+    <div class="mobile-nav-links"><a href="#oportunidad">La oportunidad</a><a href="#oferta">Qué puede ofrecer</a><a href="#alianza">La alianza</a><a href="#proceso">Cómo comienza</a><a data-route href="/">Conocer NexusG</a><a data-route href="/ejemplos">Ejemplos</a></div>
   </details>
 </nav></header>`
 
@@ -70,7 +70,6 @@ ${partnerNav()}
       ${signal('Despliegue','Implementación cloud y evaluación de alternativas privadas cuando el caso lo requiere.')}
     </div>
     <a class="partner-link" data-route href="/como">Ver cómo funciona →</a>
-    <a class="partner-link" data-route href="/arquitectura">Revisar arquitectura →</a>
   </div></section>
 
   <section class="partner-contact"><div class="shell"><p class="eyebrow">NexusG para partners</p><h2>Conversemos sobre una oportunidad concreta.</h2><a class="partner-link" href="mailto:contacto@nexusg.cl?subject=Oportunidad%20de%20partner%20para%20NexusG">contacto@nexusg.cl →</a></div></section>
