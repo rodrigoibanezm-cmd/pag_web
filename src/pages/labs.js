@@ -21,6 +21,7 @@ export const labsPage = () => `
       <a href="#adaptacion">Adaptación</a>
       <a href="#arquitectura">Arquitectura</a>
       <a href="#datos">Datos</a>
+      <a href="#implementacion">Implementación</a>
       <a href="#partners">Partners</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -68,7 +69,7 @@ export const labsPage = () => `
         <p>Es la interfaz conversacional para investigar una situación y hacer preguntas sobre el negocio utilizando evidencia verificable.</p>
       </article>
     </div>
-    <p>PressureBoard no detecta ni calcula: presenta el resultado construido por el motor. Workspace no es ChatGPT: puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p>
+    <p>PressureBoard no detecta ni calcula: presenta el resultado construido por el motor. Puede utilizarse desde una interfaz web o integrarse en otras aplicaciones. Workspace no es ChatGPT: puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p>
   `)}
 
   ${section('situaciones', 'Situaciones, no alertas', 'NexusG reúne señales dispersas en una explicación operativa', `
@@ -125,6 +126,25 @@ export const labsPage = () => `
     <p>No es una asesoría ni una colección de reportes.</p>
   `)}
 
+  ${section('implementacion', 'Implementación y escala', 'Una capacidad concreta, no una transformación tecnológica', `
+    <p>NexusG incorpora nuevas capacidades sobre los sistemas que la empresa ya utiliza. No requiere reemplazar el ERP, CRM ni iniciar un proyecto de transformación tecnológica.</p>
+    <p>La mayoría de las implementaciones comienza con una única capacidad sobre una fuente existente y evoluciona incorporando nuevas capacidades según las necesidades del negocio.</p>
+    <div class="labs-cards">
+      <article class="labs-card">
+        <p class="labs-card-kicker">Implementación inicial</p>
+        <h3>Desde USD 2.000</h3>
+        <p>Por capacidad, según las fuentes conectadas y los motores requeridos.</p>
+      </article>
+      <article class="labs-card">
+        <p class="labs-card-kicker">Operación continua</p>
+        <h3>Desde USD 50 mensuales</h3>
+        <p>Según el alcance y la modalidad de implementación.</p>
+      </article>
+    </div>
+    <p>El valor final depende de las fuentes conectadas, los motores implementados y las interfaces habilitadas.</p>
+    <p><strong>NexusG está diseñado para empresas que desean obtener más valor de los sistemas que ya poseen, no para reemplazarlos por una nueva plataforma corporativa.</strong></p>
+  `)}
+
   ${section('partners', 'Partners', 'Una nueva capacidad sobre los sistemas que tus clientes ya utilizan', `
     <p>El partner identifica la oportunidad y mantiene la relación con el cliente. NexusG aporta producto, implementación, soporte técnico y evolución.</p>
     <a class="labs-text-link" href="/partners" data-route>Conocer el modelo de alianza</a>
@@ -134,8 +154,10 @@ export const labsPage = () => `
     <div class="labs-faq">
       <details><summary>¿Qué compra el cliente?</summary><p>Una capacidad operativa para comprender la operación y convertir esa comprensión en decisiones.</p></details>
       <details><summary>¿Qué son Workspace y PressureBoard?</summary><p>Workspace es la interfaz conversacional para investigar situaciones. PressureBoard presenta las situaciones construidas por NexusG y explica por qué merecen atención.</p></details>
+      <details><summary>¿Cómo se accede a Workspace y PressureBoard?</summary><p>Workspace puede utilizarse desde clientes compatibles con MCP o integrarse en otras interfaces conversacionales. PressureBoard puede utilizarse desde una interfaz web o integrarse en otras aplicaciones.</p></details>
       <details><summary>¿Cómo se adapta NexusG a cada empresa?</summary><p>Los motores del backend analizan las fuentes conectadas y construyen automáticamente un modelo operativo. NexusG solo presenta preguntas específicas y cerradas cuando necesita validar una hipótesis o comprobar el resultado antes de habilitar la capacidad.</p></details>
       <details><summary>¿Dónde quedan los datos y los persistentes de Workspace?</summary><p>La configuración, el estado operativo, el modelo construido y los persistentes generados por Workspace pueden mantenerse en infraestructura controlada por el cliente. El conocimiento generado permanece como un activo del cliente.</p></details>
+      <details><summary>¿Cómo se implementa y cuánto cuesta comenzar?</summary><p>La mayoría de los proyectos comienza con una única capacidad sobre una fuente existente. Las implementaciones iniciales parten desde USD 2.000 por capacidad y la operación continua desde USD 50 mensuales, según alcance y modalidad.</p></details>
       <details><summary>¿Workspace es ChatGPT?</summary><p>No. Workspace puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p></details>
       <details><summary>¿PressureBoard calcula o detecta situaciones?</summary><p>No. Las situaciones, reglas y cálculos se construyen en capacidades controladas del backend. PressureBoard las presenta.</p></details>
       <details><summary>¿Dónde ocurren los cálculos?</summary><p>En motores especializados del backend, utilizando las definiciones válidas del negocio.</p></details>
