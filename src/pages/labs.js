@@ -13,16 +13,13 @@ export const labsPage = () => `
 <header class="labs-nav">
   <div class="shell labs-nav-inner">
     <a class="labs-brand" href="/" data-route>NexusG</a>
-    <nav class="labs-menu" aria-label="Secciones de la página">
+    <nav class="labs-menu" aria-label="Navegación principal">
       <a href="#problema">Problema</a>
-      <a href="#que-es">Qué es</a>
       <a href="#producto">Producto</a>
       <a href="#como-funciona">Cómo funciona</a>
-      <a href="#adaptacion">Adaptación</a>
-      <a href="#arquitectura">Arquitectura</a>
-      <a href="#datos">Datos</a>
+      <a href="/ejemplos" data-route>Ejemplos</a>
       <a href="#implementacion">Implementación</a>
-      <a href="#partners">Partners</a>
+      <a href="/partners" data-route>Partners</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a class="button labs-nav-cta" href="mailto:contacto@nexusg.cl">Conversemos</a>
@@ -103,6 +100,7 @@ export const labsPage = () => `
       <article><h3>Operación</h3><p>Compromisos detenidos, solicitudes envejecidas y fricciones entre áreas.</p></article>
       <article><h3>Correo</h3><p>Conversaciones críticas sin respuesta y compromisos pendientes.</p></article>
     </div>
+    <a class="labs-text-link" href="/ejemplos" data-route>Ver ejemplos completos →</a>
   `)}
 
   ${section('arquitectura', 'Arquitectura', 'Lenguaje natural, ejecución controlada', `
