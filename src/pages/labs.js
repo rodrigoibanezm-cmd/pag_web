@@ -18,6 +18,7 @@ export const labsPage = () => `
       <a href="#que-es">Qué es</a>
       <a href="#producto">Producto</a>
       <a href="#como-funciona">Cómo funciona</a>
+      <a href="#adaptacion">Adaptación</a>
       <a href="#arquitectura">Arquitectura</a>
       <a href="#partners">Partners</a>
       <a href="#faq">FAQ</a>
@@ -85,6 +86,12 @@ export const labsPage = () => `
     </div>
   `)}
 
+  ${section('adaptacion', 'Adaptación automática', 'El sistema descubre primero y pregunta solo cuando hace falta', `
+    <p>Al conectar las fuentes, los motores del backend comienzan a analizar automáticamente la estructura de la operación, relacionar información, detectar patrones y actualizar un modelo operativo de la empresa.</p>
+    <p>Cuando la evidencia no permite resolver una hipótesis con suficiente certeza, NexusG presenta preguntas específicas y cerradas para validarla antes de continuar.</p>
+    <p>El proceso incluye comprobaciones parciales y una validación final antes de habilitar la capacidad. El usuario confirma o corrige resultados; no tiene que describir la empresa desde cero ni configurar manualmente cada caso de uso.</p>
+  `)}
+
   ${section('casos', 'Casos de uso', 'Dónde puede aportar valor', `
     <div class="labs-use-grid">
       <article><h3>Ventas</h3><p>Oportunidades detenidas, negocios en riesgo y prioridades comerciales.</p></article>
@@ -119,9 +126,10 @@ export const labsPage = () => `
     <div class="labs-faq">
       <details><summary>¿Qué compra el cliente?</summary><p>Una capacidad operativa para comprender la operación y convertir esa comprensión en decisiones.</p></details>
       <details><summary>¿Qué son Workspace y PressureBoard?</summary><p>Workspace es la interfaz conversacional para investigar situaciones. PressureBoard presenta las situaciones construidas por NexusG y explica por qué merecen atención.</p></details>
+      <details><summary>¿Cómo se adapta NexusG a cada empresa?</summary><p>Los motores del backend analizan las fuentes conectadas y construyen automáticamente un modelo operativo. NexusG solo presenta preguntas específicas y cerradas cuando necesita validar una hipótesis o comprobar el resultado antes de habilitar la capacidad.</p></details>
       <details><summary>¿Workspace es ChatGPT?</summary><p>No. Workspace puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p></details>
       <details><summary>¿PressureBoard calcula o detecta situaciones?</summary><p>No. Las situaciones, reglas y cálculos se construyen en capacidades controladas del backend. PressureBoard las presenta.</p></details>
-      <details><summary>¿Dónde ocurren los cálculos?</summary><p>En capacidades especializadas del backend, utilizando las definiciones válidas del negocio.</p></details>
+      <details><summary>¿Dónde ocurren los cálculos?</summary><p>En motores especializados del backend, utilizando las definiciones válidas del negocio.</p></details>
       <details><summary>¿Cómo se audita una respuesta?</summary><p>Revisando las fuentes, evidencia, capacidades ejecutadas, cálculos y reglas aplicadas.</p></details>
       <details><summary>¿Reemplaza al ERP, CRM o BI?</summary><p>No. Trabaja sobre ellos y agrega una capacidad de comprensión y decisión.</p></details>
     </div>
