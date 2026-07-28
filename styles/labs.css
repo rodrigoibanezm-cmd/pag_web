@@ -4,6 +4,7 @@
 .labs-brand{flex:0 0 auto;font-family:Georgia,"Times New Roman",serif;font-size:1.28rem;font-weight:700;letter-spacing:-.03em}
 .labs-menu{display:flex;align-items:center;justify-content:center;gap:20px;font-size:.78rem;font-weight:750;color:var(--muted)}
 .labs-menu a:hover{color:var(--ink)}
+.labs-menu-separator{width:1px;height:18px;margin-inline:2px;background:rgba(17,24,39,.16)}
 .labs-nav-cta{flex:0 0 auto;padding:10px 16px}
 .labs-hero{padding:88px 0 76px;border-bottom:1px solid rgba(17,24,39,.08)}
 .labs-hero-inner{max-width:900px}
