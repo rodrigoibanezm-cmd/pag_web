@@ -88,7 +88,7 @@ export const ejemplosPage = () => `
 
   <section class="example-section">
     <div class="shell example-two-columns">
-      <div><p class="eyebrow">Preguntas</p><h2>Preguntas que cambian una decisión comercial</h2></div>
+      <div><p class="eyebrow">Workspace</p><h2>Preguntas que cambian una decisión comercial</h2></div>
       <div class="example-questions">
         <p>¿Qué parte del pipeline está comenzando a deteriorarse?</p>
         <p>¿Dónde se concentra hoy el riesgo comercial?</p>
