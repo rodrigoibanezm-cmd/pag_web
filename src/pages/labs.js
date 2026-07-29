@@ -110,6 +110,8 @@ export const labsPage = () => `
     <div class="labs-architecture-strip">
       <span>Intención</span><i>→</i><span>Capacidades</span><i>→</i><span>Fuentes y cálculos</span><i>→</i><span>Situaciones y evidencia</span><i>→</i><span>Workspace o PressureBoard</span>
     </div>
+    <p><strong>Referencia arquitectónica pública.</strong> Los principios, límites, contratos conceptuales y fundamentos de diseño que respaldan estas afirmaciones están documentados en una referencia técnica pública.</p>
+    <a class="labs-text-link" href="https://github.com/rodrigoibanezm-cmd/nexusg-reference" target="_blank" rel="noopener noreferrer">Ver referencia arquitectónica →</a>
   `)}
 
   ${section('datos', 'Datos y propiedad', 'La información y el conocimiento generado permanecen bajo control del cliente', `
