@@ -13,6 +13,8 @@ NexusG entrega una capacidad operativa implementada sobre las fuentes de la empr
 
 Ambas interfaces trabajan sobre la misma comprensión persistente y pueden implementarse juntas o por separado.
 
+La interfaz se asigna según el tipo de decisión que toma cada rol, no según una jerarquía genérica. PressureBoard sirve especialmente para roles que necesitan priorizar entre muchas situaciones; Workspace, para roles que necesitan investigar una situación en profundidad.
+
 ## Arquitectura
 
 La lógica de negocio, el acceso a datos, los cálculos y las validaciones ocurren en capacidades controladas del backend. El LLM interpreta la intención, selecciona capacidades y presenta los resultados; no reemplaza la lógica determinística ni calcula indicadores por sí solo.
@@ -35,15 +37,38 @@ El sistema combina:
 
 ## Cómo se adapta
 
+Conectar datos no significa comprenderlos. Durante el onboarding, NexusG construye una comprensión persistente del negocio antes de habilitar una capacidad.
+
+El proceso no depende de una única llamada a un modelo ni exige que una persona describa la empresa desde cero. Se ejecuta mediante componentes especializados que resuelven problemas acotados y verificables antes de entregar su resultado al siguiente componente.
+
 Durante el onboarding:
 
 - se conectan las fuentes necesarias;
-- se exploran estructuras, campos, procesos y relaciones;
+- se exploran estructuras, campos, entidades, procesos y relaciones;
+- se proponen interpretaciones sobre el significado operativo de la información;
+- se presentan preguntas específicas y cerradas cuando la evidencia no permite resolver una hipótesis;
+- se valida el nivel de detalle correspondiente a cada rol y dominio;
 - se configuran capacidades especializadas;
 - se definen criterios de prioridad junto al usuario;
-- se valida que cada capacidad use correctamente los datos disponibles.
+- se realiza una validación final antes de habilitar la capacidad.
+
+La validación mediante opciones concretas reduce el sesgo de pedir al usuario que defina su negocio desde cero y permite corregir únicamente la parte de la comprensión que necesita ajuste.
 
 Cuando falta una capacidad, se agrega como una función especializada y auditable; no se improvisa una respuesta fuera de las herramientas disponibles.
+
+## Por qué la operación puede ser acotada
+
+La comprensión se construye una vez y luego se reutiliza. Workspace y PressureBoard consultan una comprensión ya existente, por lo que no es necesario reconstruir el contexto completo de la empresa en cada pregunta.
+
+Workspace puede operar desde clientes compatibles con MCP sobre el modelo de lenguaje que la organización ya utiliza. NexusG aporta la comprensión persistente, las capacidades especializadas, las reglas, los cálculos y la trazabilidad. Esta arquitectura evita que el costo de operación dependa de repetir grandes procesos de inferencia por cada interacción y permite una operación mensual desde USD 50, según alcance y modalidad.
+
+## Confidencialidad y propiedad
+
+Cada implementación mantiene su propia comprensión, configuración, datos, situaciones y artefactos.
+
+El contenido de Workspace o PressureBoard de un cliente no se muestra ni se reutiliza para otros clientes, tampoco de forma anonimizada.
+
+La configuración, el estado operativo, el modelo construido y los persistentes pueden mantenerse en infraestructura controlada por el cliente. El conocimiento generado permanece como un activo del cliente.
 
 ## Auditoría
 
@@ -63,3 +88,4 @@ NexusG no reemplaza ERP, CRM, BI, correo ni otros sistemas. Trabaja sobre ellos 
 - https://nexusg.cl/como
 - https://nexusg.cl/arquitectura
 - https://nexusg.cl/partners
+- https://nexusg.cl/ejemplos
