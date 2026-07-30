@@ -30,8 +30,8 @@ export const labsPage = () => `
   <section class="labs-hero">
     <div class="shell labs-hero-inner">
       <p class="eyebrow">Comprensión operativa</p>
-      <h1>NexusG incorpora a tu empresa una capacidad permanente para comprender su operación y convertir esa comprensión en decisiones.</h1>
-      <p class="labs-lead">Trabaja sobre ERP, CRM, correo, documentos y otras fuentes para detectar situaciones relevantes, explicar qué las provoca y responder con evidencia del negocio.</p>
+      <h1>La empresa genera más señales de las que una persona puede procesar.</h1>
+      <p class="labs-lead">Algunas son demasiado caras como para dejarlas pasar.<br>NexusG las descubre antes de que cuesten más.</p>
       <div class="labs-hero-actions">
         <a class="button" href="mailto:contacto@nexusg.cl">Conversemos</a>
         <a class="labs-text-link" href="#problema">Ver cómo funciona</a>
