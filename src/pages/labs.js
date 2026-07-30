@@ -30,8 +30,8 @@ export const labsPage = () => `
   <section class="labs-hero">
     <div class="shell labs-hero-inner">
       <p class="eyebrow">Comprensión operativa</p>
-      <h1>La empresa genera más señales de las que una persona puede procesar.</h1>
-      <p class="labs-lead">Algunas son demasiado caras como para dejarlas pasar.<br>NexusG las descubre antes de que cuesten más.</p>
+      <h1>La empresa genera más señales de las que una persona puede procesar</h1>
+      <p class="labs-lead">Algunas son demasiado caras como para dejarlas pasar<br>NexusG las descubre antes de que cuesten más</p>
       <div class="labs-hero-actions">
         <a class="button" href="mailto:contacto@nexusg.cl">Conversemos</a>
         <a class="labs-text-link" href="#problema">Ver cómo funciona</a>
