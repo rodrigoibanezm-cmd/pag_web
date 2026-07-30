@@ -39,10 +39,13 @@ export const labsPage = () => `
     </div>
   </section>
 
-  ${section('problema', 'El problema', 'La información creció. El tiempo para comprenderla, no.', `
-    <p>La operación produce más señales de las que una persona puede revisar entre reuniones, correos, reportes y sistemas.</p>
-    <p>El trabajo real es simple de formular y difícil de resolver:</p>
-    <blockquote>Necesito entender qué está pasando, dónde intervenir ahora y qué decisión tomar sin perder tiempo buscando información.</blockquote>
+  ${section('problema', 'El problema', 'La mayoría de las señales pueden esperar.', `
+    <p><strong>El problema es que no sabes cuáles no.</strong></p>
+    <p>Mientras revisas correos, reuniones, reportes y dashboards, las señales que realmente pueden afectar el negocio compiten por la misma atención que todo lo demás.</p>
+    <p>No falta información.</p>
+    <p>No faltan sistemas.</p>
+    <p><strong>Falta saber qué no puedes dejar pasar.</strong></p>
+    <blockquote>Necesito saber qué no puedo dejar pasar, por qué importa y dónde intervenir ahora.</blockquote>
   `)}
 
   ${section('que-es', 'Qué es NexusG', 'Una capacidad permanente de comprensión', `
@@ -165,16 +168,5 @@ export const labsPage = () => `
       <details><summary>¿Reemplaza al ERP, CRM o BI?</summary><p>No. Trabaja sobre ellos y agrega una capacidad de comprensión y decisión.</p></details>
     </div>
   `)}
-
-  <section class="labs-cta">
-    <div class="shell labs-cta-inner">
-      <p class="eyebrow">NexusG</p>
-      <h2>Comprender la operación antes de decidir.</h2>
-      <p>Conversemos sobre dónde esta capacidad podría aportar valor en tu empresa o en la de tus clientes.</p>
-      <a class="button" href="mailto:contacto@nexusg.cl">Conversemos</a>
-    </div>
-  </section>
 </main>
-
-<footer class="labs-footer"><div class="shell"><span>NexusG</span><span>Comprensión operativa para decisiones</span></div></footer>
 `
