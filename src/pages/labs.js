@@ -41,7 +41,7 @@ export const labsPage = () => `
 
   ${section('problema', 'El problema', 'La mayoría de las señales pueden esperar.', `
     <p><strong>El problema es que no sabes cuáles no.</strong></p>
-    <p>Mientras revisas correos, reuniones, reportes y dashboards, las señales que realmente pueden afectar el negocio compiten por la misma atención que todo lo demás.</p>
+    <p>Mientras revisas correos, reuniones, reportes y dashboards, las señales que realmente pueden afectar el negocio compiten por la misma atención que todo lo demás. Cuando una de ellas pasa inadvertida, el costo aparece después.</p>
     <p>No falta información.</p>
     <p>No faltan sistemas.</p>
     <p><strong>Falta saber qué no puedes dejar pasar.</strong></p>
