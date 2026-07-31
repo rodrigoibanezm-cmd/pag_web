@@ -76,6 +76,22 @@ export const labsPage = () => `
     <p>Ambas interfaces utilizan la misma comprensión construida por NexusG. PressureBoard concentra la atención en lo que requiere intervención. Workspace permite investigar, profundizar y preparar decisiones con evidencia.</p>
   `)}
 
+  ${section('comprension-personalizada', 'Comprensión personalizada', 'La comprensión no se construye para toda la empresa.', `
+    <p>La comprensión que necesita un gerente comercial no es la misma que necesita un planner, un jefe de operaciones o un responsable de postventa.</p>
+    <p>Por eso NexusG construye una comprensión distinta para cada usuario, enfocada en las decisiones que realmente le corresponde tomar.</p>
+    <p>No todos necesitan ver las mismas señales.</p>
+    <p>Necesitan comprender las que afectan su propio dominio de decisión.</p>
+    <blockquote>La empresa es una sola.<br>Las decisiones no.</blockquote>
+  `)}
+
+  ${section('adaptacion', 'Adaptación por descubrimiento', 'NexusG aprende de lo que ocurrió, no solo de lo que alguien recuerda.', `
+    <p>Al conectar las fuentes, una serie de motores analiza la historia real de la operación.</p>
+    <p>Cada motor descubre una parte del contexto —personas, relaciones, patrones, responsabilidades y formas de trabajo— y entrega sus resultados al siguiente.</p>
+    <p>Cuando la evidencia no permite resolver algo con suficiente certeza, NexusG hace preguntas específicas y cerradas para confirmarlo.</p>
+    <p>Así, la implementación no depende de entrevistas largas, de la memoria de una persona ni de configurar manualmente cada situación posible.</p>
+    <blockquote>Primero descubre.<br>Después pregunta solo lo necesario.</blockquote>
+  `)}
+
   ${section('situaciones', 'Situaciones, no alertas', 'NexusG reúne señales dispersas en una explicación operativa', `
     <div class="labs-comparison">
       <div><span>Eventos aislados</span><p>Propuesta antigua, correos sin respuesta, sin próxima actividad y cierre próximo.</p></div>
@@ -90,12 +106,6 @@ export const labsPage = () => `
       <article><b>3</b><h3>Prioriza</h3><p>Construye situaciones y determina cuáles requieren atención.</p></article>
       <article><b>4</b><h3>Decide</h3><p>Presenta respuestas y evidencia para actuar con criterio.</p></article>
     </div>
-  `)}
-
-  ${section('adaptacion', 'Adaptación automática', 'El sistema descubre primero y pregunta solo cuando hace falta', `
-    <p>Al conectar las fuentes, los motores del backend comienzan a analizar automáticamente la estructura de la operación, relacionar información, detectar patrones y actualizar un modelo operativo de la empresa.</p>
-    <p>Cuando la evidencia no permite resolver una hipótesis con suficiente certeza, NexusG presenta preguntas específicas y cerradas para validarla antes de continuar.</p>
-    <p>El proceso incluye comprobaciones parciales y una validación final antes de habilitar la capacidad. El usuario confirma o corrige resultados; no tiene que describir la empresa desde cero ni configurar manualmente cada caso de uso.</p>
   `)}
 
   ${section('casos', 'Casos de uso', 'Dónde puede aportar valor', `
