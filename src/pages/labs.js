@@ -86,11 +86,12 @@ export const labsPage = () => `
     <blockquote>La empresa es una sola.<br>Las decisiones no.</blockquote>
   `)}
 
-  ${section('adaptacion', 'Adaptación por descubrimiento', 'NexusG aprende de lo que ocurrió, no solo de lo que alguien recuerda.', `
+  ${section('adaptacion', 'Adaptación por descubrimiento', 'NexusG no necesita que alguien le explique cómo funciona la empresa. La descubre a partir de la evidencia que la empresa ya dejó en sus sistemas.', `
     <p>Al conectar las fuentes, una serie de motores analiza la historia real de la operación.</p>
     <p>Cada motor descubre una parte del contexto —personas, relaciones, patrones, responsabilidades y formas de trabajo— y entrega sus resultados al siguiente.</p>
     <p>Cuando la evidencia no permite resolver algo con suficiente certeza, NexusG hace preguntas específicas y cerradas para confirmarlo.</p>
     <p>Así, la implementación no depende de entrevistas largas, de la memoria de una persona ni de configurar manualmente cada situación posible.</p>
+    <p><strong>La implementación no consiste en enseñarle el negocio a NexusG. Consiste en permitir que lo descubra.</strong></p>
     <blockquote>Primero descubre.<br>Después pregunta solo lo necesario.</blockquote>
   `)}
 
@@ -177,8 +178,7 @@ export const labsPage = () => `
       <details><summary>¿Cómo se adapta NexusG a cada empresa?</summary><p>Los motores del backend analizan las fuentes conectadas y construyen automáticamente un modelo operativo. NexusG solo presenta preguntas específicas y cerradas cuando necesita validar una hipótesis o comprobar el resultado antes de habilitar la capacidad.</p></details>
       <details><summary>¿Dónde quedan los datos y los persistentes de Workspace?</summary><p>La configuración, el estado operativo, el modelo construido y los persistentes generados por Workspace pueden mantenerse en infraestructura controlada por el cliente. El conocimiento generado permanece como un activo del cliente.</p></details>
       <details><summary>¿Cómo se implementa y cuánto cuesta comenzar?</summary><p>La mayoría de los proyectos comienza con una única capacidad sobre una fuente existente. Las implementaciones iniciales parten desde USD 2.000 por capacidad y la operación continua desde USD 50 mensuales, según alcance y modalidad.</p></details>
-      <details><summary>¿Workspace es ChatGPT?</summary><p>No. Workspace puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p></details>
-      <details><summary>¿PressureBoard calcula o detecta situaciones?</summary><p>No. Las situaciones, reglas y cálculos se construyen en capacidades controladas del backend. PressureBoard las presenta.</p></details>
+      <details><summary>¿Workspace es ChatGPT?</summary><p>No. Workspace puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p></n      <details><summary>¿PressureBoard calcula o detecta situaciones?</summary><p>No. Las situaciones, reglas y cálculos se construyen en capacidades controladas del backend. PressureBoard las presenta.</p></details>
       <details><summary>¿Dónde ocurren los cálculos?</summary><p>En motores especializados del backend, utilizando las definiciones válidas del negocio.</p></details>
       <details><summary>¿Cómo se audita una respuesta?</summary><p>Revisando las fuentes, evidencia, capacidades ejecutadas, cálculos y reglas aplicadas.</p></details>
       <details><summary>¿Reemplaza al ERP, CRM o BI?</summary><p>No. Trabaja sobre ellos y agrega una capacidad de comprensión y decisión.</p></details>
