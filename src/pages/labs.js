@@ -30,7 +30,7 @@ export const labsPage = () => `
   <section class="labs-hero">
     <div class="shell labs-hero-inner">
       <p class="eyebrow">Comprensión operativa</p>
-      <h1>La empresa genera más señales de las que una persona puede procesar</h1>
+      <h1>La empresa genera más señales de las que una persona puede atender</h1>
       <p class="labs-lead">Algunas son demasiado caras como para dejarlas pasar<br>NexusG las descubre antes de que cuesten más</p>
       <div class="labs-hero-actions">
         <a class="button" href="mailto:contacto@nexusg.cl">Conversemos</a>
@@ -49,6 +49,7 @@ export const labsPage = () => `
   `)}
 
   ${section('que-es', 'Qué es NexusG', 'Una capacidad permanente de comprensión', `
+    <p><strong>Plataforma de comprensión operativa que conecta tus sistemas y descubre las situaciones que requieren intervención.</strong></p>
     <p>NexusG conecta evidencia distribuida, aplica reglas y cálculos controlados y mantiene contexto sobre la operación.</p>
     <div class="labs-pill-row">
       <span>Relaciona evidencia</span><span>Detecta situaciones</span><span>Explica causas</span><span>Apoya decisiones</span>
