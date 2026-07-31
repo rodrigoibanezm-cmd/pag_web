@@ -79,9 +79,10 @@ export const labsPage = () => `
 
   ${section('comprension-personalizada', 'Comprensión personalizada', 'La comprensión no se construye para toda la empresa.', `
     <p>La comprensión que necesita un gerente comercial no es la misma que necesita un planner, un jefe de operaciones o un responsable de postventa.</p>
-    <p>Por eso NexusG construye una comprensión distinta para cada usuario, enfocada en las decisiones que realmente le corresponde tomar.</p>
-    <p>No todos necesitan ver las mismas señales.</p>
-    <p>Necesitan comprender las que afectan su propio dominio de decisión.</p>
+    <p>Por eso NexusG construye una comprensión específica para cada usuario, enfocada en su propio dominio de decisión.</p>
+    <p><strong>Cada usuario recibe un PressureBoard distinto, construido a partir de las señales, prioridades y decisiones que le corresponde gestionar.</strong></p>
+    <p>No todos necesitan comprender lo mismo.</p>
+    <p>Necesitan comprender aquello sobre lo que deben decidir.</p>
     <blockquote>La empresa es una sola.<br>Las decisiones no.</blockquote>
   `)}
 
