@@ -32,10 +32,26 @@ const normalizeNavigation = () => {
   }
 }
 
+const enableExclusiveFaq = () => {
+  const faq = document.querySelector('.labs-faq')
+  if (!faq) return
+
+  faq.querySelectorAll('details').forEach(item => {
+    item.addEventListener('toggle', () => {
+      if (!item.open) return
+
+      faq.querySelectorAll('details[open]').forEach(openItem => {
+        if (openItem !== item) openItem.removeAttribute('open')
+      })
+    })
+  })
+}
+
 const mount = () => {
   document.title = pageTitle(location.pathname)
   document.querySelector('#app').innerHTML = renderRoute(location.pathname)
   normalizeNavigation()
+  enableExclusiveFaq()
   window.scrollTo(0, 0)
 }
 
