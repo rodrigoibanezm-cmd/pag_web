@@ -56,20 +56,24 @@ export const labsPage = () => `
     <p>No reemplaza los sistemas existentes. Agrega una nueva capacidad sobre ellos.</p>
   `)}
 
-  ${section('producto', 'Qué entrega', 'Dos interfaces sobre la misma comprensión', `
+  ${section('producto', 'Qué entrega', 'La misma comprensión. Distintas decisiones.', `
+    <p>La misma comprensión puede utilizarse de formas distintas según las decisiones que cada persona debe tomar.</p>
+    <p>Por eso NexusG ofrece dos interfaces complementarias.</p>
     <div class="labs-cards">
       <article class="labs-card">
         <p class="labs-card-kicker">Atención</p>
         <h3>PressureBoard</h3>
-        <p>Presenta las situaciones construidas por NexusG, explica por qué importan ahora y muestra qué acción conviene evaluar.</p>
+        <p><strong>Para quienes deben decidir dónde intervenir.</strong></p>
+        <p>Prioriza las señales que no puedes dejar pasar, explica por qué requieren atención y muestra dónde conviene actuar primero.</p>
       </article>
       <article class="labs-card">
         <p class="labs-card-kicker">Investigación</p>
         <h3>Workspace</h3>
-        <p>Es la interfaz conversacional para investigar una situación y hacer preguntas sobre el negocio utilizando evidencia verificable.</p>
+        <p><strong>Para quienes investigan, analizan y preparan decisiones.</strong></p>
+        <p>Permite explorar evidencia, reconstruir contexto y responder preguntas complejas utilizando lenguaje natural y resultados verificables.</p>
       </article>
     </div>
-    <p>PressureBoard no detecta ni calcula: presenta el resultado construido por el motor. Puede utilizarse desde una interfaz web o integrarse en otras aplicaciones. Workspace no es ChatGPT: puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p>
+    <p>Ambas interfaces utilizan la misma comprensión construida por NexusG. PressureBoard concentra la atención en lo que requiere intervención. Workspace permite investigar, profundizar y preparar decisiones con evidencia.</p>
   `)}
 
   ${section('situaciones', 'Situaciones, no alertas', 'NexusG reúne señales dispersas en una explicación operativa', `
