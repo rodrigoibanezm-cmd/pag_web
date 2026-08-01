@@ -9,6 +9,21 @@
       "source": "/labs",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/como",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/arquitectura",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/que",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [
