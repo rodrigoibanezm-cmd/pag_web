@@ -6,14 +6,8 @@ const routes = [
   {
     path: '/',
     file: 'index.html',
-    title: 'NexusG — Qué',
-    description: 'NexusG trabaja sobre la información que ya existe en una empresa para responder preguntas complejas y detectar situaciones que merecen atención.'
-  },
-  {
-    path: '/como',
-    file: 'como/index.html',
-    title: 'NexusG — Cómo',
-    description: 'Conoce cómo NexusG conecta fuentes existentes, comprende su contexto y prepara evidencia y recomendaciones útiles.'
+    title: 'NexusG — Comprensión operativa',
+    description: 'NexusG conecta los sistemas existentes de una empresa y descubre las situaciones que requieren intervención.'
   },
   {
     path: '/partners',
@@ -50,12 +44,6 @@ const routes = [
     file: 'ejemplos/clientes/index.html',
     title: 'NexusG — Ejemplo experiencia de clientes',
     description: 'Ejemplo ilustrativo de cómo NexusG relaciona encuestas, reseñas, reclamos y comentarios para detectar patrones de deterioro en la experiencia de clientes.'
-  },
-  {
-    path: '/labs',
-    file: 'labs/index.html',
-    title: 'NexusG — Comprensión operativa',
-    description: 'NexusG incorpora una capacidad permanente para comprender la operación y convertir esa comprensión en decisiones.'
   }
 ]
 
