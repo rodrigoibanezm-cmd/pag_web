@@ -25,7 +25,7 @@ ${partnerNav()}
   </div></section>
 
   <section id="oportunidad"><div class="shell partner-split">
-    <p class="eyebrow">La oportunidad</p><div><h2>La implementación termina. La necesidad de entender la empresa no.</h2><p>Los sistemas registran gran parte de lo que ocurre, pero esa información suele quedar repartida entre plataformas, reportes y conversaciones. La integración resuelve el acceso. No necesariamente construye comprensión.</p><p>NexusG permite volver sobre clientes ya implementados con una capacidad adicional, sin reemplazar los sistemas que ya operan ni iniciar una transformación completa desde cero.</p></div>
+    <p class="eyebrow">La oportunidad</p><div><h2>La implementación termina. La necesidad de comprender la operación no.</h2><p>Los sistemas registran gran parte de lo que ocurre, pero esa información suele quedar repartida entre plataformas, reportes y conversaciones. La integración resuelve el acceso. No necesariamente construye comprensión operativa.</p><p>NexusG permite volver sobre clientes ya implementados con una capacidad adicional, sin reemplazar los sistemas que ya operan ni iniciar una transformación completa desde cero.</p></div>
   </div></section>
 
   <section id="oferta" class="partner-paper"><div class="shell">
@@ -58,7 +58,7 @@ ${partnerNav()}
       ${signal('2 · Evaluación','NexusG revisa las fuentes disponibles, el contexto y la factibilidad para determinar si esa situación puede resolverse con la información existente.')}
       ${signal('3 · Alcance','Se define la primera capacidad: qué fuentes conectar, qué preguntas responder y qué situaciones construir.')}
       ${signal('4 · Implementación','NexusG implementa la capacidad y el partner acompaña la relación con el cliente.')}
-      ${signal('5 · Evolución','A partir de los resultados, la capacidad puede extenderse a nuevas fuentes, nuevas preguntas y nuevos dominios.')}
+      ${signal('5 · Evolución','A partir de los resultados, la capacidad puede extenderse a nuevas fuentes, nuevas preguntas y nuevos dominios de decisión.')}
     </div>
   </div></section>
 
