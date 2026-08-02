@@ -69,6 +69,12 @@ for (const file of ['robots.txt', 'sitemap.xml', 'llms.txt']) {
   }
 }
 
+try {
+  await cp(new URL('../public/reference.txt', import.meta.url), new URL('../dist/reference.txt', import.meta.url))
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error
+}
+
 for (const route of routes) {
   const url = `${origin}${route.path}`
   const metadata = [
