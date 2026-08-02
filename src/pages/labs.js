@@ -52,7 +52,7 @@ export const labsPage = () => `
     <p><strong>Plataforma de comprensión operativa que conecta tus sistemas y descubre las situaciones que requieren intervención.</strong></p>
     <p>NexusG conecta evidencia distribuida, aplica reglas y cálculos controlados y mantiene contexto sobre la operación.</p>
     <div class="labs-pill-row">
-      <span>Relaciona evidencia</span><span>Detecta situaciones</span><span>Explica causas</span><span>Apoya decisiones</span>
+      <span>Relaciona evidencia</span><span>Construye situaciones</span><span>Explica causas</span><span>Apoya decisiones</span>
     </div>
     <p>No reemplaza los sistemas existentes. Agrega una nueva capacidad sobre ellos.</p>
   `)}
@@ -65,7 +65,7 @@ export const labsPage = () => `
         <p class="labs-card-kicker">Atención</p>
         <h3>PressureBoard</h3>
         <p><strong>Para quienes deben decidir dónde intervenir.</strong></p>
-        <p>Prioriza las señales que no puedes dejar pasar, explica por qué requieren atención y muestra dónde conviene actuar primero.</p>
+        <p>Prioriza las situaciones que no puedes dejar pasar, explica por qué requieren atención y muestra dónde conviene actuar primero.</p>
       </article>
       <article class="labs-card">
         <p class="labs-card-kicker">Investigación</p>
@@ -142,7 +142,7 @@ export const labsPage = () => `
   `)}
 
   ${section('entregable', 'El entregable', 'Una capacidad operativa implementada', `
-    <p>Incluye conexiones, capacidades de consulta y cálculo, reglas del negocio, detección de situaciones, evidencia, trazabilidad y acceso mediante Workspace, PressureBoard o ambos.</p>
+    <p>Incluye conexiones, capacidades de consulta y cálculo, reglas del negocio, construcción de situaciones, evidencia, trazabilidad y acceso mediante Workspace, PressureBoard o ambos.</p>
     <p>No es una asesoría ni una colección de reportes.</p>
   `)}
 
