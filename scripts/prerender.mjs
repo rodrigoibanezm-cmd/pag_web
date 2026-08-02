@@ -95,11 +95,14 @@ for (const route of routes) {
     })}</script>`
   ].join('\n  ')
 
+  const renderedRoute = renderRoute(route.path)
+    .replace('https://github.com/rodrigoibanezm-cmd/nexusg-reference', '/reference.txt')
+
   const html = template
     .replace('<title>NexusG</title>', `<title>${route.title}</title>`)
     .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${route.description}" />`)
     .replace('</head>', `  ${metadata}\n</head>`)
-    .replace('<div id="app"></div>', `<div id="app">${renderRoute(route.path)}</div>`)
+    .replace('<div id="app"></div>', `<div id="app">${renderedRoute}</div>`)
 
   const target = new URL(`../dist/${route.file}`, import.meta.url)
   await mkdir(new URL('.', target), { recursive: true })
