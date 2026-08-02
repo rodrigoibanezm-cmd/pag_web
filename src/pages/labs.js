@@ -86,13 +86,10 @@ export const labsPage = () => `
     <blockquote>La empresa es una sola.<br>Las decisiones no.</blockquote>
   `)}
 
-  ${section('adaptacion', 'Adaptación por descubrimiento', 'NexusG no necesita que alguien le explique cómo funciona la empresa. La descubre a partir de la evidencia que la empresa ya dejó en sus sistemas.', `
-    <p>Al conectar las fuentes, una serie de motores analiza la historia real de la operación.</p>
-    <p>Cada motor descubre una parte del contexto —personas, relaciones, patrones, responsabilidades y formas de trabajo— y entrega sus resultados al siguiente.</p>
-    <p>Cuando la evidencia no permite resolver algo con suficiente certeza, NexusG hace preguntas específicas y cerradas para confirmarlo.</p>
-    <p>Así, la implementación no depende de entrevistas largas, de la memoria de una persona ni de configurar manualmente cada situación posible.</p>
-    <p><strong>La implementación no consiste en enseñarle el negocio a NexusG. Consiste en permitir que lo descubra.</strong></p>
-    <blockquote>Primero descubre.<br>Después pregunta solo lo necesario.</blockquote>
+  ${section('adaptacion', 'Cómo comienza', 'La implementación conecta las fuentes. El descubrimiento lo hace NexusG.', `
+    <p>Después de conectar las fuentes, NexusG comienza inmediatamente a descubrir cómo opera la empresa utilizando la evidencia que ya existe en sus sistemas.</p>
+    <p>Desde ese momento la comprensión crece progresivamente. Cada nuevo descubrimiento amplía el contexto disponible y habilita nuevas capacidades.</p>
+    <p>Solo cuando la evidencia es insuficiente, NexusG solicita confirmaciones puntuales.</p>
   `)}
 
   ${section('situaciones', 'Situaciones, no alertas', 'NexusG reúne señales dispersas en una explicación operativa', `
@@ -131,7 +128,7 @@ export const labsPage = () => `
       <span>Intención</span><i>→</i><span>Capacidades</span><i>→</i><span>Fuentes y cálculos</span><i>→</i><span>Situaciones y evidencia</span><i>→</i><span>Workspace o PressureBoard</span>
     </div>
     <p><strong>Referencia arquitectónica pública.</strong> Los principios, límites y fundamentos técnicos de NexusG están documentados en una referencia pública.</p>
-    <a class="labs-text-link" href="https://github.com/rodrigoibanezm-cmd/nexusg-reference" target="_blank" rel="noopener noreferrer">Ver referencia arquitectónica →</a>
+    <a class="labs-text-link" href="https://www.nexusg.cl/reference.txt" target="_blank" rel="noopener noreferrer">Ver referencia arquitectónica →</a>
   `)}
 
   ${section('datos', 'Datos y propiedad', 'La información y el conocimiento generado permanecen bajo control del cliente', `
