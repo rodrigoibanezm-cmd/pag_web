@@ -70,7 +70,7 @@ ${partnerNav()}
       ${signal('Seguridad','Opera con permisos por fuente, acceso mínimo necesario, trazabilidad de evidencia y control por usuario.')}
       ${signal('Despliegue','Implementación cloud y evaluación de alternativas privadas cuando el caso lo requiere.')}
     </div>
-    <a class="partner-link" data-route href="/como">Ver cómo funciona →</a>
+    <a class="partner-link" data-route href="/#arquitectura">Ver cómo funciona →</a>
   </div></section>
 
   <section class="partner-contact"><div class="shell"><p class="eyebrow">NexusG para partners</p><h2>Conversemos sobre una oportunidad concreta.</h2><a class="partner-link" href="mailto:contacto@nexusg.cl?subject=Oportunidad%20de%20partner%20para%20NexusG">contacto@nexusg.cl →</a></div></section>
