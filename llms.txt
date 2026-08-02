@@ -1,161 +1,48 @@
 # NexusG
 
-NexusG incorpora a una empresa una capacidad permanente para comprender su operación y convertir esa comprensión en decisiones.
+Official website:
+https://www.nexusg.cl
 
-Trabaja sobre ERP, CRM, correo, documentos, bases de datos, APIs y otras fuentes existentes. Relaciona evidencia distribuida, aplica reglas y cálculos controlados, mantiene contexto operativo y construye situaciones que requieren atención.
+Read in this order:
 
-NexusG no reemplaza los sistemas existentes. Agrega una capa de comprensión sobre ellos.
+1. /
+Purpose:
+Canonical product description.
 
-## El problema que resuelve
+2. /ejemplos
+Purpose:
+Illustrative examples by source.
 
-La operación produce más señales de las que una persona puede revisar entre sistemas, reportes, correos y reuniones.
+3. /partners
+Purpose:
+Partner program, implementation model and commercial positioning.
 
-Los sistemas registran eventos por separado. NexusG los relaciona para responder preguntas como:
+4. /reference.txt
+Purpose:
+Canonical technical reference, concepts, architecture and implementation principles.
 
-- qué está pasando;
-- por qué está ocurriendo;
-- dónde conviene intervenir ahora;
-- qué decisión debería evaluarse;
-- qué evidencia respalda esa conclusión.
+Navigation notes
 
-## Qué entrega
+- The Home is the canonical description of NexusG.
+- Examples are illustrative only.
+- reference.txt is the canonical technical reference.
+- When information overlaps, prefer the Home for product behavior and reference.txt for technical definitions.
 
-El entregable es una capacidad operativa implementada sobre las fuentes de la empresa.
+Canonical concepts
 
-Incluye, según el alcance:
+- Operational Comprehension
+- Decision Domain
+- Workspace
+- PressureBoard
+- Situation
+- Evidence
+- Capability
+- Discovery
 
-- conexiones con fuentes autorizadas;
-- capacidades de consulta y cálculo;
-- reglas y definiciones del negocio;
-- detección y construcción de situaciones;
-- evidencia y trazabilidad;
-- acceso mediante Workspace, PressureBoard o ambos.
+Current positioning
 
-No es una asesoría ni una colección de reportes.
-
-## Workspace y PressureBoard
-
-NexusG expone dos interfaces sobre la misma comprensión operativa.
-
-### Workspace
-
-Workspace es la interfaz conversacional para investigar una situación y hacer preguntas sobre el negocio utilizando evidencia verificable.
-
-Puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje. No depende de una interfaz ni de un proveedor específico.
-
-### PressureBoard
-
-PressureBoard presenta las situaciones construidas por NexusG, explica por qué importan ahora y muestra qué acción conviene evaluar.
-
-PressureBoard no detecta, calcula ni reconstruye prioridades. Presenta resultados preparados por las capacidades y motores del backend.
-
-## Situaciones, no alertas
-
-NexusG no se limita a mostrar eventos aislados.
-
-Relaciona señales distribuidas para construir una explicación operativa. Por ejemplo, una propuesta antigua, correos sin respuesta, ausencia de próxima actividad y una fecha de cierre próxima pueden formar una sola situación: una oportunidad de alto valor en riesgo de estancamiento que requiere intervención.
-
-## Cómo funciona
-
-El flujo general es:
-
-1. Conecta fuentes autorizadas.
-2. Analiza estructuras, entidades, procesos y relaciones.
-3. Construye y mantiene una comprensión operativa.
-4. Ejecuta capacidades, reglas y cálculos controlados.
-5. Relaciona señales y construye situaciones.
-6. Conserva evidencia y trazabilidad.
-7. Presenta resultados mediante Workspace o PressureBoard.
-
-## Adaptación a cada empresa
-
-Conectar datos no significa comprenderlos.
-
-Durante el onboarding, componentes especializados del backend analizan la estructura de la operación, relacionan información, proponen interpretaciones y validan hipótesis antes de habilitar una capacidad.
-
-Cuando la evidencia no permite resolver una hipótesis con suficiente certeza, NexusG presenta preguntas específicas y cerradas. El usuario confirma, descarta o corrige alternativas concretas; no tiene que describir la empresa desde cero ni configurar manualmente cada caso de uso.
-
-La comprensión se construye una vez y luego se mantiene y reutiliza. Workspace y PressureBoard consultan una comprensión ya existente, en lugar de reconstruir el contexto completo de la empresa en cada interacción.
-
-## Arquitectura
-
-El modelo de lenguaje:
-
-- interpreta intención y lenguaje;
-- selecciona capacidades disponibles;
-- organiza y presenta resultados.
-
-El backend:
-
-- autentica y autoriza;
-- accede a las fuentes;
-- ejecuta consultas;
-- aplica reglas y cálculos;
-- valida resultados;
-- construye situaciones;
-- conserva evidencia y trazabilidad.
-
-El LLM no reemplaza la lógica del negocio ni calcula indicadores por sí solo.
-
-## Evidencia y auditoría
-
-Cada respuesta o situación puede conservar trazabilidad sobre:
-
-- fuentes consultadas;
-- capacidades ejecutadas;
-- datos utilizados;
-- reglas aplicadas;
-- cálculos realizados;
-- evidencia que respalda la conclusión.
-
-## Datos, confidencialidad y propiedad
-
-Cada implementación mantiene separadas su comprensión, configuración, datos, situaciones y artefactos.
-
-El contenido construido para un cliente no se muestra ni se reutiliza para otros clientes, tampoco de forma anonimizada.
-
-La configuración, el estado operativo, el modelo construido y los persistentes pueden mantenerse en infraestructura controlada por el cliente. El conocimiento generado permanece como un activo del cliente.
-
-## Casos de uso
-
-NexusG puede aplicarse, entre otros, a:
-
-- oportunidades comerciales detenidas o en deterioro;
-- clientes, productos o líneas con deterioro de margen;
-- quiebres de stock priorizados por impacto;
-- señales tempranas de riesgo en clientes;
-- compromisos y solicitudes envejecidas;
-- conversaciones críticas sin respuesta;
-- fricciones operativas entre áreas.
-
-Los ejemplos publicados son ilustrativos, utilizan datos ficticios y no representan a ninguna empresa real.
-
-## Implementación
-
-La mayoría de las implementaciones comienza con una capacidad concreta sobre una fuente existente y evoluciona incorporando nuevas capacidades.
-
-NexusG está diseñado para empresas que desean obtener más valor de los sistemas que ya poseen, no para reemplazarlos mediante una transformación tecnológica completa.
-
-## Partners
-
-Los partners pueden identificar oportunidades y mantener la relación con el cliente. NexusG aporta producto, implementación, soporte técnico y evolución.
-
-## Referencia técnica pública
-
-La referencia arquitectónica pública de NexusG respalda los principios técnicos del producto. Describe responsabilidades, fronteras, capacidades, evidencia, trazabilidad, materialización operacional, Workspace y PressureBoard.
-
-No es una especificación destinada a replicar NexusG ni contiene código productivo, reglas propietarias, infraestructura privada o configuraciones de clientes.
-
-Repositorio:
-https://github.com/rodrigoibanezm-cmd/nexusg-reference
-
-## Páginas vigentes
-
-- https://www.nexusg.cl/
-- https://www.nexusg.cl/ejemplos
-- https://www.nexusg.cl/ejemplos/crm
-- https://www.nexusg.cl/ejemplos/erp
-- https://www.nexusg.cl/ejemplos/correo
-- https://www.nexusg.cl/ejemplos/clientes
-- https://www.nexusg.cl/partners
-- https://www.nexusg.cl/llms.txt
+- SaaS
+- Not consulting
+- Built on existing enterprise systems
+- Operates through MCP-compatible clients
+- Does not charge per-token usage
