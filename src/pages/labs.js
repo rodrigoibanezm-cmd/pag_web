@@ -48,7 +48,7 @@ export const labsPage = () => `
     <blockquote>Necesito saber qué no puedo dejar pasar, por qué importa y dónde intervenir ahora.</blockquote>
   `)}
 
-  ${section('que-es', 'Qué es NexusG', 'Una capacidad permanente de comprensión', `
+  ${section('que-es', 'Qué es NexusG', 'Una capacidad operativa permanente', `
     <p><strong>Plataforma de comprensión operativa que conecta tus sistemas y descubre las situaciones que requieren intervención.</strong></p>
     <p>NexusG conecta evidencia distribuida, aplica reglas y cálculos controlados y mantiene contexto sobre la operación.</p>
     <div class="labs-pill-row">
@@ -58,7 +58,7 @@ export const labsPage = () => `
   `)}
 
   ${section('producto', 'Qué entrega', 'La misma comprensión. Distintas decisiones.', `
-    <p>La misma comprensión puede utilizarse de formas distintas según las decisiones que cada persona debe tomar.</p>
+    <p>El mismo contexto operativo puede utilizarse de formas distintas según las decisiones que cada persona debe tomar.</p>
     <p>Por eso NexusG ofrece dos interfaces complementarias.</p>
     <div class="labs-cards">
       <article class="labs-card">
@@ -74,7 +74,7 @@ export const labsPage = () => `
         <p>Permite explorar evidencia, reconstruir contexto y responder preguntas complejas utilizando lenguaje natural y resultados verificables.</p>
       </article>
     </div>
-    <p>Ambas interfaces utilizan la misma comprensión construida por NexusG. PressureBoard concentra la atención en lo que requiere intervención. Workspace permite investigar, profundizar y preparar decisiones con evidencia.</p>
+    <p>Ambas interfaces trabajan sobre la comprensión operativa construida por NexusG. PressureBoard concentra la atención en lo que requiere intervención. Workspace permite investigar, profundizar y preparar decisiones con evidencia.</p>
   `)}
 
   ${section('comprension-personalizada', 'Comprensión personalizada', 'La comprensión no se construye para toda la empresa.', `
@@ -125,12 +125,12 @@ export const labsPage = () => `
 
   ${section('arquitectura', 'Arquitectura', 'Lenguaje natural, ejecución controlada', `
     <p>El modelo de lenguaje interpreta la intención, selecciona capacidades y presenta resultados. Workspace permite esa interacción desde clientes compatibles con MCP; no depende de una interfaz ni de un proveedor específico.</p>
-    <p>Las consultas, reglas, cálculos, validaciones y construcción de situaciones ocurren en componentes controlados del backend. PressureBoard solo presenta esas situaciones y su evidencia.</p>
+    <p>Las consultas, reglas, cálculos, validaciones y construcción de situaciones ocurren en componentes controlados del backend. PressureBoard presenta las situaciones construidas por el backend y la evidencia asociada.</p>
     <p>Cada respuesta conserva trazabilidad sobre las capacidades ejecutadas, las fuentes consultadas y los cálculos aplicados.</p>
     <div class="labs-architecture-strip">
       <span>Intención</span><i>→</i><span>Capacidades</span><i>→</i><span>Fuentes y cálculos</span><i>→</i><span>Situaciones y evidencia</span><i>→</i><span>Workspace o PressureBoard</span>
     </div>
-    <p><strong>Referencia arquitectónica pública.</strong> Los principios, límites, contratos conceptuales y fundamentos de diseño que respaldan estas afirmaciones están documentados en una referencia técnica pública.</p>
+    <p><strong>Referencia arquitectónica pública.</strong> Los principios, límites y fundamentos técnicos de NexusG están documentados en una referencia pública.</p>
     <a class="labs-text-link" href="https://github.com/rodrigoibanezm-cmd/nexusg-reference" target="_blank" rel="noopener noreferrer">Ver referencia arquitectónica →</a>
   `)}
 
@@ -138,7 +138,6 @@ export const labsPage = () => `
     <p>NexusG trabaja sobre las fuentes que la empresa ya utiliza y consulta únicamente la información necesaria para cada operación, con permisos definidos por fuente y por usuario.</p>
     <p>La configuración, el estado operativo, el modelo construido y los persistentes generados por Workspace pueden mantenerse en infraestructura controlada por el cliente.</p>
     <p>Así, no solo los datos originales, sino también el conocimiento y los artefactos generados durante el uso de NexusG permanecen como activos del cliente.</p>
-    <p>Cada respuesta conserva trazabilidad sobre las fuentes consultadas, los motores ejecutados, las reglas aplicadas y los cálculos realizados.</p>
   `)}
 
   ${section('entregable', 'El entregable', 'Una capacidad operativa implementada', `
