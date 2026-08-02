@@ -7,10 +7,10 @@ const routeDefinitions = [
   { paths: ['', '/'], title: 'NexusG — Comprensión operativa', render: labsPage },
   { paths: ['/partners', '/partners/'], title: 'NexusG — Partners', render: partnersPage },
   { paths: ['/ejemplos', '/ejemplos/'], title: 'NexusG — Ejemplos', render: ejemplosIndexPage },
-  { paths: ['/ejemplos/crm', '/ejemplos/crm/'], title: 'NexusG — Ejemplos', render: ejemplosPage },
-  { paths: ['/ejemplos/erp', '/ejemplos/erp/'], title: 'NexusG — Ejemplos', render: ejemplosErpPage },
-  { paths: ['/ejemplos/correo', '/ejemplos/correo/'], title: 'NexusG — Ejemplos', render: ejemplosCorreoPage },
-  { paths: ['/ejemplos/clientes', '/ejemplos/clientes/'], title: 'NexusG — Ejemplos', render: ejemplosClientesPage }
+  { paths: ['/ejemplos/crm', '/ejemplos/crm/'], title: 'NexusG — Ejemplo CRM', render: ejemplosPage },
+  { paths: ['/ejemplos/erp', '/ejemplos/erp/'], title: 'NexusG — Ejemplo ERP y margen', render: ejemplosErpPage },
+  { paths: ['/ejemplos/correo', '/ejemplos/correo/'], title: 'NexusG — Ejemplo operación y correo', render: ejemplosCorreoPage },
+  { paths: ['/ejemplos/clientes', '/ejemplos/clientes/'], title: 'NexusG — Ejemplo experiencia de clientes', render: ejemplosClientesPage }
 ]
 
 export const getRoute = pathname => routeDefinitions.find(route => route.paths.includes(pathname)) ?? null
