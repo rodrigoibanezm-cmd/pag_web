@@ -45,12 +45,24 @@ const enableExclusiveFaq = () => {
   })
 }
 
+const restoreScrollPosition = () => {
+  if (!location.hash) {
+    window.scrollTo(0, 0)
+    return
+  }
+
+  const targetId = decodeURIComponent(location.hash.slice(1))
+  requestAnimationFrame(() => {
+    document.getElementById(targetId)?.scrollIntoView()
+  })
+}
+
 const mount = () => {
   document.title = pageTitle(location.pathname)
   document.querySelector('#app').innerHTML = renderRoute(location.pathname)
   normalizeNavigation()
   enableExclusiveFaq()
-  window.scrollTo(0, 0)
+  restoreScrollPosition()
 }
 
 window.addEventListener('popstate', mount)
