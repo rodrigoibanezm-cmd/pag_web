@@ -1,13 +1,22 @@
 import { partnersPage } from './pages/partners.js'
 import { labsPage } from './pages/labs.js'
+import { notFoundPage } from './pages/not-found.js'
 import { ejemplosIndexPage, ejemplosPage, ejemplosErpPage, ejemplosCorreoPage, ejemplosClientesPage } from './pages/ejemplos.js'
 
-export const renderRoute = pathname => {
-  if (pathname === '/partners' || pathname === '/partners/') return partnersPage()
-  if (pathname === '/ejemplos' || pathname === '/ejemplos/') return ejemplosIndexPage()
-  if (pathname === '/ejemplos/crm' || pathname === '/ejemplos/crm/') return ejemplosPage()
-  if (pathname === '/ejemplos/erp' || pathname === '/ejemplos/erp/') return ejemplosErpPage()
-  if (pathname === '/ejemplos/correo' || pathname === '/ejemplos/correo/') return ejemplosCorreoPage()
-  if (pathname === '/ejemplos/clientes' || pathname === '/ejemplos/clientes/') return ejemplosClientesPage()
-  return labsPage()
-}
+const routeDefinitions = [
+  { paths: ['', '/'], title: 'NexusG — Comprensión operativa', render: labsPage },
+  { paths: ['/partners', '/partners/'], title: 'NexusG — Partners', render: partnersPage },
+  { paths: ['/ejemplos', '/ejemplos/'], title: 'NexusG — Ejemplos', render: ejemplosIndexPage },
+  { paths: ['/ejemplos/crm', '/ejemplos/crm/'], title: 'NexusG — Ejemplos', render: ejemplosPage },
+  { paths: ['/ejemplos/erp', '/ejemplos/erp/'], title: 'NexusG — Ejemplos', render: ejemplosErpPage },
+  { paths: ['/ejemplos/correo', '/ejemplos/correo/'], title: 'NexusG — Ejemplos', render: ejemplosCorreoPage },
+  { paths: ['/ejemplos/clientes', '/ejemplos/clientes/'], title: 'NexusG — Ejemplos', render: ejemplosClientesPage }
+]
+
+export const getRoute = pathname => routeDefinitions.find(route => route.paths.includes(pathname)) ?? null
+
+export const isKnownRoute = pathname => Boolean(getRoute(pathname))
+
+export const pageTitle = pathname => getRoute(pathname)?.title ?? 'NexusG — Página no encontrada'
+
+export const renderRoute = pathname => getRoute(pathname)?.render() ?? notFoundPage()
