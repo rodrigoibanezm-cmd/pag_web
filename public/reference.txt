@@ -1,0 +1,645 @@
+NEXUSG REFERENCE — REFERENCIA TÉCNICA CONSOLIDADA
+
+Fuente canónica: https://github.com/rodrigoibanezm-cmd/nexusg-reference
+
+Este documento consolida la referencia arquitectónica pública de NexusG en un único archivo de texto para lectura por LLM.
+No contiene código productivo, secretos, configuración de clientes, thresholds, estado actual, roadmap, deuda técnica ni detalles de despliegue.
+
+======================================================================
+README.md
+======================================================================
+
+# NexusG Reference
+
+Referencia arquitectónica pública de NexusG.
+
+Este repositorio describe conceptos estables de la plataforma: responsabilidades, contratos, flujos, límites, evidencia, trazabilidad, materialización operacional, seguridad y extensibilidad.
+
+## Qué es NexusG
+
+NexusG es una capa de comprensión operacional entre los sistemas de una organización y las personas que deben decidir.
+
+Integra fuentes estructuradas y no estructuradas, normaliza información, ejecuta capacidades controladas, conserva evidencia y expone dos interfaces principales:
+
+- Workspace para investigar preguntas y situaciones con profundidad.
+- PressureBoard para priorizar las señales que requieren atención.
+
+## Flujo general
+
+Fuentes autorizadas
+→ integración y normalización
+→ capacidades y motores
+→ interpretación semántica controlada
+→ cálculo y reglas versionadas
+→ evidencia y trazabilidad
+→ señales operacionales
+→ Workspace / PressureBoard
+
+## Principios
+
+- El LLM interpreta lenguaje y contexto; no reemplaza el cálculo controlado.
+- Los motores ejecutan reglas determinísticas y políticas formalizadas.
+- Toda afirmación relevante debe poder vincularse con evidencia.
+- Las fuentes no estructuradas se investigan mediante recuperación progresiva.
+- Las señales tienen identidad estable, estado y trazabilidad.
+- La preparación operacional ocurre antes del consumo runtime cuando corresponde.
+- Las interfaces no reconstruyen inteligencia que ya fue calculada.
+- La identidad, el tenant y la autorización son conceptos separados.
+- REST, MCP u otros canales son transportes sobre las mismas capacidades.
+
+======================================================================
+docs/00-overview.md
+======================================================================
+
+# Visión general
+
+## Propósito
+
+NexusG transforma información operacional dispersa en comprensión utilizable, evidencia trazable y señales accionables.
+
+No reemplaza los sistemas de origen. Opera sobre ellos mediante integraciones autorizadas y capacidades formales.
+
+## Arquitectura general
+
+Fuentes estructuradas y no estructuradas
+→ integración autorizada
+→ normalización
+→ capacidades y motores
+→ interpretación semántica
+→ cálculo controlado y políticas
+→ evidencia y trazabilidad
+→ señales operacionales
+→ Workspace / PressureBoard
+
+## Componentes principales
+
+### Integración
+Conecta fuentes autorizadas y administra credenciales delegadas sin exponerlas al LLM ni a las interfaces.
+
+### Normalización
+Convierte datos heterogéneos en representaciones intermedias consistentes: entidades, métricas, documentos, eventos y evidencia.
+
+### Capacidades
+Expone operaciones formales y acotadas. Una capacidad define qué puede pedirse, qué parámetros acepta y qué devuelve.
+
+### Motores
+Ejecutan consultas, agregaciones, reglas y políticas controladas. No dependen de una narrativa libre para producir resultados.
+
+### Capa semántica
+Interpreta lenguaje, clasifica contenido y genera narrativa dentro de contratos explícitos.
+
+### Persistencia y materialización
+Conserva memoria operacional, evidencia, ejecuciones y señales. Cuando corresponde, prepara vistas antes del consumo runtime.
+
+### Workspace
+Permite investigar libremente o profundizar una señal existente.
+
+### PressureBoard
+Muestra un conjunto reducido de situaciones que requieren atención y explica por qué importan.
+
+## Dos modos de comprensión
+
+Workspace = investigación
+PressureBoard = priorización
+
+Ambos consumen las mismas capacidades, señales y evidencias. No son sistemas separados.
+
+## Fuera de alcance
+
+Esta referencia no prescribe proveedor de nube, base de datos específica, framework frontend, modelo LLM concreto, thresholds universales, taxonomías únicas, nombres de endpoints o tablas ni configuración de clientes.
+
+======================================================================
+docs/01-principles.md
+======================================================================
+
+# Principios de arquitectura
+
+1. Comprensión sobre sistemas existentes.
+2. Contratos antes que prompts.
+3. Cálculo controlado.
+4. LLM acotado.
+5. Evidencia primero.
+6. Modalidad epistemológica explícita.
+7. Recuperación progresiva.
+8. Presupuesto de contexto.
+9. Señales persistentes.
+10. Preparación antes del consumo.
+11. Interfaces pasivas.
+12. Separación de identidad y tenant.
+13. Transportes intercambiables.
+14. Configuración no es arquitectura.
+
+Detalle:
+
+- NexusG agrega una capacidad de lectura y decisión sin reemplazar ERP, CRM, correo, BI, documentos u otras fuentes.
+- Las capacidades se describen mediante entradas y salidas formales. El lenguaje natural se traduce a contratos; no sustituye su validación.
+- Las métricas, reglas, agregaciones y políticas se ejecutan en componentes controlados, auditables y versionables.
+- El LLM interpreta lenguaje y contenido, clasifica semánticamente y genera narrativa. No administra credenciales ni reemplaza controles de acceso, validación o cálculo.
+- Toda conclusión relevante debe conservar referencias a la información que la sostiene.
+- El sistema distingue entre hecho registrado, declaración de una persona, cálculo, clasificación semántica, inferencia y recomendación.
+- Las fuentes extensas o no estructuradas se investigan desde representaciones compactas hacia evidencia detallada solo cuando es necesario.
+- El contexto entregado al LLM se administra mediante compactación, paginación, selección y límites explícitos.
+- Una situación operacional posee identidad estable, estado, contexto y evidencia. Puede actualizarse sin duplicarse en cada ejecución.
+- La preparación calcula; el runtime consume.
+- Las interfaces renderizan y facilitan interacción. No deben reconstruir prioridad, evidencia o cálculo ya formalizado.
+- El principal autenticado, el usuario, el tenant y sus permisos son conceptos distintos.
+- REST, MCP, aplicaciones conversacionales u otros canales son adaptadores sobre las mismas capacidades.
+- Thresholds, pesos, ventanas, límites y taxonomías pueden variar. La arquitectura define dónde viven, cómo se versionan y cómo se auditan.
+
+======================================================================
+docs/02-system-boundaries.md
+======================================================================
+
+# Límites del sistema
+
+## Capas y responsabilidades
+
+Integración: conecta fuentes autorizadas y obtiene datos. No interpreta semánticamente, prioriza ni expone credenciales.
+
+Normalización: convierte formatos heterogéneos en estructuras consistentes. No genera narrativa ni decisiones ejecutivas.
+
+Capacidades: define operaciones formales disponibles para el sistema. No contiene lógica de transporte o presentación.
+
+Router: valida la intención formal, selecciona una capacidad y orquesta su ejecución. No implementa lógica de dominio.
+
+Motores: ejecutan consultas, cálculos, reglas y políticas formalizadas. No dependen de instrucciones narrativas ambiguas.
+
+Capa semántica: interpreta lenguaje, clasifica contenido y redacta respuestas. No autentica, autoriza, administra secretos ni altera datos fuera de contratos permitidos.
+
+Persistencia: conserva datos normalizados, evidencia, ejecuciones, señales y vistas materializadas. No se confunde con la lógica que produce esos artefactos.
+
+Materialización: prepara representaciones operacionales completas y consistentes para consumo posterior. No publica una fotografía como completa cuando su universo de entrada está incompleto.
+
+Workspace: investiga preguntas o señales mediante capacidades y evidencia. No inventa evidencia ni salta controles de acceso.
+
+PressureBoard: muestra señales priorizadas y facilita su comprensión inicial. No recalcula prioridad, deduplica señales ni reconstruye inteligencia en frontend.
+
+Fronteras críticas:
+LLM ≠ motor de cálculo
+router ≠ lógica de dominio
+frontend ≠ motor de prioridad
+persistencia ≠ decisión
+transporte ≠ capacidad
+
+======================================================================
+docs/03-runtime-flow.md
+======================================================================
+
+# Flujo runtime
+
+Pregunta o acción
+→ interpretación de intención
+→ solicitud formal de capacidad
+→ validación
+→ autorización
+→ router
+→ motor especializado
+→ resultado estructurado
+→ evidencia y trazas
+→ interpretación narrativa
+→ respuesta o actualización de señal
+
+Antes de ejecutar, la intención debe convertirse en una solicitud formal con capacidad, actor, tenant autorizado, parámetros, modo de salida y contexto permitido.
+
+Una respuesta de capacidad puede incluir datos, métricas, evidencia, advertencias, trazas de ejecución e información de versión.
+
+La narrativa se genera después de obtener el resultado estructurado.
+
+Modos de salida: minimal, compact y full. Cambia la representación, no el cálculo.
+
+Para fuentes extensas:
+búsqueda amplia
+→ resumen estructurado
+→ selección de elementos relevantes
+→ lectura detallada
+→ evidencia específica
+
+Errores mínimos: autenticación, autorización, contrato inválido, capacidad no soportada, fuente no disponible, universo incompleto, evidencia insuficiente y error interno.
+
+Un error no debe transformarse en una conclusión narrativa aparentemente válida.
+
+======================================================================
+docs/04-llm-backend-boundary.md
+======================================================================
+
+# Frontera entre LLM y backend
+
+LLM = lenguaje, contexto, clasificación y narrativa.
+Backend = autenticación, autorización, contratos, datos, cálculo, reglas, persistencia y evidencia.
+
+El LLM puede interpretar preguntas, proponer una capacidad formal, clasificar contenido dentro de una taxonomía permitida, resumir evidencia, relacionar contexto, redactar una respuesta y explicar resultados ya calculados.
+
+El backend debe autenticar al principal, resolver tenant y permisos, validar contratos, acceder a fuentes autorizadas, ejecutar consultas y cálculos, aplicar reglas y políticas versionadas, normalizar resultados, persistir señales y evidencia, registrar trazas y devolver errores estructurados.
+
+El LLM no debe administrar credenciales, decidir acceso a datos, inventar evidencia, modificar libremente el scope, reemplazar cálculos determinísticos, presentar inferencias como hechos ni ejecutar escrituras fuera de contratos autorizados.
+
+Clasificación semántica:
+contenido
+→ contrato de clasificación
+→ LLM
+→ salida cerrada
+→ validación backend
+→ normalización
+→ reglas derivadas
+→ persistencia
+
+Modalidad epistemológica:
+- “el sistema registró” para hechos de fuente;
+- “el cálculo indica” para resultados derivados;
+- “una persona reporta” para declaraciones;
+- “la clasificación interpreta” para lectura semántica;
+- “se infiere” para inferencias;
+- “se recomienda” para acciones propuestas.
+
+El LLM amplía comprensión. No elimina las fronteras de control.
+
+======================================================================
+docs/05-capabilities-and-routers.md
+======================================================================
+
+# Capacidades y routers
+
+Una capacidad es una operación formal que NexusG puede ejecutar sobre una fuente o representación operacional.
+
+Debe definir nombre estable, propósito, contrato de entrada, contrato de salida, permisos requeridos, errores posibles, evidencia producida y versión.
+
+El router recibe una solicitud formal y selecciona el motor correspondiente:
+solicitud
+→ validación
+→ autorización
+→ resolución de capacidad
+→ ejecución
+→ normalización de respuesta
+
+El router no consulta directamente fuentes de dominio, calcula métricas, interpreta evidencia, construye narrativa ni contiene reglas específicas de clientes.
+
+Una misma capacidad puede exponerse por REST, MCP, aplicación conversacional, interfaz interna o proceso programado. El transporte adapta el protocolo; no redefine la lógica de dominio.
+
+======================================================================
+docs/06-data-model.md
+======================================================================
+
+# Modelo de datos
+
+Entidades principales:
+- Principal
+- User
+- Tenant
+- Source
+- Entity
+- Metric
+- Document
+- Evidence
+- CapabilityExecution
+- PressureSignal
+- MaterializedView
+
+Relación conceptual:
+Tenant
+├─ Users
+├─ Sources
+├─ Entities
+├─ Metrics
+├─ Documents
+├─ Evidence
+├─ CapabilityExecutions
+├─ PressureSignals
+└─ MaterializedViews
+
+Las implementaciones pueden separar:
+raw
+→ normalized
+→ derived
+→ materialized
+
+La referencia no prescribe nombres de tablas, tipos SQL, proveedor de base de datos, esquema físico único ni campos específicos de una industria.
+
+======================================================================
+docs/07-evidence-and-traceability.md
+======================================================================
+
+# Evidencia y trazabilidad
+
+La narrativa no es la evidencia. NexusG conserva la evidencia como un objeto independiente y trazable.
+
+Una evidencia identifica tipo e identidad de fuente, entidad o documento relacionado, título o descripción, extracto o valor observado, metadata, momento de observación y ámbito de acceso.
+
+Linaje:
+fuente
+→ dato o documento
+→ normalización
+→ cálculo o clasificación
+→ regla o política
+→ resultado
+→ narrativa o señal
+
+Modalidades:
+- hecho registrado;
+- declaración;
+- cálculo;
+- clasificación semántica;
+- inferencia;
+- recomendación.
+
+Una ejecución relevante registra actor, tenant, capacidad, parámetros efectivos, versión del contrato, versión del motor o política, fuentes consultadas, evidencias seleccionadas, advertencias, fecha y estado de ejecución.
+
+Cuando la evidencia no alcanza para responder con certeza, el sistema debe indicarlo. No debe completar vacíos con una narrativa convincente.
+
+Una referencia de evidencia no autoriza por sí misma su exposición. La recuperación debe volver a comprobar permisos y ámbito.
+
+======================================================================
+docs/08-operational-materialization.md
+======================================================================
+
+# Materialización operacional
+
+La materialización prepara una representación operacional antes de que una interfaz o agente la consuma.
+
+fuente
+→ datos crudos
+→ normalización
+→ métricas y evidencia
+→ reglas y señales
+→ vista materializada
+→ consumo runtime
+
+Principio central:
+la preparación calcula
+el runtime consume
+
+Una vista no debe presentarse como completa cuando el universo de entrada está incompleto.
+
+Reprocesar el mismo ámbito y período debe actualizar la representación correspondiente sin crear duplicados innecesarios.
+
+Operación: captura, persistencia, normalización, clasificación, cálculo y reconstrucción de vistas.
+Runtime: lectura, filtrado autorizado, entrega de JSON estructurado, render o interpretación.
+
+======================================================================
+docs/09-pressure-signals.md
+======================================================================
+
+# Señales de presión
+
+Una PressureSignal representa una situación operacional que requiere atención, seguimiento o decisión.
+
+La señal es el concepto persistente. La tarjeta es solo una posible representación visual.
+
+Una señal responde:
+- qué ocurre;
+- por qué importa;
+- qué conviene hacer;
+- qué evidencia lo sostiene;
+- cuál es su estado.
+
+Puede contener identidad estable, tenant, dimensión, estado, prioridad, título, resumen, razón de importancia, acción recomendada, confianza, referencias de evidencia, contexto reutilizable, versión de política y fechas.
+
+La misma situación no debe convertirse en una señal nueva en cada ejecución.
+
+Si varios hallazgos conducen a la misma decisión, deben agruparse antes de llegar a la interfaz.
+
+La prioridad debe ser explicable y versionable. No existe un threshold universal de NexusG.
+
+======================================================================
+docs/10-workspace.md
+======================================================================
+
+# Workspace
+
+Workspace es la interfaz de investigación de NexusG.
+
+Permite explorar una pregunta abierta o profundizar una señal existente utilizando capacidades formales y evidencia autorizada.
+
+Modos:
+- investigación libre;
+- investigación desde una señal.
+
+Flujo:
+pregunta o señal
+→ interpretación de intención
+→ selección de capacidades
+→ recuperación progresiva
+→ cálculo y evidencia
+→ síntesis
+→ profundización opcional
+
+Workspace debe conservar contexto, usar capacidades autorizadas, distinguir datos, inferencias y recomendaciones, mostrar evidencia suficiente, permitir profundización y comunicar límites y ausencia de datos.
+
+PressureBoard responde primero dónde mirar. Workspace permite comprender qué ocurrió, por qué importa y qué alternativas existen.
+
+======================================================================
+docs/11-pressureboard.md
+======================================================================
+
+# PressureBoard
+
+PressureBoard es la interfaz de priorización de NexusG.
+
+Muestra un conjunto reducido de situaciones que requieren atención y permite comprender rápidamente por qué importan.
+
+No calcula métricas, clasifica contenido, reconstruye prioridades, deduplica señales, inventa recomendaciones, sustituye evidencia ni funciona como dashboard BI general.
+
+Flujo:
+PressureSignals activas
+→ filtro autorizado
+→ orden y agrupación preparados
+→ representación visual
+→ apertura de contexto
+→ Workspace
+
+El motor reduce ruido antes del render:
+múltiples hallazgos relacionados
+→ una situación operacional
+→ una señal activa
+
+PressureBoard prioriza. Workspace profundiza.
+
+======================================================================
+docs/12-identity-tenancy-security.md
+======================================================================
+
+# Identidad, tenancy y seguridad
+
+La identidad autenticada, el usuario, el tenant y el scope de datos son conceptos distintos.
+
+Toda ejecución debe resolver quién actúa, en nombre de qué tenant, sobre qué fuente, con qué permisos, para qué capacidad y dentro de qué scope.
+
+El tenant no debe derivarse únicamente de un parámetro libre enviado por el cliente.
+
+Las credenciales deben permanecer fuera del contexto del LLM, almacenarse de forma protegida, renovarse en integración, limitarse al scope necesario, poder revocarse y asociarse a una identidad y ámbito verificables.
+
+runtime = lectura y consumo autorizado
+operations = captura, reconstrucción y administración
+
+Una referencia a evidencia no concede acceso automático. La recuperación debe volver a verificar autorización.
+
+Toda entidad persistente relevante debe quedar asociada a su tenant o ámbito equivalente verificable.
+
+La precisión semántica también es un control de seguridad y reputación: el sistema debe evitar transformar una acusación, interpretación o inferencia en un hecho afirmado.
+
+======================================================================
+glossary.md
+======================================================================
+
+Capability: operación formal y versionable que NexusG puede ejecutar.
+Router: componente que valida una solicitud formal y selecciona el motor correspondiente.
+Engine: componente especializado que ejecuta consultas, cálculos, reglas o políticas.
+Evidence: referencia trazable a la información que sostiene una afirmación, cálculo o señal.
+PressureSignal: situación operacional persistente que requiere atención, seguimiento o decisión.
+PressureBoard: interfaz de priorización que muestra señales preparadas.
+Workspace: interfaz de investigación que utiliza capacidades y evidencia.
+Materialization: proceso que prepara una representación operacional antes del consumo runtime.
+Runtime: capa que atiende consultas o interfaces usando capacidades y datos preparados.
+Operations: capa que captura, normaliza, persiste, clasifica, calcula y reconstruye artefactos.
+Principal: identidad autenticada que inicia una acción.
+Tenant: ámbito organizacional que separa datos, políticas y permisos.
+Source: sistema o repositorio autorizado del que proviene información.
+Normalization: transformación de formatos heterogéneos a representaciones intermedias consistentes.
+Semantic classification: interpretación de contenido dentro de una taxonomía y contrato definidos.
+Deterministic calculation: cálculo cuyo resultado depende de entradas y reglas explícitas, no de generación narrativa libre.
+Policy: conjunto versionado de reglas, pesos, thresholds o criterios de decisión.
+Trace: registro de cómo se ejecutó una capacidad y qué fuentes, versiones y parámetros participaron.
+Epistemic modality: naturaleza de una afirmación: hecho, declaración, cálculo, clasificación, inferencia o recomendación.
+Compact representation: forma reducida de datos o documentos diseñada para selección e interpretación eficiente.
+Progressive retrieval: estrategia que avanza desde búsqueda y resúmenes compactos hacia evidencia detallada.
+
+======================================================================
+CONTRATOS PÚBLICOS — RESUMEN
+======================================================================
+
+capability-request.schema.json
+- request_id
+- capability
+- actor_context: principal_id, user_id, roles
+- tenant_context: tenant_id, source_scope
+- parameters
+- output_mode: minimal, compact, full
+- trace_context: conversation_id, parent_execution_id, correlation_id
+
+capability-response.schema.json
+- ok
+- request_id
+- execution_id
+- capability
+- status: completed, partial, failed
+- data
+- evidence
+- warnings
+- trace: timestamps, versiones y fuentes consultadas
+- error estructurado
+
+evidence.schema.json
+- evidence_id
+- tenant_id
+- source: source_type, source_id, entity_id, document_id, location
+- modality: recorded_fact, statement, calculation, semantic_classification, inference, recommendation
+- title, excerpt, value, metadata
+- observed_at
+- lineage
+- access_scope
+
+pressure-signal.schema.json
+- signal_id
+- signal_key
+- tenant_id
+- dimension
+- status: active, monitoring, resolved, dismissed
+- priority: level, score, rationale
+- title
+- summary
+- why_it_matters
+- recommended_action
+- confidence
+- evidence_refs
+- context
+- policy_version
+- created_at, updated_at, resolved_at
+
+error.schema.json
+- code
+- message
+- retryable
+- details
+
+======================================================================
+EJEMPLOS CONCEPTUALES
+======================================================================
+
+Fuente estructurada:
+Una capacidad operations.margin.pressure compara margen actual y anterior, devuelve resultado estructurado, recomendación, evidencia de cálculo y trazas de versiones y fuentes consultadas.
+
+Fuente no estructurada:
+Una capacidad communications.operational.discovery usa recuperación progresiva, identifica una dependencia no resuelta, conserva por separado la declaración de fuente y la clasificación semántica, y devuelve advertencia si aún existen resultados por recuperar.
+
+PressureSignal:
+Una señal persistente identifica una dependencia sin confirmar para una apertura, explica por qué importa, propone una acción, conserva confianza, referencias de evidencia y contexto para abrir una investigación en Workspace.
+
+Cadena de evidencia:
+fuente
+→ documento
+→ normalización
+→ clasificación semántica
+→ política
+→ PressureSignal
+
+La afirmación final mantiene su modalidad como inferencia y conserva ejecución, tenant, contrato y fecha.
+
+======================================================================
+DIAGRAMAS — REPRESENTACIÓN TEXTUAL
+======================================================================
+
+Contexto del sistema:
+Persona o agente autorizado
+→ PressureBoard / Workspace
+→ NexusG
+→ fuentes estructuradas y no estructuradas
+
+Políticas y contratos versionados alimentan NexusG.
+NexusG entrega señales priorizadas a PressureBoard y respuestas con evidencia a Workspace.
+
+Flujo runtime:
+Pregunta
+→ interpretación semántica
+→ Capability Request validado
+→ autenticación y autorización
+→ Capability Router
+→ motor especializado
+→ fuentes autorizadas
+→ resultado estructurado
+→ evidencia y trazabilidad
+→ narrativa controlada
+→ respuesta
+
+Flujo operacional:
+Fuentes autorizadas
+→ captura
+→ datos o documentos crudos
+→ normalización
+→ resultados derivados y evidencia
+→ PressureSignals
+→ vistas materializadas
+→ PressureBoard
+→ Workspace
+
+Workspace y PressureBoard:
+Preparación operacional
+→ PressureSignal persistente
+→ PressureBoard
+→ Workspace
+→ capacidades
+→ evidencia autorizada
+
+Linaje de evidencia:
+Fuente autorizada
+→ dato, mensaje o documento
+→ representación normalizada
+→ CapabilityExecution
+→ cálculo o clasificación
+→ Evidence
+→ afirmación
+→ PressureSignal o narrativa
+
+======================================================================
+ALCANCE
+======================================================================
+
+Esta referencia es conceptual y normativa. Las implementaciones concretas pueden variar en tecnologías, nombres de tablas, endpoints, límites y estrategias de despliegue, siempre que respeten los principios y contratos aquí definidos.
