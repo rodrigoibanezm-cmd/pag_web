@@ -16,6 +16,9 @@ const normalizeNavigation = () => {
     }
   }
 
+  const architectureReference = document.querySelector('a[href="https://github.com/rodrigoibanezm-cmd/nexusg-reference"]')
+  if (architectureReference) architectureReference.setAttribute('href', '/reference.txt')
+
   const exampleHome = document.querySelector('.example-nav a[href="/"]')
   if (exampleHome) {
     exampleHome.textContent = 'Home'
