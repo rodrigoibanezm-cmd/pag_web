@@ -1,10 +1,4 @@
-import { renderRoute } from './router.js'
-
-const pageTitle = pathname => {
-  if (pathname.startsWith('/partners')) return 'NexusG — Partners'
-  if (pathname.startsWith('/ejemplos')) return 'NexusG — Ejemplos'
-  return 'NexusG — Comprensión operativa'
-}
+import { pageTitle, renderRoute } from './router.js'
 
 const normalizeNavigation = () => {
   const homeMenu = document.querySelector('.labs-menu')
