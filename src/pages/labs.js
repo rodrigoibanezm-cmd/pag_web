@@ -50,7 +50,7 @@ export const labsPage = () => `
 
   ${section('que-es', 'Qué es NexusG', 'Una capacidad operativa permanente', `
     <p><strong>Plataforma de comprensión operativa que conecta tus sistemas y descubre las situaciones que requieren intervención.</strong></p>
-    <p>NexusG conecta evidencia distribuida, aplica reglas y cálculos controlados y mantiene contexto sobre la operación.</p>
+    <p>NexusG conecta evidencia distribuida, aplica reglas y cálculos controlados y mantiene el contexto de decisión de cada usuario.</p>
     <div class="labs-pill-row">
       <span>Relaciona evidencia</span><span>Construye situaciones</span><span>Explica causas</span><span>Apoya decisiones</span>
     </div>
@@ -77,19 +77,17 @@ export const labsPage = () => `
     <p>Ambas interfaces trabajan sobre la comprensión operativa construida por NexusG. PressureBoard concentra la atención en lo que requiere intervención. Workspace permite investigar, profundizar y preparar decisiones con evidencia.</p>
   `)}
 
-  ${section('comprension-personalizada', 'Comprensión personalizada', 'La comprensión no se construye para toda la empresa.', `
-    <p>La comprensión que necesita un gerente comercial no es la misma que necesita un planner, un jefe de operaciones o un responsable de postventa.</p>
-    <p>Por eso NexusG construye una comprensión específica para cada usuario, enfocada en su propio dominio de decisión.</p>
-    <p><strong>Cada usuario recibe un PressureBoard distinto, construido a partir de las señales, prioridades y decisiones que le corresponde gestionar.</strong></p>
-    <p>No todos necesitan comprender lo mismo.</p>
-    <p>Necesitan comprender aquello sobre lo que deben decidir.</p>
+  ${section('comprension-personalizada', 'Comprensión personalizada', 'Los sistemas empresariales modelan la empresa. NexusG modela el contexto de decisión de cada usuario.', `
+    <p>La empresa comparte los mismos datos.</p>
+    <p>Cada usuario necesita una comprensión distinta para decidir.</p>
+    <p>Por eso NexusG construye y mantiene un modelo operacional específico para cada usuario, utilizando la evidencia relevante para su propio contexto de decisión.</p>
     <blockquote>La empresa es una sola.<br>Las decisiones no.</blockquote>
   `)}
 
   ${section('adaptacion', 'Cómo comienza', 'La implementación conecta las fuentes. El descubrimiento lo hace NexusG.', `
-    <p>Después de conectar las fuentes, NexusG comienza inmediatamente a descubrir cómo opera la empresa utilizando la evidencia que ya existe en sus sistemas.</p>
-    <p>Desde ese momento la comprensión crece progresivamente. Cada nuevo descubrimiento amplía el contexto disponible y habilita nuevas capacidades.</p>
-    <p>Solo cuando la evidencia es insuficiente, NexusG solicita confirmaciones puntuales.</p>
+    <p>La implementación conecta las fuentes.</p>
+    <p>A partir de ese momento, NexusG construye y mantiene automáticamente el modelo operacional de cada usuario utilizando la evidencia existente y la nueva evidencia que aparece cada día.</p>
+    <p>Cuando la evidencia disponible no permite construir un modelo suficientemente confiable, NexusG solicita únicamente las confirmaciones necesarias.</p>
   `)}
 
   ${section('situaciones', 'Situaciones, no alertas', 'NexusG reúne señales dispersas en una explicación operativa', `
@@ -172,7 +170,7 @@ export const labsPage = () => `
       <details><summary>¿NexusG es una consultora o un SaaS?</summary><p><strong>NexusG es un producto SaaS.</strong></p><p>Se implementa sobre los sistemas que la empresa ya utiliza y entrega una capacidad operativa permanente.</p><p>No es una consultoría, ni el resultado de una consultoría, ni un informe que se entrega una vez.</p><p>La implementación consiste en conectar las fuentes y descubrir el dominio de decisión de cada usuario. A partir de esa comprensión, NexusG incorpora nuevas capacidades sobre los sistemas existentes.</p></details>
       <details><summary>¿Qué son Workspace y PressureBoard?</summary><p>Workspace es la interfaz conversacional para investigar situaciones. PressureBoard presenta las situaciones construidas por NexusG y explica por qué merecen atención.</p></details>
       <details><summary>¿Cómo se accede a Workspace y PressureBoard?</summary><p>Workspace puede utilizarse desde clientes compatibles con MCP o integrarse en otras interfaces conversacionales. PressureBoard puede utilizarse desde una interfaz web o integrarse en otras aplicaciones.</p></details>
-      <details><summary>¿Cómo se adapta NexusG a cada usuario?</summary><p>Los motores analizan las fuentes conectadas y construyen una comprensión específica para el dominio de decisión de cada usuario.</p><p>Cuando la evidencia no permite resolver algo con suficiente certeza, NexusG presenta preguntas concretas y cerradas antes de habilitar la capacidad.</p></details>
+      <details><summary>¿Cómo se adapta NexusG a cada usuario?</summary><p>Los motores analizan las fuentes conectadas y construyen y mantienen un modelo operacional específico para cada usuario.</p><p>Cuando la evidencia disponible no permite construir un modelo suficientemente confiable, NexusG presenta preguntas concretas y cerradas antes de habilitar la capacidad.</p></details>
       <details><summary>¿Dónde quedan los datos y los persistentes de Workspace?</summary><p>La configuración, el estado operativo, el modelo construido y los persistentes generados por Workspace pueden mantenerse en infraestructura controlada por el cliente. El conocimiento generado permanece como un activo del cliente.</p></details>
       <details><summary>¿Cómo se implementa y cuánto cuesta comenzar?</summary><p>La mayoría de las implementaciones comienza con una única capacidad sobre una fuente existente. Las implementaciones iniciales parten desde USD 2.000 por capacidad y la operación continua desde USD 50 mensuales, según alcance y modalidad.</p></details>
       <details><summary>¿Workspace es ChatGPT?</summary><p>No. Workspace puede operar desde clientes compatibles con MCP sobre distintos modelos de lenguaje.</p></details>
