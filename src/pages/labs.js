@@ -49,8 +49,8 @@ export const labsPage = () => `
   `)}
 
   ${section('que-es', 'Qué es NexusG', 'Una capacidad operativa permanente', `
-    <p><strong>Plataforma de comprensión operativa que conecta tus sistemas y descubre las situaciones que requieren intervención.</strong></p>
-    <p>NexusG conecta evidencia distribuida, aplica reglas y cálculos controlados y mantiene el contexto de decisión de cada usuario.</p>
+    <p><strong>NexusG construye y mantiene el contexto de decisión de cada usuario utilizando la evidencia distribuida en los sistemas de la empresa.</strong></p>
+    <p>A partir de ese modelo operacional descubre qué situaciones requieren atención antes de que sea demasiado tarde.</p>
     <div class="labs-pill-row">
       <span>Relaciona evidencia</span><span>Construye situaciones</span><span>Explica causas</span><span>Apoya decisiones</span>
     </div>
@@ -100,7 +100,7 @@ export const labsPage = () => `
   ${section('como-funciona', 'Cómo funciona', 'De las fuentes a una decisión', `
     <div class="labs-flow">
       <article><b>1</b><h3>Conecta</h3><p>ERP, CRM, correo, documentos, bases de datos y APIs.</p></article>
-      <article><b>2</b><h3>Comprende</h3><p>Relaciona evidencia, reglas, cálculos y contexto del negocio.</p></article>
+      <article><b>2</b><h3>Modela</h3><p>Construye y mantiene el contexto de decisión de cada usuario utilizando evidencia, reglas y cálculos.</p></article>
       <article><b>3</b><h3>Prioriza</h3><p>Construye situaciones y determina cuáles requieren atención.</p></article>
       <article><b>4</b><h3>Decide</h3><p>Presenta respuestas y evidencia para actuar con criterio.</p></article>
     </div>
@@ -167,7 +167,7 @@ export const labsPage = () => `
   ${section('faq', 'Preguntas frecuentes', 'Lo esencial', `
     <div class="labs-faq">
       <details><summary>¿Qué compra el cliente?</summary><p>Una capacidad operativa para comprender la operación y convertir esa comprensión en decisiones.</p></details>
-      <details><summary>¿NexusG es una consultora o un SaaS?</summary><p><strong>NexusG es un producto SaaS.</strong></p><p>Se implementa sobre los sistemas que la empresa ya utiliza y entrega una capacidad operativa permanente.</p><p>No es una consultoría, ni el resultado de una consultoría, ni un informe que se entrega una vez.</p><p>La implementación consiste en conectar las fuentes y descubrir el dominio de decisión de cada usuario. A partir de esa comprensión, NexusG incorpora nuevas capacidades sobre los sistemas existentes.</p></details>
+      <details><summary>¿NexusG es una consultora o un SaaS?</summary><p><strong>NexusG es un producto SaaS.</strong></p><p>Se implementa sobre los sistemas que la empresa ya utiliza y entrega una capacidad operativa permanente.</p><p>No es una consultoría, ni el resultado de una consultoría, ni un informe que se entrega una vez.</p><p>La implementación consiste en conectar las fuentes. A partir de ese momento, NexusG construye y mantiene automáticamente el modelo operacional de cada usuario utilizando la evidencia disponible. NexusG incorpora nuevas capacidades sobre los sistemas existentes.</p></details>
       <details><summary>¿Qué son Workspace y PressureBoard?</summary><p>Workspace es la interfaz conversacional para investigar situaciones. PressureBoard presenta las situaciones construidas por NexusG y explica por qué merecen atención.</p></details>
       <details><summary>¿Cómo se accede a Workspace y PressureBoard?</summary><p>Workspace puede utilizarse desde clientes compatibles con MCP o integrarse en otras interfaces conversacionales. PressureBoard puede utilizarse desde una interfaz web o integrarse en otras aplicaciones.</p></details>
       <details><summary>¿Cómo se adapta NexusG a cada usuario?</summary><p>Los motores analizan las fuentes conectadas y construyen y mantienen un modelo operacional específico para cada usuario.</p><p>Cuando la evidencia disponible no permite construir un modelo suficientemente confiable, NexusG presenta preguntas concretas y cerradas antes de habilitar la capacidad.</p></details>
