@@ -78,6 +78,7 @@ export const labsPage = () => `
   `)}
 
   ${section('comprension-personalizada', 'Comprensión personalizada', 'Los sistemas empresariales modelan la empresa. NexusG modela el contexto de decisión de cada usuario.', `
+    <p>La misma evidencia puede tener significados distintos según quién deba decidir. Por eso NexusG mantiene un modelo operacional independiente para cada usuario.</p>
     <p>La empresa comparte los mismos datos.</p>
     <p>Cada usuario necesita una comprensión distinta para decidir.</p>
     <p>Por eso NexusG construye y mantiene un modelo operacional específico para cada usuario, utilizando la evidencia relevante para su propio contexto de decisión.</p>
@@ -85,8 +86,8 @@ export const labsPage = () => `
   `)}
 
   ${section('adaptacion', 'Cómo comienza', 'La implementación conecta las fuentes. El descubrimiento lo hace NexusG.', `
-    <p>La implementación conecta las fuentes.</p>
-    <p>A partir de ese momento, NexusG construye y mantiene automáticamente el modelo operacional de cada usuario utilizando la evidencia existente y la nueva evidencia que aparece cada día.</p>
+    <p>La implementación únicamente conecta las fuentes.</p>
+    <p>A partir de ese momento, NexusG construye y mantiene automáticamente el modelo operacional de cada usuario utilizando la evidencia existente y la nueva evidencia que aparece durante la operación.</p>
     <p>Cuando la evidencia disponible no permite construir un modelo suficientemente confiable, NexusG solicita únicamente las confirmaciones necesarias.</p>
   `)}
 
