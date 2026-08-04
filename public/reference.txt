@@ -59,6 +59,20 @@ NexusG transforma información operacional dispersa en comprensión utilizable, 
 
 No reemplaza los sistemas de origen. Opera sobre ellos mediante integraciones autorizadas y capacidades formales.
 
+## Unidad de modelado
+
+Los sistemas empresariales modelan la operación de la empresa.
+
+NexusG modela el contexto de decisión de cada usuario.
+
+No intenta construir un modelo completo de la organización ni reemplazar ERP, CRM u otros sistemas. Mantiene un modelo operacional vivo para cada usuario utilizando la evidencia existente y la nueva evidencia que aparece durante la operación.
+
+Ese modelo operacional representa el contexto de decisión del usuario: qué responsabilidades tiene, qué información es relevante para decidir, qué evidencia necesita y qué situaciones requieren atención.
+
+Workspace investiga ese modelo.
+
+PressureBoard prioriza las situaciones que emergen de ese modelo.
+
 ## Arquitectura general
 
 Fuentes estructuradas y no estructuradas
